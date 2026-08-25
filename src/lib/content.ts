@@ -53,13 +53,76 @@ export const PILLARS = [
   },
 ] as const;
 
-// Identity — "Our Identity" (About).
+// ── Charter (Mission Charter v1.0, Dec 2025) ──────────────────────────────
+// Adapted for the for-profit "Bitcoin Policy India": the enduring conviction
+// carries over; explicit non-profit framing is left out per prior decision.
+
+// Why we exist — the vacuum (Home + About).
+export const WHY_EXISTS = {
+  lead: "India is stepping into a future shaped by digital money, global competition, economic uncertainty, and accelerating technological change. In that world, Bitcoin is no longer a niche curiosity.",
+  gaps: [
+    "Policy conversations are fragmented.",
+    "Research is shallow or biased.",
+    "Public education is inconsistent.",
+    "Most discussion collapses into ideology, hype, or noise.",
+  ],
+  resolve: "There is a vacuum. We exist to fill it with clarity.",
+} as const;
+
+// What we say about Bitcoin — our stance (Home + About).
+export const BITCOIN_IS = [
+  { title: "A monetary innovation", body: "A new form of money with global implications no serious economy can ignore." },
+  { title: "A maturing financial asset", body: "Increasingly held by institutions and treated as a distinct asset class." },
+  { title: "A security & energy question", body: "As much about the grid and national resilience as about finance." },
+  { title: "A savings technology", body: "For many, a way to preserve value over long time horizons." },
+  { title: "A foundation for resilience", body: "A potential hedge against monetary and geopolitical fragility." },
+] as const;
+
+// The three commitments beneath the mission (Home + About).
+export const COMMITMENTS = [
+  { title: "Rigor", body: "Every insight is accurate, sourced, and globally benchmarked." },
+  { title: "Clarity", body: "Complex ideas, explained simply." },
+  { title: "Independence", body: "No alignment with political parties, corporate interests, or ideological tribes." },
+] as const;
+
+// Identity pillars — "Our Identity" (About).
 export const IDENTITY = [
-  { title: "Bitcoin-Only", body: "No tokens. No crypto. No Web3. Only Bitcoin — understood deeply." },
-  { title: "India-First", body: "All analysis begins with one question: what is good for India?" },
-  { title: "Independent & Non-Partisan", body: "Rigorous analysis, free of partisan agendas." },
-  { title: "Rigor Without Complexity", body: "Serious work, explained simply." },
-  { title: "Evidence-Based", body: "No ideology. No speculation. Only data, reasoning, and clarity." },
+  { title: "Bitcoin-Only", body: "Not Web3. Not crypto. Not tokens. Not NFTs. Only Bitcoin — understood deeply and explained clearly." },
+  { title: "India-First", body: "We benchmark globally, but think locally. Every question starts with India's economy, grid, and institutions." },
+  { title: "Non-Partisan & Non-Ideological", body: "We are neutral because neutrality builds trust — for government, academia, industry, and citizens alike." },
+  { title: "Rigor Without Jargon", body: "Being clear is harder than being complicated. We choose clarity." },
+  { title: "Signal Over Noise", body: "We publish less, but publish well. Accuracy over speed, depth over trends." },
+] as const;
+
+// Boundaries — what we don't do (About). Credibility boundaries from the
+// charter; the non-profit-specific lines are intentionally omitted.
+export const BOUNDARIES = [
+  "Shill tokens, altcoins, or “crypto” projects",
+  "Give trading, investment, or portfolio advice",
+  "Comment on price or make predictions",
+  "Publish hype, memes, or maximalist rhetoric",
+  "Lobby for special treatment or private interests",
+  "Align with political parties or campaigns",
+] as const;
+
+// Long-term vision — what we're building (Home + About).
+export const VISION = {
+  headline: "What we're building",
+  body: "A durable, India-first reference point for Bitcoin — known for clarity, independence, intellectual honesty, and policy relevance.",
+  aims: [
+    "The reference point policymakers turn to",
+    "The training ground for India's next generation of Bitcoin thinkers",
+    "The bridge between India and global Bitcoin research",
+  ],
+} as const;
+
+// The bar every output must clear (About).
+export const STANDARD = [
+  { title: "Accurate", body: "Verified, benchmarked, referenced." },
+  { title: "Independent", body: "Unaffected by corporate or political interests." },
+  { title: "Clear", body: "Simple language. No jargon." },
+  { title: "Useful", body: "Something policymakers, educators, companies, and citizens can actually use." },
+  { title: "Neutral", body: "Benefits, risks, and trade-offs explained fairly." },
 ] as const;
 
 // Our Approach (About).
