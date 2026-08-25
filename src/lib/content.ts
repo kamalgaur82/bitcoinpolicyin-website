@@ -154,6 +154,28 @@ export const IDENTITY = [
   { title: "Integrity Over Growth", body: "Small, slow, and credible beats fast-growing but compromised." },
 ] as const;
 
+// The two co-founders (About). Bios drawn from kamalgaur.com, saqeershah.com,
+// and BPI's own materials; kept factual and modest.
+export const FOUNDERS_INTRO =
+  "BPI is a small, deliberately lean effort — for now, two people doing the work. That's the point: independent, focused, and accountable. Together we set BPI's strategy, structure, and governance.";
+
+export const FOUNDERS = [
+  {
+    name: "Kamal Gaur",
+    role: "Co-founder",
+    bio: "Two decades across telecom, technology, and financial services, having led organisations of 300+. He has briefed India's Parliamentary Standing Committee on Finance on cryptocurrency, and brings the analytical depth — leading BPI's research and frameworks on digital-asset taxonomy, classification, and taxation.",
+    link: "https://kamalgaur.com",
+    linkLabel: "kamalgaur.com",
+  },
+  {
+    name: "Saqeer Shah",
+    role: "Co-founder",
+    bio: "An advocate and policy strategist. He brings the network and on-the-ground judgment — turning research into relationships and real engagement across policy and industry.",
+    link: "https://saqeershah.com",
+    linkLabel: "saqeershah.com",
+  },
+] as const;
+
 // Boundaries — what we don't do (Bitcoin-only discipline + firewall).
 export const BOUNDARIES = [
   "Shill tokens, altcoins, or “crypto” projects",

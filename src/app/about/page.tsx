@@ -8,6 +8,8 @@ import {
   WE_ARE,
   WE_ARE_NOT,
   IDENTITY,
+  FOUNDERS,
+  FOUNDERS_INTRO,
   RED_LINES,
   BOUNDARIES,
   STANDARD,
@@ -139,6 +141,36 @@ export default function AboutPage() {
               ))}
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* Who's behind BPI */}
+      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="Who's behind BPI">
+        <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
+          Who&rsquo;s behind BPI
+        </h2>
+        <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-soft">
+          {FOUNDERS_INTRO}
+        </p>
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+          {FOUNDERS.map((f) => (
+            <div key={f.name} className="rounded-2xl border border-line bg-card p-8">
+              <h3 className="font-display text-xl font-semibold text-ink">
+                {f.name}
+              </h3>
+              <p className="mt-1 text-sm font-medium text-gold">{f.role}</p>
+              <p className="mt-4 leading-relaxed text-ink-soft">{f.bio}</p>
+              <a
+                href={f.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-gold"
+              >
+                {f.linkLabel}
+                <span aria-hidden>↗</span>
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 
