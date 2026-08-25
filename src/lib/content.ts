@@ -354,13 +354,51 @@ export const EDUCATION_ARTICLES = [
 
 // Fellowship (Fellowship page).
 export const FELLOWSHIP = {
-  trains: ["research", "policy reasoning", "public education", "institutional thinking"],
+  commitment:
+    "8–12 hours a week for Fellows, 4–6 for Associate Fellows. Not full-time — but not casual.",
+  tiers: [
+    {
+      name: "Associate Fellow",
+      commitment: "4–6 hrs/week",
+      detail: "A training track for students, early-stage contributors, and high-potential volunteers.",
+    },
+    {
+      name: "Fellow",
+      commitment: "8–12 hrs/week",
+      detail: "The core engine — the primary producer of research, explainers, policy briefs, and workshops.",
+    },
+    {
+      name: "Senior Fellow",
+      commitment: "Project-based",
+      detail: "A domain expert leading major research, institutional collaborations, and mentoring.",
+    },
+  ],
+  cycle: [
+    { weeks: "Weeks 1–2", focus: "Orientation, research training, and project assignment." },
+    { weeks: "Weeks 3–4", focus: "Foundational reading, framing sessions, and first drafts." },
+    { weeks: "Weeks 5–9", focus: "Deep research, writing, and policy analysis." },
+    { weeks: "Weeks 10–11", focus: "Reviews, editing, and public-education output." },
+    { weeks: "Week 12", focus: "Final presentations, publication, and graduation." },
+  ],
   deliverables: [
-    "1 research paper",
-    "1 policy brief",
-    "1 explainer",
-    "1 workshop",
-    "1 capstone project",
+    "A 10–15 page research paper",
+    "A 1,000–2,500 word policy brief",
+    "A public explainer (article, deck, or video)",
+    "A workshop or lecture",
+    "A capstone project",
+  ],
+  curriculum: [
+    "Bitcoin foundations, in an India context",
+    "Research & writing discipline",
+    "Policy thinking & comparative frameworks",
+    "Public education & clear communication",
+    "Institutional conduct & integrity",
+  ],
+  selection: [
+    "Humility over ego",
+    "Consistency over brilliance",
+    "Curiosity over credentials",
+    "India-first, not personality-first",
   ],
   values: ["humility", "independence", "discipline", "evidence", "consistency", "clarity"],
 } as const;
