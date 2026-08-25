@@ -2,11 +2,12 @@ import Link from "next/link";
 import {
   WHY_EXISTS,
   BELIEFS,
-  VERTICALS,
+  PRIORITY_LAYERS,
   PILLARS,
   FEATURED_WORK,
   VISION,
   PURPOSE,
+  PRINCIPLE,
 } from "@/lib/content";
 
 export default function Home() {
@@ -19,15 +20,15 @@ export default function Home() {
             Clarity. Rigor. Independence.
           </p>
           <h1 className="anim-fade-up mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.1] text-ink md:text-6xl">
-            Bitcoin and India&rsquo;s sovereign financial future.
+            Sound, India-first policy for Bitcoin.
           </h1>
           <p
             className="anim-fade-up mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft md:text-xl"
             style={{ animationDelay: "120ms" }}
           >
-            We&rsquo;re an independent, Bitcoin-only research company making the
-            evidence-based case for sound Bitcoin policy in India — across
-            mining, reserves, treasuries, savings, and infrastructure.
+            We&rsquo;re an independent, Bitcoin-only policy think tank working to
+            enable positive, rational, and forward-looking regulation for
+            Bitcoin in India — for its citizens, its institutions, and the state.
           </p>
           <div
             className="anim-fade-up mt-9 flex flex-wrap gap-4"
@@ -49,6 +50,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ------------------------------------------------------ Guiding principle */}
+      <section className="border-b border-line bg-cream-alt" aria-label="Guiding principle">
+        <div className="mx-auto max-w-4xl px-6 py-14 text-center md:px-10">
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold">
+            Our guiding principle
+          </span>
+          <p className="mx-auto mt-4 max-w-3xl font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
+            {PRINCIPLE}
+          </p>
+        </div>
+      </section>
+
       {/* --------------------------------------------------------- Why we exist */}
       <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24" aria-label="Why we exist">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
@@ -57,11 +70,7 @@ export default function Home() {
           </h2>
           <div className="md:col-span-2">
             <p className="text-lg leading-relaxed text-ink-soft">{WHY_EXISTS.lead}</p>
-            <p className="mt-6 text-lg leading-relaxed text-ink-soft">
-              Yet India&rsquo;s understanding of Bitcoin hasn&rsquo;t kept pace
-              with its relevance:
-            </p>
-            <ul className="mt-5 space-y-2.5">
+            <ul className="mt-6 space-y-2.5">
               {WHY_EXISTS.gaps.map((g) => (
                 <li key={g} className="flex gap-3 text-ink-soft">
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" aria-hidden />
@@ -87,7 +96,7 @@ export default function Home() {
               What we believe
             </h2>
             <p className="mt-4 text-lg text-ink-soft">
-              We take a clear view — grounded in evidence, not ideology.
+              A clear point of view, grounded in evidence — not ideology.
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -110,32 +119,41 @@ export default function Home() {
             Where we focus
           </h2>
           <p className="mt-4 text-lg text-ink-soft">
-            Five verticals where Bitcoin can do the most for India — each backed
-            by research, education, and policy work.
+            Six priorities, in three layers — so our work protects citizens,
+            removes barriers, and builds foundations, rather than pushing a
+            single issue.
           </p>
         </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {VERTICALS.map((v, i) => (
-            <div key={v.title} className="flex flex-col rounded-2xl border border-line bg-card p-8">
-              <span className="font-display text-sm font-semibold text-gold">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h3 className="mt-3 font-display text-xl font-semibold text-ink">
-                {v.title}
-              </h3>
-              <p className="mt-1 text-sm font-medium uppercase tracking-wide text-ink-faint">
-                {v.tagline}
-              </p>
-              <p className="mt-3 leading-relaxed text-ink-soft">{v.body}</p>
+        <div className="mt-12 space-y-10">
+          {PRIORITY_LAYERS.map((layer) => (
+            <div key={layer.layer} className="grid grid-cols-1 gap-6 md:grid-cols-4">
+              <div className="md:col-span-1">
+                <h3 className="font-display text-xl font-semibold text-gold">
+                  {layer.layer}
+                </h3>
+                <p className="mt-2 text-sm text-ink-soft">{layer.blurb}</p>
+              </div>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:col-span-3">
+                {layer.items.map((it) => (
+                  <div key={it.title} className="rounded-2xl border border-line bg-card p-6">
+                    <h4 className="font-display text-base font-semibold text-ink">
+                      {it.title}
+                    </h4>
+                    <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                      {it.body}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* ------------------------------------------------------------ What We Do */}
+      {/* ------------------------------------------------------------ How we work */}
       <section
         className="border-y border-line bg-cream-alt py-20 md:py-24"
-        aria-label="What we do"
+        aria-label="How we work"
       >
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <div className="max-w-2xl">

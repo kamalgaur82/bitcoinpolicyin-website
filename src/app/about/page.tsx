@@ -4,10 +4,12 @@ import PageHeader from "@/components/PageHeader";
 import {
   WHY_EXISTS,
   PURPOSE,
-  MISSION,
+  PRINCIPLE,
   COMMITMENTS,
-  BITCOIN_REPRESENTS,
+  WE_ARE,
+  WE_ARE_NOT,
   IDENTITY,
+  RED_LINES,
   BOUNDARIES,
   STANDARD,
   VISION,
@@ -16,7 +18,7 @@ import {
 export const metadata: Metadata = {
   title: "About BPI",
   description:
-    "Why Bitcoin Policy India exists, what we believe, and what we're building: an independent, Bitcoin-only, India-first company making the evidence-based case for Bitcoin as a pillar of India's monetary sovereignty.",
+    "Why Bitcoin Policy India exists, what we believe, and what we're building: an independent, Bitcoin-only, public-interest policy think tank working to enable positive, rational, forward-looking regulation for Bitcoin in India.",
 };
 
 const DOES = [
@@ -38,7 +40,7 @@ const DOES = [
       "YouTube explainers",
       "University workshops and lectures",
     ],
-    note: "Not marketing — national capacity building.",
+    note: "Not marketing — building understanding.",
   },
   {
     title: "Policy",
@@ -58,7 +60,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About BPI"
         title="Why BPI exists"
-        intro="India's conversations around Bitcoin are shaped by hype, fear, and noise. We exist to change that — with rigorous, India-first research and a clear, evidence-based point of view."
+        intro="India doesn't yet have a trusted, rigorous, India-specific source that consistently translates Bitcoin policy in a serious way. We exist to be that source — with a clear point of view and disciplined independence."
       />
 
       {/* Why we exist */}
@@ -77,25 +79,28 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Purpose + mission + commitments */}
-      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Purpose and mission">
+      {/* Purpose + principle + commitments */}
+      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Purpose">
         <div className="mx-auto max-w-4xl px-6 md:px-10">
           <span className="text-sm font-semibold uppercase tracking-wider text-gold">
-            Our purpose
+            Our mission
           </span>
           <p className="mt-4 font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
             {PURPOSE}
           </p>
 
-          <span className="mt-10 block text-sm font-semibold uppercase tracking-wider text-gold">
-            Our mission
-          </span>
-          <p className="mt-4 text-lg leading-relaxed text-ink-soft">{MISSION}</p>
-          <p className="mt-6 text-lg leading-relaxed text-ink-soft">
-            We don&rsquo;t shill, and we don&rsquo;t lobby for private interests.
-            We make the evidence-based case for sound Bitcoin policy — because
-            India&rsquo;s monetary future is too important to leave to hype.
-          </p>
+          <div className="mt-8 rounded-2xl border border-line bg-card p-8">
+            <span className="text-sm font-semibold uppercase tracking-wider text-gold">
+              Our guiding principle
+            </span>
+            <p className="mt-2 font-display text-xl font-medium leading-snug text-ink md:text-2xl">
+              {PRINCIPLE}
+            </p>
+            <p className="mt-3 text-ink-soft">
+              If we&rsquo;re seen mainly as useful to industry, policymakers will
+              treat us as a lobby. Trust comes first — usefulness follows from it.
+            </p>
+          </div>
 
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {COMMITMENTS.map((c) => (
@@ -112,24 +117,35 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* What Bitcoin represents for India */}
-      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="What Bitcoin represents for India">
-        <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-          What Bitcoin represents for India
-        </h2>
-        <p className="mt-4 max-w-2xl text-lg text-ink-soft">
-          Not a trade, a meme, or a tribe. We see Bitcoin as honest money — and
-          what that makes possible for India.
-        </p>
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {BITCOIN_REPRESENTS.map((b) => (
-            <div key={b.title} className="rounded-2xl border border-line bg-card p-8">
-              <h3 className="font-display text-xl font-semibold text-ink">
-                {b.title}
-              </h3>
-              <p className="mt-2 leading-relaxed text-ink-soft">{b.body}</p>
-            </div>
-          ))}
+      {/* What we are / are not */}
+      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="What we are and are not">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-ink">
+              What we are
+            </h2>
+            <ul className="mt-6 space-y-3">
+              {WE_ARE.map((w) => (
+                <li key={w} className="flex gap-3 text-ink-soft">
+                  <span className="mt-1 shrink-0 font-semibold text-gold" aria-hidden>✓</span>
+                  {w}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h2 className="font-display text-2xl font-semibold text-ink">
+              What we are not
+            </h2>
+            <ul className="mt-6 space-y-3">
+              {WE_ARE_NOT.map((w) => (
+                <li key={w} className="flex gap-3 text-ink-soft">
+                  <span className="mt-1 shrink-0 font-semibold text-ink-faint" aria-hidden>✕</span>
+                  {w}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -152,8 +168,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* What we do */}
-      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="What we do">
+      {/* How we work */}
+      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="How we work">
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           How we work
         </h2>
@@ -177,25 +193,36 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Boundaries */}
-      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="What we don't do">
+      {/* Red lines */}
+      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Our red lines">
         <div className="mx-auto max-w-4xl px-6 md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            What we don&rsquo;t do
+            Our red lines
           </h2>
           <p className="mt-4 text-lg text-ink-soft">
-            We have a point of view — but discipline protects credibility. We
-            don&rsquo;t:
+            We assume we may one day be judged by hostile interpreters, not
+            sympathetic ones. So we hold hard lines.
           </p>
-          <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <ul className="mt-8 space-y-3">
+            {RED_LINES.map((r) => (
+              <li
+                key={r}
+                className="flex items-start gap-3 rounded-xl border border-line bg-card px-5 py-4 text-ink"
+              >
+                <span className="mt-0.5 shrink-0 font-semibold text-gold" aria-hidden>—</span>
+                {r}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-8 text-sm font-medium uppercase tracking-wider text-ink-faint">
+            In our writing, we also don&rsquo;t
+          </p>
+          <ul className="mt-3 flex flex-wrap gap-2">
             {BOUNDARIES.map((b) => (
               <li
                 key={b}
-                className="flex items-start gap-3 rounded-xl border border-line bg-card px-5 py-4 text-ink-soft"
+                className="rounded-full border border-line bg-card px-4 py-2 text-sm text-ink-soft"
               >
-                <span className="mt-0.5 shrink-0 font-semibold text-gold" aria-hidden>
-                  ✕
-                </span>
                 {b}
               </li>
             ))}
@@ -248,7 +275,7 @@ export default function AboutPage() {
             href="/contact"
             className="mt-12 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-cream transition-opacity hover:opacity-90"
           >
-            Work with us <span aria-hidden>&rarr;</span>
+            Get in touch <span aria-hidden>&rarr;</span>
           </Link>
         </div>
       </section>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const DOCUMENTS = [
   { title: "Mission Charter", note: "Our purpose, mandate, and standards of independence." },
-  { title: "Organisational Physics", note: "How the company is structured and how it operates." },
+  { title: "Organisational Physics", note: "How the organisation is structured and how it operates." },
   { title: "Funding Policy", note: "Sources of funding and the safeguards on our independence." },
   { title: "Code of Conduct", note: "Standards of behaviour expected of everyone at BPI." },
   { title: "Conflict-of-Interest Policy", note: "How we identify and manage conflicts." },

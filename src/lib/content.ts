@@ -53,93 +53,128 @@ export const PILLARS = [
   },
 ] as const;
 
-// ── Charter (Moral + Structural Charters v1.7; Mission Charter v1.0) ───────
-// Conviction-led posture: we make the evidence-based case for Bitcoin in
-// India. Adapted for the for-profit "Bitcoin Policy India" — the non-profit /
-// Section 8 framing in the source docs is intentionally left out.
+// ── Positioning (April 2026 Vision Alignment Deck; charters v1.7) ──────────
+// Blend posture: a clear point of view (positive regulation for Bitcoin) held
+// in a disciplined, policymaker-credible register — not slogan-heavy. Public
+// site = the Think Tank (public-interest posture); the commercial Advisory arm
+// is kept off the public site.
 
-// Purpose / north star (Structural Charter vision).
+// Mission — working statement (April 2026 deck).
 export const PURPOSE =
-  "To help India secure its sovereign financial future and empower every citizen with economic freedom — through the strategic adoption of Bitcoin.";
+  "Bitcoin Policy India exists to enable positive, rational, and forward-looking regulation for Bitcoin — for Indians and India alike.";
 
-// Mission (Structural Charter).
-export const MISSION =
-  "We work to dismantle policy barriers and correct misinformation through rigorous, data-driven research and education — making the case for Bitcoin as a strategic reserve asset for the Indian state and an accessible savings technology for its people.";
+// The core design principle (April 2026 deck).
+export const PRINCIPLE =
+  "We aim to be trusted by policymakers more than we are useful to industry.";
 
-// Why we exist — monetary sovereignty + the vacuum (Moral + Mission Charter).
+// Why we exist — the gap (April deck slide 3).
 export const WHY_EXISTS = {
-  lead: "India has the world's largest youth population, world-class digital public infrastructure, and rising global ambition — yet its financial architecture remains exposed to inflation, currency shocks, and opaque monetary governance. In a digital age, sovereignty is not only political or military. It is also monetary.",
+  lead: "India does not yet have a clear, rational, stable, Bitcoin-specific policy posture. Bitcoin is too often conflated with speculation and “crypto” noise; tax treatment is misaligned; legal clarity is incomplete; rights like self-custody aren't firmly grounded; mining is poorly understood; and retail protection is weak.",
   gaps: [
     "Policy conversations are fragmented and often punitive.",
-    "Research is shallow, biased, or imported wholesale.",
-    "Public education is inconsistent.",
-    "Most discussion collapses into ideology, hype, or noise.",
+    "Bitcoin is conflated with undifferentiated “crypto”.",
+    "Self-custody and ownership rights aren't firmly grounded.",
+    "Policymakers lack a trusted, rigorous, India-specific source.",
   ],
-  resolve: "There is a vacuum. We exist to fill it — with clarity, evidence, and conviction.",
+  resolve: "That is the gap we exist to fill.",
 } as const;
 
-// What we believe (Moral Charter).
+// What we believe (blended: measured conviction).
 export const BELIEFS = [
-  { title: "Bitcoin is honest money", body: "A fixed supply, rules that cannot be manipulated, and no authority that can debase it — the first monetary network to truly minimise trust." },
-  { title: "Monetary sovereignty is national sovereignty", body: "In a digital age, a nation's freedom is bound up with the integrity of its money." },
-  { title: "It strengthens India's institutions", body: "Bitcoin is not here to undermine the RBI. It is here to give India optionality in a world of declining fiat credibility." },
-  { title: "Not an ideology — a benchmark of truth", body: "We reject tribalism and hype. Bitcoin's case rests on evidence and first principles, not belief." },
+  { title: "Bitcoin is not “crypto”", body: "Treating Bitcoin on its own terms — not as one more speculative token — is the starting point for sensible policy." },
+  { title: "Good regulation beats prohibition or neglect", body: "We argue for positive, rational, forward-looking rules. Not deregulation, and not hype." },
+  { title: "Ownership and self-custody are worth protecting", body: "Indians should be able to hold their own Bitcoin securely and lawfully, with clear rights." },
+  { title: "Monetary questions are sovereignty questions", body: "In a digital age, how a nation treats money bears on its long-term resilience — worth engaging from understanding, not fear." },
 ] as const;
 
-// What Bitcoin represents for India (Moral Charter).
-export const BITCOIN_REPRESENTS = [
-  { title: "Fairness", body: "No insider access, no privileged dilution." },
-  { title: "Sovereignty", body: "A tool that strengthens national resilience." },
-  { title: "Transparency", body: "An auditable monetary system, immune to political cycles." },
-  { title: "Time-protection", body: "Money that protects the labour of 1.4 billion Indians from erosion." },
-  { title: "Inclusion", body: "An asset open to all — not just the wealthy or well-connected." },
-  { title: "Accountability", body: "A system where mathematics, not power, enforces the rules." },
+// Where we focus — six priorities in three layers (April 2026 deck).
+export const PRIORITY_LAYERS = [
+  {
+    layer: "Protection",
+    blurb: "Grounding the rights and safeguards citizens need.",
+    items: [
+      { title: "Legal clarity for holding Bitcoin", body: "A clearer long-term understanding of what lawful ownership means for citizens and institutions." },
+      { title: "Self-custody rights", body: "The legitimacy of individuals holding their own Bitcoin securely and legally." },
+      { title: "Retail investor protection", body: "Protecting ordinary people from mis-selling, confusion, and avoidable harm." },
+    ],
+  },
+  {
+    layer: "Enablement",
+    blurb: "Removing the barriers to responsible participation.",
+    items: [
+      { title: "Tax rationalisation", body: "A sensible long-term treatment of Bitcoin in place of today's misaligned VDA framework." },
+      { title: "Institutional adoption", body: "Treasury, fund, and balance-sheet pathways, where appropriate." },
+    ],
+  },
+  {
+    layer: "Infrastructure",
+    blurb: "The physical and energy foundations.",
+    items: [
+      { title: "Mining & energy policy", body: "Thoughtful frameworks for the role Bitcoin mining could play in India's grid and power context." },
+    ],
+  },
 ] as const;
 
-// Where we focus — the five verticals (Structural Charter).
-export const VERTICALS = [
-  { title: "Sovereign Mining", tagline: "Energy into monetary value", body: "Turn India's stranded and surplus renewable energy into a monetary asset — and a flexible, location-agnostic load that helps balance the grid." },
-  { title: "Strategic National Reserve", tagline: "Optionality for the state", body: "Model the case for a measured Bitcoin allocation that reduces over-reliance on any single foreign reserve currency." },
-  { title: "Corporate Treasury", tagline: "A long-term treasury hedge", body: "Frameworks for Indian companies and family offices to hold Bitcoin responsibly — custody, accounting, and risk." },
-  { title: "Household Savings", tagline: "Bitcoin as savings technology", body: "Financial-literacy frameworks and fair, classification-correct taxation so households can save in Bitcoin sensibly." },
-  { title: "Enabling Infrastructure", tagline: "Safe, compliant rails", body: "Standards for custody, security, and service providers so India's Bitcoin ecosystem stays safe and reliable." },
+// What we are (April 2026 deck slide 10).
+export const WE_ARE = [
+  "A Bitcoin-only, public-interest policy think tank",
+  "A research and thought-leadership institution",
+  "An advocacy body — in that we want to influence policy direction",
+  "A small, high-trust, India-specific, long-term platform",
+] as const;
+
+// What we are not (April 2026 deck slide 11).
+export const WE_ARE_NOT = [
+  "A lobbying shop for hire",
+  "A broker of access or a deal-making platform",
+  "A place where money buys opinion",
+  "A policy wrapper around commercial agendas",
+  "A generic crypto industry association",
+] as const;
+
+// Red lines (April 2026 deck slide 13).
+export const RED_LINES = [
+  "We never take money to change an opinion.",
+  "We never pay to secure a policy outcome.",
+  "We never represent commercial interests in policy meetings.",
+  "We never sell access to policymakers.",
+  "We help people understand the system — we don't help them game it.",
 ] as const;
 
 // The three commitments beneath the mission (Home + About).
 export const COMMITMENTS = [
   { title: "Rigor", body: "Every insight is accurate, sourced, and globally benchmarked." },
-  { title: "Clarity", body: "Complex ideas, explained simply." },
+  { title: "Clarity", body: "Complex ideas, explained simply — never slogan-heavy." },
   { title: "Independence", body: "No party line, no industry brief. Our conclusions follow the evidence." },
 ] as const;
 
 // Identity pillars — "Our Identity" (About).
 export const IDENTITY = [
-  { title: "Bitcoin-Only", body: "Not Web3. Not crypto. Not tokens. Not NFTs. Only Bitcoin — understood deeply and explained clearly." },
+  { title: "Bitcoin-Only", body: "Not Web3. Not crypto. Not tokens. Not NFTs. Only Bitcoin — anchored, and understood deeply." },
   { title: "India-First", body: "We benchmark globally, but think locally. Every question starts with India's economy, grid, and institutions." },
-  { title: "Non-Partisan & Independent", body: "No party line, no industry brief. Our conclusions follow the evidence, wherever it leads." },
+  { title: "Policymaker-Trusted", body: "We aim to be trusted by policymakers more than we are useful to industry." },
   { title: "Rigor Without Jargon", body: "Being clear is harder than being complicated. We choose clarity." },
-  { title: "Signal Over Noise", body: "We publish less, but publish well. Accuracy over speed, depth over trends." },
+  { title: "Integrity Over Growth", body: "Small, slow, and credible beats fast-growing but compromised." },
 ] as const;
 
-// Boundaries — what we don't do (About). Conviction-led but disciplined:
-// we advocate for sound Bitcoin policy, never for private interests.
+// Boundaries — what we don't do (Bitcoin-only discipline + firewall).
 export const BOUNDARIES = [
   "Shill tokens, altcoins, or “crypto” projects",
   "Give trading, investment, or portfolio advice",
   "Comment on price or make predictions",
   "Publish hype, memes, or maximalist rhetoric",
-  "Lobby or market on behalf of exchanges or private companies",
+  "Represent commercial interests in policy meetings",
   "Align with political parties or campaigns",
 ] as const;
 
-// Long-term ambition — what we're building (Home + About).
+// Long-term ambition — what we're building (Home + About; April 2026 deck).
 export const VISION = {
   headline: "What we're building",
-  body: "A durable, India-first reference point for Bitcoin — known for clarity, independence, intellectual honesty, and policy relevance.",
+  body: "A small, high-trust, Bitcoin-only policy institution that policymakers take seriously — helping move India from confusion toward a thoughtful, stable, rights-respecting, and economically intelligent Bitcoin posture.",
   aims: [
-    "The reference point policymakers turn to",
-    "The training ground for India's next generation of Bitcoin thinkers",
-    "The bridge between India and global Bitcoin research",
+    "Policy clarity and credible frameworks",
+    "Public-interest Bitcoin thinking",
+    "Trusted engagement with central and state stakeholders",
   ],
 } as const;
 

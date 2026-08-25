@@ -10,9 +10,9 @@ export default function Footer() {
           <div className="max-w-sm md:col-span-2">
             <Wordmark textClassName="text-xl" />
             <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-              An independent research, education, and policy company helping
-              India understand Bitcoin with clarity and seriousness.
-              Bitcoin-only. India-first.
+              An independent, Bitcoin-only policy think tank working to enable
+              positive, rational regulation for Bitcoin in India.
+              Bitcoin-only. India-first. Public-interest.
             </p>
             <p className="mt-4 text-sm text-ink-soft">
               <a

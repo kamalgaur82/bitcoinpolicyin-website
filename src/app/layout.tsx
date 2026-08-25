@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     template: "%s · Bitcoin Policy India",
   },
   description:
-    "Evidence-based Bitcoin research and policy for India. An independent, Bitcoin-only, India-first company producing clear, evidence-based insights through research, education, and policy analysis.",
+    "Evidence-based Bitcoin research and policy for India. An independent, Bitcoin-only, India-first policy think tank working to enable positive, rational, forward-looking regulation for Bitcoin — through research, education, and policy analysis.",
   keywords: [
     "Bitcoin policy India",
     "Bitcoin research India",
