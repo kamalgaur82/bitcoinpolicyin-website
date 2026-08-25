@@ -160,15 +160,17 @@ export default function AboutPage() {
               </h3>
               <p className="mt-1 text-sm font-medium text-gold">{f.role}</p>
               <p className="mt-4 leading-relaxed text-ink-soft">{f.bio}</p>
-              <a
-                href={f.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-gold"
-              >
-                {f.linkLabel}
-                <span aria-hidden>↗</span>
-              </a>
+              {f.link && (
+                <a
+                  href={f.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-gold"
+                >
+                  {f.linkLabel}
+                  <span aria-hidden>↗</span>
+                </a>
+              )}
             </div>
           ))}
         </div>

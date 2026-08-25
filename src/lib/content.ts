@@ -164,15 +164,15 @@ export const FOUNDERS = [
     name: "Kamal Gaur",
     role: "Co-founder",
     bio: "Two decades across telecom, technology, and financial services, having led organisations of 300+. He has briefed India's Parliamentary Standing Committee on Finance on cryptocurrency, and brings the analytical depth — leading BPI's research and frameworks on digital-asset taxonomy, classification, and taxation.",
-    link: "https://kamalgaur.com",
-    linkLabel: "kamalgaur.com",
+    link: "https://www.linkedin.com/in/kamalgaur/",
+    linkLabel: "LinkedIn",
   },
   {
     name: "Saqeer Shah",
     role: "Co-founder",
     bio: "An advocate and policy strategist. He brings the network and on-the-ground judgment — turning research into relationships and real engagement across policy and industry.",
-    link: "https://saqeershah.com",
-    linkLabel: "saqeershah.com",
+    link: "", // LinkedIn URL to be added
+    linkLabel: "LinkedIn",
   },
 ] as const;
 
