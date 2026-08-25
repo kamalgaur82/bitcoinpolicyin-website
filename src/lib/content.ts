@@ -262,12 +262,60 @@ export const RESEARCH_PAPERS = [
     status: "Research · in progress",
   },
   {
-    title: "Sovereign Arbitrage: Turning Energy Waste into Foreign-Exchange Reserves",
+    title: "Sovereign Energy Monetization for India",
     summary:
-      "The economic case for converting curtailed domestic energy into a globally liquid, exportable digital asset.",
+      "A pilot framework to convert stranded energy — renewable curtailment, hydro spillage, and gas flaring — into strategic reserves through flexible, containerised computing deployed at the source.",
     status: "Working paper",
   },
 ];
+
+// External references we build on — third-party works, verified titles and
+// attributions (2026-08-25). These are NOT BPI's own work.
+export const REFERENCES = [
+  {
+    title: "The Impact of India's VDA Tax Policy: An Update",
+    author: "Esya Centre",
+    year: "2024",
+    note: "Evidence on how the 30% tax and 1% TDS reshaped India's digital-asset market.",
+  },
+  {
+    title: "TDS on Virtual Digital Assets: Effects on Tax Revenue and User Trends",
+    author: "Centre for Tax Laws, NALSAR",
+    year: "2024",
+    note: "How the 1% TDS affected tax collection and pushed users toward offshore venues.",
+  },
+  {
+    title: "Crypto Assets in India — Crypto Assets Project Report",
+    author: "GNLU (Prof. S. Shanthakumar et al.)",
+    year: "2025",
+    note: "An academic assessment of the case for regulating crypto assets in India.",
+  },
+  {
+    title:
+      "Softwar: A Novel Theory on Power Projection and the National Strategic Significance of Bitcoin",
+    author: "Jason P. Lowery, MIT",
+    year: "2023",
+    note: "A foundational reference on Bitcoin, energy, and national strategy.",
+  },
+] as const;
+
+// Past events / talks — from BPI's own seminar and consultation materials.
+export const EVENTS_PAST = [
+  {
+    name: "Regional Stakeholder Consultation on Crypto Assets",
+    host: "GNLU · Bengaluru",
+    date: "Nov 2025",
+    detail:
+      "Presented a functional taxonomy and a regulator-mapping framework for digital assets in India.",
+  },
+  {
+    name: "Bitplebs · Goa",
+    host: "Goa",
+    date: "2025",
+    detail:
+      "BPI seminar sessions on Bitcoin's strategic power, law & policy, India's Bitcoin future, and reforming India's digital-asset policy.",
+  },
+] as const;
 
 // Research themes (Research page).
 export const RESEARCH_THEMES = [

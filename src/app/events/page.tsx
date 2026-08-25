@@ -1,37 +1,41 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
+import { EVENTS_PAST } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Events",
   description:
-    "Workshops, talks, panels, and roundtables from Bitcoin Policy India.",
+    "Talks, consultations, and roundtables from Bitcoin Policy India — including the GNLU stakeholder consultation and Bitplebs Goa.",
 };
-
-const TYPES = ["Workshops", "Talks", "Panels", "Roundtables"];
 
 export default function EventsPage() {
   return (
     <>
       <PageHeader
         eyebrow="Events"
-        title="Workshops, talks, panels & roundtables"
-        intro="Where we convene serious, non-hyped conversations about Bitcoin and India. Upcoming and past events will be listed here."
+        title="Talks, consultations & roundtables"
+        intro="Where we convene serious, non-hyped conversations about Bitcoin and India."
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20">
-        <ul className="flex flex-wrap gap-3">
-          {TYPES.map((t) => (
-            <li
-              key={t}
-              className="rounded-full border border-line bg-card px-5 py-2.5 text-sm font-medium text-ink-soft"
-            >
-              {t}
+      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20" aria-label="Recent events">
+        <h2 className="font-display text-2xl font-semibold text-ink">Recent</h2>
+        <ul className="mt-8 space-y-6">
+          {EVENTS_PAST.map((e) => (
+            <li key={e.name} className="rounded-2xl border border-line bg-card p-8">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="font-display text-xl font-semibold text-ink">
+                  {e.name}
+                </h3>
+                <span className="text-sm text-ink-faint">{e.date}</span>
+              </div>
+              <p className="mt-1 text-sm font-medium text-gold">{e.host}</p>
+              <p className="mt-3 leading-relaxed text-ink-soft">{e.detail}</p>
             </li>
           ))}
         </ul>
-        <div className="mt-10 rounded-2xl border border-dashed border-line bg-cream-alt p-8 text-center text-sm text-ink-faint">
-          No events are scheduled yet. Check back soon, or add your support to
-          hear when we do.
+        <div className="mt-10 rounded-2xl border border-dashed border-line bg-cream-alt p-6 text-center text-sm text-ink-faint">
+          No upcoming events are scheduled yet. Add your support to hear when we
+          announce the next one.
         </div>
       </section>
     </>
