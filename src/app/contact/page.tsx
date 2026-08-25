@@ -23,7 +23,7 @@ export default function ContactPage() {
         intro="Simple, serious, clean. Reach the right team directly, or send us a note."
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
           {CHANNELS.map((c) => (
             <div key={c.label} className="rounded-2xl border border-line bg-card p-8">

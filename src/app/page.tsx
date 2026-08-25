@@ -201,7 +201,7 @@ export default function Home() {
 
       {/* ------------------------------------------------------ What we're building */}
       <section className="border-t border-line bg-cream-alt py-20 md:py-24" aria-label="What we're building">
-        <div className="mx-auto max-w-4xl px-6 text-center md:px-10">
+        <div className="mx-auto max-w-7xl px-6 text-center md:px-10">
           <span className="text-sm font-semibold uppercase tracking-wider text-gold">
             Our purpose
           </span>
@@ -223,7 +223,7 @@ export default function Home() {
 
       {/* ----------------------------------------------------------------- Support */}
       <section className="border-t border-line bg-cream-alt" aria-label="Support the mission">
-        <div className="mx-auto max-w-3xl px-6 py-20 text-center md:px-10">
+        <div className="mx-auto max-w-7xl px-6 py-20 text-center md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             Stand with sound Bitcoin policy for India.
           </h2>

@@ -65,8 +65,8 @@ export default function AboutPage() {
       />
 
       {/* Why we exist */}
-      <section className="mx-auto max-w-3xl px-6 py-16 md:px-10 md:py-20" aria-label="Why we exist">
-        <p className="text-lg leading-relaxed text-ink-soft">{WHY_EXISTS.lead}</p>
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Why we exist">
+        <p className="max-w-3xl text-lg leading-relaxed text-ink-soft">{WHY_EXISTS.lead}</p>
         <ul className="mt-6 space-y-2.5">
           {WHY_EXISTS.gaps.map((g) => (
             <li key={g} className="flex gap-3 text-ink-soft">
@@ -82,15 +82,15 @@ export default function AboutPage() {
 
       {/* Purpose + principle + commitments */}
       <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Purpose">
-        <div className="mx-auto max-w-4xl px-6 md:px-10">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
           <span className="text-sm font-semibold uppercase tracking-wider text-gold">
             Our mission
           </span>
-          <p className="mt-4 font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
+          <p className="mt-4 max-w-3xl font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
             {PURPOSE}
           </p>
 
-          <p className="mt-6 text-lg leading-relaxed text-ink-soft">
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-ink-soft">
             Our approach is simple: earn policymakers&rsquo; trust through
             independence and rigor, and let our usefulness follow from that —
             never the other way around. That&rsquo;s what keeps us a credible
@@ -113,7 +113,7 @@ export default function AboutPage() {
       </section>
 
       {/* What we are / are not */}
-      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="What we are and are not">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="What we are and are not">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           <div>
             <h2 className="font-display text-2xl font-semibold text-ink">
@@ -145,7 +145,7 @@ export default function AboutPage() {
       </section>
 
       {/* Who's behind BPI */}
-      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="Who's behind BPI">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Who's behind BPI">
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           Who&rsquo;s behind BPI
         </h2>
@@ -178,7 +178,7 @@ export default function AboutPage() {
 
       {/* Identity */}
       <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Our identity">
-        <div className="mx-auto max-w-5xl px-6 md:px-10">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             Our identity
           </h2>
@@ -196,7 +196,7 @@ export default function AboutPage() {
       </section>
 
       {/* How we work */}
-      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="How we work">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="How we work">
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           How we work
         </h2>
@@ -222,7 +222,7 @@ export default function AboutPage() {
 
       {/* Red lines */}
       <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Our red lines">
-        <div className="mx-auto max-w-4xl px-6 md:px-10">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             Our red lines
           </h2>
@@ -258,7 +258,7 @@ export default function AboutPage() {
       </section>
 
       {/* The standard */}
-      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20" aria-label="The bar we hold">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="The bar we hold">
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           The bar every output must clear
         </h2>
@@ -278,7 +278,7 @@ export default function AboutPage() {
 
       {/* Vision */}
       <section className="border-t border-line bg-cream-alt py-16 text-center md:py-24" aria-label="What we're building">
-        <div className="mx-auto max-w-4xl px-6 md:px-10">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
           <span className="text-sm font-semibold uppercase tracking-wider text-gold">
             Long-term ambition
           </span>

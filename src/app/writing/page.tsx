@@ -25,8 +25,8 @@ export default function WritingPage() {
         intro="Short-form analysis, explainers, and op-eds — the same rigor as our research, written to be read. This is where our thinking shows up between papers."
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20">
-        <div className="rounded-2xl border border-dashed border-line bg-cream-alt p-8 text-center">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
+        <div className="mx-auto max-w-2xl rounded-2xl border border-dashed border-line bg-cream-alt p-8 text-center">
           <p className="text-lg text-ink">
             Our writing channel is launching soon.
           </p>

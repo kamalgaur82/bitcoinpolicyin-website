@@ -26,7 +26,7 @@ export default function GovernancePage() {
         intro="Our credibility rests on being independent and transparent. These documents set out our mandate, structure, and safeguards."
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
         <ul className="divide-y divide-line border-y border-line">
           {DOCUMENTS.map((d) => (
             <li key={d.title} className="flex items-center justify-between gap-4 py-6">

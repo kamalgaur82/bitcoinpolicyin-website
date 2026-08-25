@@ -26,7 +26,7 @@ export default function PolicyPage() {
 
       {/* The problem, in numbers */}
       <section className="border-b border-line" aria-label="The problem, in numbers">
-        <div className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             The problem, in numbers
           </h2>
@@ -51,7 +51,7 @@ export default function PolicyPage() {
       </section>
 
       {/* Policy briefs */}
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20" aria-label="Policy briefs">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Policy briefs">
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           Policy briefs
         </h2>
@@ -71,7 +71,7 @@ export default function PolicyPage() {
 
       {/* Government workshops */}
       <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Government workshops">
-        <div className="mx-auto max-w-4xl px-6 md:px-10">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             Government &amp; institutional workshops
           </h2>
@@ -92,7 +92,7 @@ export default function PolicyPage() {
       </section>
 
       {/* Policy principles */}
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20" aria-label="Policy principles">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Policy principles">
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           Policy principles
         </h2>

@@ -17,7 +17,7 @@ export default function EventsPage() {
         intro="Where we convene serious, non-hyped conversations about Bitcoin and India."
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20" aria-label="Recent events">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Recent events">
         <h2 className="font-display text-2xl font-semibold text-ink">Recent</h2>
         <ul className="mt-8 space-y-6">
           {EVENTS_PAST.map((e) => (

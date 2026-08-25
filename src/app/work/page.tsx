@@ -70,7 +70,7 @@ export default function WorkPage() {
       </section>
 
       {/* References */}
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20" aria-label="References we build on">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="References we build on">
         <h2 className="font-display text-2xl font-semibold text-ink">
           References we build on
         </h2>

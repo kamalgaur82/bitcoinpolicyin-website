@@ -18,7 +18,7 @@ export default function FellowshipPage() {
         intro="A 12-week program to train fellows to research, write, and engage with clarity and rigor — not a crypto or Web3 fellowship, but a Bitcoin policy fellowship grounded in research and India's public interest."
       />
 
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
         <div className="mb-12 rounded-2xl border border-dashed border-line bg-cream-alt p-6 text-sm text-ink-soft">
           <span className="font-semibold text-ink">Not open yet.</span> We&rsquo;ll
           launch the fellowship as BPI grows. Here&rsquo;s how it will work — and
