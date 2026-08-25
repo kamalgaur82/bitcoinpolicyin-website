@@ -25,26 +25,33 @@ export default function ResearchPage() {
         intro="Our evidence base: original papers, data, and analysis. This is the raw material behind everything we take to policymakers and everything we translate for the public."
       />
 
-      {/* Featured papers */}
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Featured papers">
+      {/* Featured work */}
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Featured work">
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-          Featured papers
+          Featured work
         </h2>
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {RESEARCH_PAPERS.map((p) => (
             <article
               key={p.title}
-              className="flex flex-col justify-between rounded-2xl border border-line bg-card p-8"
+              className="flex flex-col rounded-2xl border border-line bg-card p-8"
             >
               <h3 className="font-display text-xl font-semibold leading-snug text-ink">
                 {p.title}
               </h3>
-              <p className="mt-6 text-sm font-medium text-ink-faint">
-                {p.href ? "Read paper →" : "In preparation"}
+              <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
+                {p.summary}
+              </p>
+              <p className="mt-6 text-xs uppercase tracking-wider text-ink-faint">
+                {p.status}
               </p>
             </article>
           ))}
         </div>
+        <p className="mt-6 text-sm text-ink-faint">
+          Full documents are published here as each is finalised. For a draft or
+          a briefing, <a href="/contact" className="text-gold hover:text-ink">get in touch</a>.
+        </p>
       </section>
 
       {/* Research themes */}

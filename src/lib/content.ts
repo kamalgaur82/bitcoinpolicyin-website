@@ -196,21 +196,77 @@ export const APPROACH = [
   "Signal over noise",
 ] as const;
 
-// Featured work cards (home "Our Work").
-export const FEATURED_WORK = [
-  "Bitcoin in India: A Regulatory-Neutral Primer",
-  "CBDC vs Bitcoin — An India Context Analysis",
-  "Bitcoin & Taxation: Global Benchmarks for India",
-  "The State of Bitcoin in India (Annual Report)",
+// Validated facts (Aug-2025 verification ledger, verdict 5.1 "Correct",
+// re-checked against current 2026 sources 2026-08-25). Every item is sourced;
+// do not add unsourced figures here.
+export const INDIA_FACTS = [
+  {
+    stat: "30% + 1% TDS",
+    label:
+      "A flat 30% tax on gains from virtual digital assets, plus a 1% TDS on transfers, with no set-off or carry-forward of losses — retained unchanged in Budget 2026.",
+    source: "Finance Act 2022; Union Budget 2026 (§115BBH, §194S)",
+  },
+  {
+    stat: "~$135 billion",
+    label:
+      "India is the world's largest recipient of remittances (FY2024-25), typically at fees of 5–7% — exactly where low-cost, borderless rails matter most.",
+    source: "RBI; World Bank",
+  },
+  {
+    stat: "Fundamental right",
+    label:
+      "Privacy is a fundamental right in India — a constitutional anchor for financial privacy and the right to hold your own assets.",
+    source: "Supreme Court, K. S. Puttaswamy v. Union of India (2017)",
+  },
+  {
+    stat: "1,200 M kWh",
+    label:
+      "Renewable energy curtailed in Tamil Nadu in a single year — stranded, interruptible power that flexible Bitcoin mining could put to use.",
+    source: "CEA / State Load Despatch Centres",
+  },
 ] as const;
 
-// Featured papers (Research page grid).
+// Featured work cards (home "Our Work") — real BPI work.
+export const FEATURED_WORK = [
+  "An Accounting Framework for Virtual Digital Assets",
+  "A Functional Taxonomy for Digital Assets in India",
+  "The Sovereign Mining Initiative",
+  "Regulator Mapping for Digital Assets",
+] as const;
+
+// Featured research (Research page) — actual BPI work products. Descriptions
+// are drawn from the documents themselves; status reflects their real state.
 export const RESEARCH_PAPERS = [
-  { title: "CBDCs vs Bitcoin: A Comparative Analysis for India", href: undefined as string | undefined },
-  { title: "Bitcoin Mining: Energy, Economics & India's Grid", href: undefined },
-  { title: "Bitcoin Taxation — Global Models & Lessons for India", href: undefined },
-  { title: "Financial Inclusion & Bitcoin: India's Opportunity", href: undefined },
-  { title: "Bitcoin & National Security: A Structural Overview", href: undefined },
+  {
+    title: "An Accounting Standards Framework for Virtual Digital Assets in India",
+    summary:
+      "How VDAs should be classified and measured in financial statements — for the Ministry of Finance, MCA, NFRA and ICAI. Bitcoin as a distinct non-financial asset class, fair-valued through profit and loss, drawing on the US (FASB), Japan (ASBJ) and IFRS experience.",
+    status: "Policy brief · draft, 2026",
+  },
+  {
+    title: "A Functional Taxonomy for Digital Assets in India",
+    summary:
+      "A four-pillar, risk-based classification — decentralised cryptocommodities (Bitcoin), tokenised securities, stablecoins, and utility tokens — on the principle that classification must precede regulation.",
+    status: "Presented · GNLU stakeholder consultation, Nov 2025",
+  },
+  {
+    title: "Regulator Mapping for Digital Asset Categories",
+    summary:
+      "Which Indian regulator should oversee which kind of digital asset — mapping Bitcoin to commodity-style oversight (MoF/DEA, FIU-IND) rather than SEBI or RBI.",
+    status: "Presented · GNLU stakeholder consultation, Nov 2025",
+  },
+  {
+    title: "The Sovereign Mining Initiative",
+    summary:
+      "How India's stranded and surplus renewable energy — hydro, solar, wind — can be turned into monetary value through flexible, interruptible Bitcoin mining, with global precedents from Bhutan, Norway and Texas.",
+    status: "Research · in progress",
+  },
+  {
+    title: "Sovereign Arbitrage: Turning Energy Waste into Foreign-Exchange Reserves",
+    summary:
+      "The economic case for converting curtailed domestic energy into a globally liquid, exportable digital asset.",
+    status: "Working paper",
+  },
 ];
 
 // Research themes (Research page).

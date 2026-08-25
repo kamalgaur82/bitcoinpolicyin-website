@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
-import { POLICY_BRIEFS, POLICY_PRINCIPLES } from "@/lib/content";
+import { POLICY_BRIEFS, POLICY_PRINCIPLES, INDIA_FACTS } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Policy",
@@ -23,6 +23,32 @@ export default function PolicyPage() {
         title="Independent, evidence-based frameworks for policymakers."
         intro="Where our research meets government: briefs, consultation responses, and frameworks — offered as independent analysis, never as a lobbying ask."
       />
+
+      {/* The problem, in numbers */}
+      <section className="border-b border-line" aria-label="The problem, in numbers">
+        <div className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-20">
+          <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
+            The problem, in numbers
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg text-ink-soft">
+            A few facts that frame why India&rsquo;s Bitcoin policy matters. Every
+            figure is sourced.
+          </p>
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {INDIA_FACTS.map((f) => (
+              <div key={f.stat} className="rounded-2xl border border-line bg-card p-8">
+                <div className="font-display text-3xl font-semibold text-gold">
+                  {f.stat}
+                </div>
+                <p className="mt-3 leading-relaxed text-ink-soft">{f.label}</p>
+                <p className="mt-4 text-xs uppercase tracking-wider text-ink-faint">
+                  {f.source}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Policy briefs */}
       <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20" aria-label="Policy briefs">
