@@ -13,12 +13,18 @@ export default function FellowshipPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Fellowship"
+        eyebrow="Fellowship · planned"
         title="Developing India's next generation of Bitcoin policy thinkers."
-        intro="A 12-week program that trains fellows to research, write, and engage with clarity and rigor. This is not a crypto or Web3 fellowship — it's a Bitcoin policy fellowship, grounded in research and India's public interest."
+        intro="A 12-week program to train fellows to research, write, and engage with clarity and rigor — not a crypto or Web3 fellowship, but a Bitcoin policy fellowship grounded in research and India's public interest."
       />
 
       <section className="mx-auto max-w-4xl px-6 py-16 md:px-10 md:py-20">
+        <div className="mb-12 rounded-2xl border border-dashed border-line bg-cream-alt p-6 text-sm text-ink-soft">
+          <span className="font-semibold text-ink">Not open yet.</span> We&rsquo;ll
+          launch the fellowship as BPI grows. Here&rsquo;s how it will work — and
+          you&rsquo;re welcome to register your interest for a future cohort.
+        </div>
+
         {/* Tiers */}
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
           Three tiers
@@ -111,18 +117,17 @@ export default function FellowshipPage() {
         {/* Apply */}
         <div className="mt-16 rounded-2xl border border-line bg-cream-alt p-8 text-center md:p-12">
           <h2 className="font-display text-2xl font-semibold text-ink md:text-3xl">
-            Apply now
+            Register your interest
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-ink-soft">
-            Applications include a writing sample, an intent statement, your
-            academic or employment details, and availability. The application
-            form will open here for the next cohort.
+            The fellowship isn&rsquo;t open yet. If you&rsquo;d like to hear when a
+            cohort opens — or to contribute in the meantime — get in touch.
           </p>
           <Link
             href="/contact"
             className="mt-6 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-cream transition-opacity hover:opacity-90"
           >
-            Register your interest <span aria-hidden>&rarr;</span>
+            Get in touch <span aria-hidden>&rarr;</span>
           </Link>
         </div>
       </section>

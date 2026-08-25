@@ -221,27 +221,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* -------------------------------------------------------------- Fellowship */}
-      <section className="border-t border-line py-20 md:py-24" aria-label="Fellowship">
-        <div className="mx-auto flex max-w-7xl flex-col items-start gap-6 px-6 md:flex-row md:items-center md:justify-between md:px-10">
-          <div className="max-w-2xl">
-            <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-              The BPI Fellowship
-            </h2>
-            <p className="mt-3 text-lg text-ink-soft">
-              A program for India&rsquo;s next generation of Bitcoin policy
-              thinkers. 12-week cycles. Serious work. High standards.
-            </p>
-          </div>
-          <Link
-            href="/fellowship"
-            className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-cream transition-opacity hover:opacity-85"
-          >
-            Learn more <span aria-hidden>&rarr;</span>
-          </Link>
-        </div>
-      </section>
-
       {/* ----------------------------------------------------------------- Support */}
       <section className="border-t border-line bg-cream-alt" aria-label="Support the mission">
         <div className="mx-auto max-w-3xl px-6 py-20 text-center md:px-10">
