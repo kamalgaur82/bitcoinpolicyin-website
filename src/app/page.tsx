@@ -1,19 +1,13 @@
 import Link from "next/link";
 import {
+  WHY_EXISTS,
+  BELIEFS,
+  VERTICALS,
   PILLARS,
   FEATURED_WORK,
-  WHY_EXISTS,
-  BITCOIN_IS,
   VISION,
+  PURPOSE,
 } from "@/lib/content";
-
-const WHO_WE_ARE = [
-  "Bitcoin-only",
-  "India-first",
-  "Neutral & non-partisan",
-  "Evidence-driven",
-  "Independent",
-];
 
 export default function Home() {
   return (
@@ -25,15 +19,15 @@ export default function Home() {
             Clarity. Rigor. Independence.
           </p>
           <h1 className="anim-fade-up mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.1] text-ink md:text-6xl">
-            Evidence-based Bitcoin research and policy for India.
+            Bitcoin and India&rsquo;s sovereign financial future.
           </h1>
           <p
             className="anim-fade-up mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft md:text-xl"
             style={{ animationDelay: "120ms" }}
           >
-            We produce clear, neutral, India-first insights on Bitcoin — through
-            research, education, and policy frameworks designed for a rapidly
-            changing world.
+            We&rsquo;re an independent, Bitcoin-only research company making the
+            evidence-based case for sound Bitcoin policy in India — across
+            mining, reserves, treasuries, savings, and infrastructure.
           </p>
           <div
             className="anim-fade-up mt-9 flex flex-wrap gap-4"
@@ -46,10 +40,10 @@ export default function Home() {
               Read our work <span aria-hidden>&rarr;</span>
             </Link>
             <Link
-              href="/newsletter"
+              href="/about"
               className="inline-flex items-center gap-2 rounded-lg border border-ink/20 px-7 py-3.5 font-semibold text-ink transition-colors hover:bg-card"
             >
-              Join the newsletter
+              What we stand for
             </Link>
           </div>
         </div>
@@ -64,7 +58,7 @@ export default function Home() {
           <div className="md:col-span-2">
             <p className="text-lg leading-relaxed text-ink-soft">{WHY_EXISTS.lead}</p>
             <p className="mt-6 text-lg leading-relaxed text-ink-soft">
-              But public understanding of Bitcoin in India hasn&rsquo;t kept pace
+              Yet India&rsquo;s understanding of Bitcoin hasn&rsquo;t kept pace
               with its relevance:
             </p>
             <ul className="mt-5 space-y-2.5">
@@ -82,23 +76,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --------------------------------------------------- What Bitcoin is */}
+      {/* -------------------------------------------------------- What we believe */}
       <section
         className="border-y border-line bg-cream-alt py-20 md:py-24"
-        aria-label="What Bitcoin is to us"
+        aria-label="What we believe"
       >
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <div className="max-w-2xl">
             <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-              What Bitcoin is to us
+              What we believe
             </h2>
             <p className="mt-4 text-lg text-ink-soft">
-              We treat Bitcoin as a serious subject — not a trade, a meme, or a
-              tribe. Five lenses shape our work.
+              We take a clear view — grounded in evidence, not ideology.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {BITCOIN_IS.map((b) => (
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {BELIEFS.map((b) => (
               <div key={b.title} className="rounded-2xl border border-line bg-card p-8">
                 <h3 className="font-display text-xl font-semibold text-ink">
                   {b.title}
@@ -110,39 +103,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------------------------------------------------------- Who we are */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24" aria-label="Who we are">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-          <h2 className="font-display text-3xl font-semibold leading-tight text-ink md:text-4xl">
-            Who we are
+      {/* --------------------------------------------------------- Where we focus */}
+      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24" aria-label="Where we focus">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
+            Where we focus
           </h2>
-          <div className="md:col-span-2">
-            <p className="text-lg leading-relaxed text-ink-soft">
-              Bitcoin Policy India (BPI) is an independent research, education,
-              and policy company dedicated to helping India understand Bitcoin
-              with clarity and seriousness.
-            </p>
-            <ul className="mt-8 flex flex-wrap gap-3">
-              {WHO_WE_ARE.map((tag) => (
-                <li
-                  key={tag}
-                  className="rounded-full border border-line bg-card px-4 py-2 text-sm font-medium text-ink-soft"
-                >
-                  {tag}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 font-display text-xl font-medium text-ink md:text-2xl">
-              Our mission is simple: make India&rsquo;s Bitcoin conversations
-              more informed.
-            </p>
-            <Link
-              href="/about"
-              className="mt-6 inline-flex items-center gap-2 font-semibold text-gold hover:text-ink"
-            >
-              Read our charter &amp; mission <span aria-hidden>&rarr;</span>
-            </Link>
-          </div>
+          <p className="mt-4 text-lg text-ink-soft">
+            Five verticals where Bitcoin can do the most for India — each backed
+            by research, education, and policy work.
+          </p>
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {VERTICALS.map((v, i) => (
+            <div key={v.title} className="flex flex-col rounded-2xl border border-line bg-card p-8">
+              <span className="font-display text-sm font-semibold text-gold">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <h3 className="mt-3 font-display text-xl font-semibold text-ink">
+                {v.title}
+              </h3>
+              <p className="mt-1 text-sm font-medium uppercase tracking-wide text-ink-faint">
+                {v.tagline}
+              </p>
+              <p className="mt-3 leading-relaxed text-ink-soft">{v.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -152,9 +138,15 @@ export default function Home() {
         aria-label="What we do"
       >
         <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            What we do
-          </h2>
+          <div className="max-w-2xl">
+            <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
+              How we work
+            </h2>
+            <p className="mt-4 text-lg text-ink-soft">
+              Three engines, each feeding the next: research becomes education,
+              education informs policy, policy raises new research questions.
+            </p>
+          </div>
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
             {PILLARS.map((p) => (
               <div
@@ -205,13 +197,13 @@ export default function Home() {
       {/* ------------------------------------------------------ What we're building */}
       <section className="border-t border-line bg-cream-alt py-20 md:py-24" aria-label="What we're building">
         <div className="mx-auto max-w-4xl px-6 text-center md:px-10">
-          <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            {VISION.headline}
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-ink-soft">
-            {VISION.body}
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold">
+            Our purpose
+          </span>
+          <p className="mx-auto mt-4 max-w-3xl font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
+            {PURPOSE}
           </p>
-          <ul className="mx-auto mt-8 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
+          <ul className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
             {VISION.aims.map((a) => (
               <li
                 key={a}

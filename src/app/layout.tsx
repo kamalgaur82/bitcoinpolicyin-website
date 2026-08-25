@@ -42,13 +42,13 @@ export const metadata: Metadata = {
     siteName: "Bitcoin Policy India",
     title: "Bitcoin Policy India — Clarity. Rigor. Independence.",
     description:
-      "Evidence-based Bitcoin research and policy for India — independent, neutral, and Bitcoin-only.",
+      "Evidence-based Bitcoin research and policy for India — independent and Bitcoin-only.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Bitcoin Policy India",
     description:
-      "Evidence-based Bitcoin research and policy for India — independent, neutral, and Bitcoin-only.",
+      "Evidence-based Bitcoin research and policy for India — independent and Bitcoin-only.",
   },
 };
 

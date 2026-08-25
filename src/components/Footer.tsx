@@ -60,7 +60,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Bitcoin Policy India. All rights
             reserved.
           </span>
-          <span>Bitcoin-only · India-first · Neutral &amp; non-partisan</span>
+          <span>Bitcoin-only · India-first · Independent &amp; non-partisan</span>
         </div>
       </div>
     </footer>

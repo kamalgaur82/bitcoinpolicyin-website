@@ -5,7 +5,7 @@ import { POLICY_BRIEFS, POLICY_PRINCIPLES } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Policy",
   description:
-    "Neutral, evidence-based frameworks for policymakers: policy briefs, consultation responses, government workshops, and the principles that guide our work.",
+    "Independent, evidence-based frameworks for policymakers: policy briefs, consultation responses, government workshops, and the principles that guide our work.",
 };
 
 const WORKSHOPS = [
@@ -20,7 +20,7 @@ export default function PolicyPage() {
     <>
       <PageHeader
         eyebrow="Policy"
-        title="Neutral, evidence-based frameworks for policymakers."
+        title="Independent, evidence-based frameworks for policymakers."
       />
 
       {/* Policy briefs */}

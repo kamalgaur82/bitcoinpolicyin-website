@@ -5,7 +5,7 @@ import { RESEARCH_PAPERS, RESEARCH_THEMES } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Research",
   description:
-    "Deep, neutral, evidence-based research on Bitcoin — for India. Featured papers and research themes across economics, energy, consumer protection, technology, and regulation.",
+    "Deep, rigorous, evidence-based research on Bitcoin — for India. Featured papers and research themes across economics, energy, consumer protection, technology, and regulation.",
 };
 
 const PHILOSOPHY = [
@@ -21,7 +21,7 @@ export default function ResearchPage() {
     <>
       <PageHeader
         eyebrow="Research"
-        title="Deep, neutral, evidence-based research on Bitcoin — for India."
+        title="Deep, rigorous, evidence-based research on Bitcoin — for India."
       />
 
       {/* Featured papers */}
