@@ -21,18 +21,16 @@ export const SITE = {
 // Primary navigation (top-level IA from the doc). Home is the logo.
 export const NAV_LINKS = [
   { label: "About", href: "/about" },
-  { label: "Research", href: "/research" },
+  { label: "Work", href: "/work" },
   { label: "Policy", href: "/policy" },
-  { label: "Education", href: "/education" },
-  { label: "Resources", href: "/resources" },
+  { label: "Writing", href: "/writing" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
 // Footer / system pages
 export const FOOTER_LINKS = [
-  { label: "Legal & Governance", href: "/governance" },
-  { label: "Partners", href: "/partners" },
   { label: "Events", href: "/events" },
+  { label: "Legal & Governance", href: "/governance" },
   { label: "Support", href: "/support" },
 ] as const;
 

@@ -34,7 +34,7 @@ export default function Home() {
             style={{ animationDelay: "240ms" }}
           >
             <Link
-              href="/research"
+              href="/work"
               className="inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-cream transition-opacity hover:opacity-85"
             >
               Read our work <span aria-hidden>&rarr;</span>
@@ -174,15 +174,15 @@ export default function Home() {
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             Our work
           </h2>
-          <Link href="/research" className="shrink-0 font-semibold text-gold hover:text-ink">
-            Explore research &rarr;
+          <Link href="/work" className="shrink-0 font-semibold text-gold hover:text-ink">
+            Explore our work &rarr;
           </Link>
         </div>
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {FEATURED_WORK.map((title) => (
             <Link
               key={title}
-              href="/research"
+              href="/work"
               className="group flex items-start justify-between gap-4 rounded-2xl border border-line bg-card p-8 transition-shadow hover:shadow-lg"
             >
               <h3 className="font-display text-xl font-semibold text-ink">
