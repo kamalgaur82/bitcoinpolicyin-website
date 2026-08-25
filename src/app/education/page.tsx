@@ -29,6 +29,7 @@ export default function EducationPage() {
       <PageHeader
         eyebrow="Education"
         title="Making Bitcoin understandable for India."
+        intro="Where our research meets the public: plain-language explainers, visuals, and workshops. The same rigor, translated for a broad audience — no hype."
       />
 
       {/* Articles */}

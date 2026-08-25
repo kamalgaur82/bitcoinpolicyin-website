@@ -4,7 +4,6 @@ import PageHeader from "@/components/PageHeader";
 import {
   WHY_EXISTS,
   PURPOSE,
-  PRINCIPLE,
   COMMITMENTS,
   WE_ARE,
   WE_ARE_NOT,
@@ -89,18 +88,12 @@ export default function AboutPage() {
             {PURPOSE}
           </p>
 
-          <div className="mt-8 rounded-2xl border border-line bg-card p-8">
-            <span className="text-sm font-semibold uppercase tracking-wider text-gold">
-              Our guiding principle
-            </span>
-            <p className="mt-2 font-display text-xl font-medium leading-snug text-ink md:text-2xl">
-              {PRINCIPLE}
-            </p>
-            <p className="mt-3 text-ink-soft">
-              If we&rsquo;re seen mainly as useful to industry, policymakers will
-              treat us as a lobby. Trust comes first — usefulness follows from it.
-            </p>
-          </div>
+          <p className="mt-6 text-lg leading-relaxed text-ink-soft">
+            Our approach is simple: earn policymakers&rsquo; trust through
+            independence and rigor, and let our usefulness follow from that —
+            never the other way around. That&rsquo;s what keeps us a credible
+            voice rather than another interested party.
+          </p>
 
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {COMMITMENTS.map((c) => (

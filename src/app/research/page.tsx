@@ -22,6 +22,7 @@ export default function ResearchPage() {
       <PageHeader
         eyebrow="Research"
         title="Deep, rigorous, evidence-based research on Bitcoin — for India."
+        intro="Our evidence base: original papers, data, and analysis. This is the raw material behind everything we take to policymakers and everything we translate for the public."
       />
 
       {/* Featured papers */}

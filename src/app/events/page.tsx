@@ -30,8 +30,8 @@ export default function EventsPage() {
           ))}
         </ul>
         <div className="mt-10 rounded-2xl border border-dashed border-line bg-cream-alt p-8 text-center text-sm text-ink-faint">
-          No events are scheduled yet. Check back soon, or join the newsletter to
-          hear first.
+          No events are scheduled yet. Check back soon, or add your support to
+          hear when we do.
         </div>
       </section>
     </>

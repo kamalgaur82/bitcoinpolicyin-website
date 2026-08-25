@@ -34,7 +34,7 @@ export const FOOTER_LINKS = [
   { label: "Legal & Governance", href: "/governance" },
   { label: "Partners", href: "/partners" },
   { label: "Events", href: "/events" },
-  { label: "Newsletter", href: "/newsletter" },
+  { label: "Support", href: "/support" },
 ] as const;
 
 // Three pillars — "What We Do" (home).

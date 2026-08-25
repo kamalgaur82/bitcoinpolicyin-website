@@ -28,10 +28,10 @@ export default function NavBar() {
             </Link>
           ))}
           <Link
-            href="/newsletter"
+            href="/support"
             className="rounded-lg bg-gold px-5 py-2.5 text-sm font-semibold text-cream transition-opacity hover:opacity-85"
           >
-            Newsletter
+            Support
           </Link>
         </div>
 
@@ -69,11 +69,11 @@ export default function NavBar() {
               </Link>
             ))}
             <Link
-              href="/newsletter"
+              href="/support"
               className="mt-3 rounded-lg bg-gold px-5 py-3 text-center text-base font-semibold text-cream"
               onClick={() => setOpen(false)}
             >
-              Newsletter
+              Support
             </Link>
           </div>
         </div>

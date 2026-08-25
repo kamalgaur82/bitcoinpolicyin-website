@@ -21,6 +21,7 @@ export default function PolicyPage() {
       <PageHeader
         eyebrow="Policy"
         title="Independent, evidence-based frameworks for policymakers."
+        intro="Where our research meets government: briefs, consultation responses, and frameworks — offered as independent analysis, never as a lobbying ask."
       />
 
       {/* Policy briefs */}

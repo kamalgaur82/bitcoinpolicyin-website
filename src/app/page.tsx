@@ -7,7 +7,6 @@ import {
   FEATURED_WORK,
   VISION,
   PURPOSE,
-  PRINCIPLE,
 } from "@/lib/content";
 
 export default function Home() {
@@ -47,18 +46,6 @@ export default function Home() {
               What we stand for
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------ Guiding principle */}
-      <section className="border-b border-line bg-cream-alt" aria-label="Guiding principle">
-        <div className="mx-auto max-w-4xl px-6 py-14 text-center md:px-10">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">
-            Our guiding principle
-          </span>
-          <p className="mx-auto mt-4 max-w-3xl font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
-            {PRINCIPLE}
-          </p>
         </div>
       </section>
 
@@ -255,18 +242,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --------------------------------------------------------------- Newsletter */}
-      <section className="border-t border-line bg-cream-alt" aria-label="Newsletter">
+      {/* ----------------------------------------------------------------- Support */}
+      <section className="border-t border-line bg-cream-alt" aria-label="Support the mission">
         <div className="mx-auto max-w-3xl px-6 py-20 text-center md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            One clear, evidence-based Bitcoin insight every week.
+            Stand with sound Bitcoin policy for India.
           </h2>
-          <p className="mt-3 text-lg text-ink-soft">No hype. No noise.</p>
+          <p className="mx-auto mt-3 max-w-xl text-lg text-ink-soft">
+            Add your name to a growing group of people who back rigorous,
+            India-first Bitcoin policy. It takes a moment, and it helps us show
+            policymakers this work has real support.
+          </p>
           <Link
-            href="/newsletter"
+            href="/support"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-cream transition-opacity hover:opacity-90"
           >
-            Subscribe <span aria-hidden>&rarr;</span>
+            Add your support <span aria-hidden>&rarr;</span>
           </Link>
         </div>
       </section>
