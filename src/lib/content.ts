@@ -82,6 +82,20 @@ export const BELIEFS = [
   { title: "Monetary questions are sovereignty questions", body: "In a digital age, how a nation treats money bears on its long-term resilience — worth engaging from understanding, not fear." },
 ] as const;
 
+// What Bitcoin represents for India — the values layer (Moral Charter v1.7).
+// Dignified, civic register; every phrase is from the charter, not invented.
+export const MEANS_FOR_INDIA = {
+  lead: "In a digital age, sovereignty is not only political or military — it is also monetary. We see Bitcoin as honest, sound money: a form of self-reliance — Atmanirbhar Bharat applied to money — that protects the savings and labour of ordinary Indians from erosion, and opens a path to prosperity not reserved for the few.",
+  represents: [
+    { title: "Fairness", body: "No insider access, no privileged dilution." },
+    { title: "Sovereignty", body: "A tool that strengthens national resilience." },
+    { title: "Transparency", body: "An auditable monetary system, immune to political cycles." },
+    { title: "Time-protection", body: "Money that protects the labour of 1.4 billion Indians from erosion." },
+    { title: "Inclusion", body: "An asset open to all — not just the wealthy or well-connected." },
+    { title: "Accountability", body: "A system where mathematics, not power, enforces the rules." },
+  ],
+} as const;
+
 // Where we focus — six priorities in three layers (April 2026 deck).
 export const PRIORITY_LAYERS = [
   {

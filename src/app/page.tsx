@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {
   WHY_EXISTS,
+  MEANS_FOR_INDIA,
   BELIEFS,
   PRIORITY_LAYERS,
   PILLARS,
@@ -68,6 +69,33 @@ export default function Home() {
             <p className="mt-6 font-display text-xl font-medium text-ink md:text-2xl">
               {WHY_EXISTS.resolve}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ------------------------------------ What Bitcoin represents for India */}
+      <section
+        className="border-t border-line"
+        aria-label="What Bitcoin represents for India"
+      >
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+            <h2 className="font-display text-3xl font-semibold leading-tight text-ink md:text-4xl">
+              What Bitcoin represents for India
+            </h2>
+            <p className="text-lg leading-relaxed text-ink-soft md:col-span-2 md:text-xl">
+              {MEANS_FOR_INDIA.lead}
+            </p>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {MEANS_FOR_INDIA.represents.map((r) => (
+              <div key={r.title} className="rounded-2xl border border-line bg-card p-8">
+                <h3 className="font-display text-xl font-semibold text-ink">
+                  {r.title}
+                </h3>
+                <p className="mt-2 leading-relaxed text-ink-soft">{r.body}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
