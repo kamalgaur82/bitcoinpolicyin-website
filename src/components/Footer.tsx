@@ -12,7 +12,7 @@ export default function Footer() {
             <p className="mt-4 text-sm leading-relaxed text-ink-soft">
               An independent, Bitcoin-only policy think tank working to enable
               positive, rational regulation for Bitcoin in India.
-              Bitcoin-only. India-first. Public-interest.
+              Bitcoin-only. India-first. Independent.
             </p>
             <p className="mt-4 text-sm text-ink-soft">
               <a

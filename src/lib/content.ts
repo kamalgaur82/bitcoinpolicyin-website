@@ -2,8 +2,8 @@
 // Source of truth: "BPI Website — Full Information Architecture + Copy" (Dec 2025).
 // Entity: Bitcoin Policy India (for-profit; no "Institute" in the identity).
 // Positioning: Bitcoin-only, India-first, evidence-based research, education,
-// and policy analysis. NOTE: non-profit/"no lobbying" framing from the source
-// doc is under review now that the entity is for-profit — see project memory.
+// and policy analysis. SINGLE for-profit entity — the two-entity / non-profit /
+// "public-interest" framing from the source docs does NOT apply.
 
 export const SITE = {
   name: "Bitcoin Policy India",
@@ -50,9 +50,9 @@ export const PILLARS = [
 
 // ── Positioning (April 2026 Vision Alignment Deck; charters v1.7) ──────────
 // Blend posture: a clear point of view (positive regulation for Bitcoin) held
-// in a disciplined, policymaker-credible register — not slogan-heavy. Public
-// site = the Think Tank (public-interest posture); the commercial Advisory arm
-// is kept off the public site.
+// in a disciplined, policymaker-credible register — not slogan-heavy. Entity:
+// a SINGLE for-profit (Bitcoin Policy India). The earlier two-entity Think Tank
+// + Advisory model no longer applies — don't reintroduce "public-interest".
 
 // Mission — working statement (April 2026 deck).
 export const PURPOSE =
@@ -122,7 +122,7 @@ export const PRIORITY_LAYERS = [
 
 // What we are (April 2026 deck slide 10).
 export const WE_ARE = [
-  "A Bitcoin-only, public-interest policy think tank",
+  "A Bitcoin-only policy think tank",
   "An advocacy body — in that we want to influence policy direction",
   "A small, independent, India-first, long-term effort",
 ] as const;
@@ -188,7 +188,7 @@ export const VISION = {
   body: "A small, high-trust, Bitcoin-only policy institution that policymakers take seriously — helping move India from confusion toward a thoughtful, stable, rights-respecting, and economically intelligent Bitcoin posture.",
   aims: [
     "Policy clarity and credible frameworks",
-    "Public-interest Bitcoin thinking",
+    "Independent, India-first Bitcoin thinking",
     "Trusted engagement with central and state stakeholders",
   ],
 } as const;

@@ -18,7 +18,7 @@ import {
 export const metadata: Metadata = {
   title: "About BPI",
   description:
-    "Why Bitcoin Policy India exists, what we believe, and what we're building: an independent, Bitcoin-only, public-interest policy think tank working to enable positive, rational, forward-looking regulation for Bitcoin in India.",
+    "Why Bitcoin Policy India exists, what we believe, and what we're building: an independent, Bitcoin-only policy think tank working to enable positive, rational, forward-looking regulation for Bitcoin in India.",
 };
 
 const DOES = [

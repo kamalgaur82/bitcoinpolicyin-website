@@ -15,7 +15,7 @@ export default function FellowshipPage() {
       <PageHeader
         eyebrow="Fellowship · planned"
         title="Developing India's next generation of Bitcoin policy thinkers."
-        intro="A 12-week program to train fellows to research, write, and engage with clarity and rigor — not a crypto or Web3 fellowship, but a Bitcoin policy fellowship grounded in research and India's public interest."
+        intro="A 12-week program to train fellows to research, write, and engage with clarity and rigor — not a crypto or Web3 fellowship, but a Bitcoin policy fellowship grounded in research and India's long-term interest."
       />
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
