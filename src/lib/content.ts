@@ -239,26 +239,128 @@ export const FEATURED_WORK = [
   "The Sovereign Mining Initiative",
 ] as const;
 
-// Featured research (Research page) — actual BPI work products. Descriptions
-// are drawn from the documents themselves; status reflects their real state.
-export const RESEARCH_PAPERS = [
+// Featured work (Policy page) — actual BPI work products. Descriptions and
+// takeaways are drawn from the documents themselves. Items with a `slug` have a
+// detail page (/policy/<slug>) showing takeaways; the full document is shared
+// directly on request. Contributor works (mining, energy) intentionally have no
+// detail page yet — pending the authors' sign-off.
+export type Work = {
+  slug?: string;
+  title: string;
+  summary: string;
+  status: string;
+  audience?: string;
+  sections?: { heading: string; points: string[] }[];
+};
+
+export const RESEARCH_PAPERS: Work[] = [
   {
+    slug: "vda-accounting-framework",
     title: "An Accounting Standards Framework for Virtual Digital Assets in India",
     summary:
       "How VDAs should be classified and measured in financial statements — for the Ministry of Finance, MCA, NFRA and ICAI. Bitcoin as a distinct non-financial asset class, fair-valued through profit and loss, drawing on the US (FASB), Japan (ASBJ) and IFRS experience.",
     status: "Policy brief · draft, 2026",
+    audience: "A policy brief for the Ministry of Finance, MCA, NFRA and ICAI.",
+    sections: [
+      {
+        heading: "The problem",
+        points: [
+          "India already taxes VDA gains at 30% and deducts a 1% TDS, and companies must disclose VDA dealings under Schedule III (since 2021). The Madras High Court has recognised crypto assets as property held in trust (Rhutikumari v. Zanmai Labs, 2025).",
+          "Yet no Ind AS or ICAI guidance says how to classify or measure a VDA in financial statements — so by default they fall under Ind AS 38: carried at cost, losses shown, gains invisible until sale.",
+          "The result: the disclosed 'amount held' has no standard meaning, audits lack an anchor, and the tax base is harder to verify than it should be.",
+        ],
+      },
+      {
+        heading: "What the world has settled on",
+        points: [
+          "United States (FASB, mandatory from 2025): actively-traded crypto at fair value through net income.",
+          "Japan (ASBJ, since 2018): market value through profit and loss where an active market exists; customer crypto matched with a liability.",
+          "IFRS has no standard — a widely-criticised 2019 decision routes crypto to inventory or intangibles; the IASB is revisiting it.",
+          "Every body that examined the question deliberately — FASB, ASBJ, Swiss practice — chose fair value through profit or loss for actively-traded crypto.",
+        ],
+      },
+      {
+        heading: "What we propose",
+        points: [
+          "One VDA definition across tax and accounting, sub-classified: Class A (fungible, active-market, no issuer — e.g. Bitcoin), Class B (rights-bearing tokens like stablecoins), Class C (NFTs and illiquid tokens).",
+          "Classify VDAs as a distinct non-financial asset class — expressly not cash, not currency, not a financial instrument — consistent with the Madras HC's property ruling.",
+          "Measure Class A at fair value through profit and loss; hold customer assets on the trust model — segregated assets off the custodian's balance sheet, commingled assets on it with a matching liability (the lesson of WazirX).",
+          "A cheap transition: a cumulative adjustment to opening retained earnings, no restatement.",
+        ],
+      },
+      {
+        heading: "What it does not do",
+        points: [
+          "It does not make any VDA legal tender or a unit of account — books stay in rupees.",
+          "It does not alter the RBI's monetary role, SEBI or exchange listing policy, or the 30% / 1% tax architecture. Measurement is representation, not endorsement.",
+        ],
+      },
+      {
+        heading: "The path",
+        points: [
+          "Step 1 (0–12 months): an ICAI Guidance Note — no legislative change, immediately usable by auditors.",
+          "Step 2 (12–36 months): a limited-scope Ind AS, endorsed by NFRA and notified by MCA.",
+        ],
+      },
+    ],
   },
   {
+    slug: "functional-taxonomy",
     title: "A Functional Taxonomy for Digital Assets in India",
     summary:
       "A four-pillar, risk-based classification — decentralised cryptocommodities (Bitcoin), tokenised securities, stablecoins, and utility tokens — on the principle that classification must precede regulation.",
     status: "Presented · GNLU stakeholder consultation, Nov 2025",
+    audience: "Presented at the GNLU Regional Stakeholder Consultation, Bengaluru, November 2025.",
+    sections: [
+      {
+        heading: "Why a taxonomy",
+        points: [
+          "Digital assets sit under one umbrella term — 'crypto' — despite fundamental differences in risk, economic function, and technical architecture.",
+          "Classification must precede regulation, so that rules can be proportional, protect consumers, and leave room for innovation. The primary differentiator is issuer-dependence.",
+        ],
+      },
+      {
+        heading: "The four categories",
+        points: [
+          "Decentralised cryptocommodities (no issuer) — e.g. Bitcoin: no issuer, no cash-flow claims, commodity-like. Fit: commodity / payment-asset oversight, plus AML/KYC.",
+          "Tokenised securities (issuer-dependent) — ICO and governance tokens, tokenised equity: an issuer and a profit expectation. Fit: SEBI; disclosures and anti-fraud norms.",
+          "Stablecoins — fiat-backed or algorithmic: they touch the monetary system and carry reserve risk. Fit: RBI (reserves/payments), SEBI (backing assets), MeitY (tech).",
+          "Consumer / utility tokens — loyalty, in-game, access: non-monetary, non-investment. Fit: light-touch, under MeitY and consumer-protection law.",
+        ],
+      },
+      {
+        heading: "Why it works",
+        points: [
+          "It aligns with MiCA, the UK FCA, Japan and US principles.",
+          "It reduces misclassification, supports innovation, and enhances consumer protection — by treating each kind of asset on its own terms.",
+        ],
+      },
+    ],
   },
   {
+    slug: "regulator-mapping",
     title: "Regulator Mapping for Digital Asset Categories",
     summary:
       "Which Indian regulator should oversee which kind of digital asset — mapping Bitcoin to commodity-style oversight (MoF/DEA, FIU-IND) rather than SEBI or RBI.",
     status: "Presented · GNLU stakeholder consultation, Nov 2025",
+    audience: "A companion to the functional taxonomy, presented at GNLU, November 2025.",
+    sections: [
+      {
+        heading: "The idea",
+        points: [
+          "Once digital assets are classified by function, the right regulator for each becomes clear — a risk-based mapping rather than a single catch-all authority.",
+        ],
+      },
+      {
+        heading: "Who oversees what",
+        points: [
+          "Decentralised cryptocommodities (Bitcoin) — commodity-like, issuerless; risks are market integrity and AML. Likely regulators: the Ministry of Finance (DEA) for policy framing, FIU-IND for AML/CFT, and a possible future Digital Commodities Cell — not SEBI, not RBI.",
+          "Tokenised securities — an issuer and profit expectation. Primary regulator SEBI, with MCA/ROC for corporate filings.",
+          "Stablecoins — payment and settlement instruments with reserve risk. Primary regulator RBI, with SEBI, FIU-IND and MeitY.",
+          "Consumer / utility tokens — light-touch, under MeitY and consumer-protection law.",
+        ],
+      },
+    ],
   },
   {
     title: "The Sovereign Mining Initiative",
@@ -282,18 +384,21 @@ export const REFERENCES = [
     author: "Esya Centre",
     year: "2024",
     note: "Evidence on how the 30% tax and 1% TDS reshaped India's digital-asset market.",
+    link: "https://www.esyacentre.org/documents/2024/12/9/the-impact-of-indias-vda-tax-policy-an-update",
   },
   {
     title: "TDS on Virtual Digital Assets: Effects on Tax Revenue and User Trends",
     author: "Centre for Tax Laws, NALSAR",
     year: "2024",
     note: "How the 1% TDS affected tax collection and pushed users toward offshore venues.",
+    link: "",
   },
   {
     title: "Crypto Assets in India — Crypto Assets Project Report",
     author: "GNLU (Prof. S. Shanthakumar et al.)",
     year: "2025",
     note: "An academic assessment of the case for regulating crypto assets in India.",
+    link: "",
   },
   {
     title:
@@ -301,6 +406,7 @@ export const REFERENCES = [
     author: "Jason P. Lowery, MIT",
     year: "2023",
     note: "A foundational reference on Bitcoin, energy, and national strategy.",
+    link: "https://dspace.mit.edu/entities/publication/8ac6037b-efd6-4ecd-a57f-2b75c965c889",
   },
 ] as const;
 

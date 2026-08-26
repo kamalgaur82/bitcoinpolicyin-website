@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   INDIA_FACTS,
   RESEARCH_PAPERS,
@@ -64,29 +65,50 @@ export default function PolicyPage() {
           A small body of specific, India-first work that backs our positions.
         </p>
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {RESEARCH_PAPERS.map((p) => (
-            <article
-              key={p.title}
-              className="flex flex-col rounded-2xl border border-line bg-card p-8"
-            >
-              <h3 className="font-display text-xl font-semibold leading-snug text-ink">
-                {p.title}
-              </h3>
-              <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
-                {p.summary}
-              </p>
-              <p className="mt-6 text-xs uppercase tracking-wider text-ink-faint">
-                {p.status}
-              </p>
-            </article>
-          ))}
+          {RESEARCH_PAPERS.map((p) =>
+            p.slug ? (
+              <Link
+                key={p.title}
+                href={`/policy/${p.slug}`}
+                className="group flex flex-col rounded-2xl border border-line bg-card p-8 transition-shadow hover:shadow-lg"
+              >
+                <h3 className="font-display text-xl font-semibold leading-snug text-ink">
+                  {p.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
+                  {p.summary}
+                </p>
+                <p className="mt-6 text-xs uppercase tracking-wider text-ink-faint">
+                  {p.status}
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold transition-all group-hover:gap-2.5">
+                  Read the takeaways <span aria-hidden>&rarr;</span>
+                </span>
+              </Link>
+            ) : (
+              <article
+                key={p.title}
+                className="flex flex-col rounded-2xl border border-line bg-card p-8"
+              >
+                <h3 className="font-display text-xl font-semibold leading-snug text-ink">
+                  {p.title}
+                </h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-ink-soft">
+                  {p.summary}
+                </p>
+                <p className="mt-6 text-xs uppercase tracking-wider text-ink-faint">
+                  {p.status}
+                </p>
+              </article>
+            )
+          )}
         </div>
         <p className="mt-6 text-sm text-ink-faint">
-          We share drafts and briefings directly with the institutions they&rsquo;re
-          for. For one,{" "}
-          <a href="/contact" className="text-gold hover:text-ink">
+          Full documents are shared directly with the institutions they&rsquo;re
+          for. To request one,{" "}
+          <Link href="/contact" className="text-gold hover:text-ink">
             get in touch
-          </a>
+          </Link>
           .
         </p>
       </section>
@@ -148,7 +170,21 @@ export default function PolicyPage() {
             {REFERENCES.map((r) => (
               <li key={r.title} className="rounded-2xl border border-line bg-card p-6">
                 <h3 className="font-display text-lg font-semibold leading-snug text-ink">
-                  {r.title}
+                  {r.link ? (
+                    <a
+                      href={r.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors hover:text-gold"
+                    >
+                      {r.title}{" "}
+                      <span aria-hidden className="text-gold">
+                        ↗
+                      </span>
+                    </a>
+                  ) : (
+                    r.title
+                  )}
                 </h3>
                 <p className="mt-1 text-sm font-medium text-gold">
                   {r.author} · {r.year}
