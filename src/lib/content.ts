@@ -98,24 +98,27 @@ export const PRIORITY_LAYERS = [
     layer: "Protection",
     blurb: "Grounding the rights and safeguards citizens need.",
     items: [
-      { title: "Legal clarity for holding Bitcoin", body: "A clearer long-term understanding of what lawful ownership means for citizens and institutions." },
-      { title: "Self-custody rights", body: "The legitimacy of individuals holding their own Bitcoin securely and legally." },
-      { title: "Retail investor protection", body: "Protecting ordinary people from mis-selling, confusion, and avoidable harm." },
+      { title: "Legal clarity for holding", body: "Holding Bitcoin is legal but ungrounded — no dedicated law since the 2021 bill was shelved. Ownership deserves clear, lawful recognition." },
+      { title: "Self-custody rights", body: "The right to hold your own Bitcoin securely and lawfully, protected in principle." },
+      { title: "Retail protection", body: "Protecting ordinary people from mis-selling, confusion, and avoidable harm." },
     ],
   },
   {
     layer: "Enablement",
     blurb: "Removing the barriers to responsible participation.",
     items: [
-      { title: "Tax rationalisation", body: "A sensible long-term treatment of Bitcoin in place of today's misaligned VDA framework." },
-      { title: "Institutional adoption", body: "Treasury, fund, and balance-sheet pathways, where appropriate." },
+      { title: "Clear classification", body: "India lumps Bitcoin with every token under one Virtual Digital Asset definition (2022). Classification must precede sensible regulation." },
+      { title: "Fair taxation", body: "A flat 30% plus a 1% TDS, with no loss set-off, taxes Bitcoin like speculation — and pushed activity offshore. It needs rationalising." },
+      { title: "Institutional adoption", body: "Treasury, fund, and balance-sheet pathways for Bitcoin, where appropriate." },
     ],
   },
   {
-    layer: "Infrastructure",
-    blurb: "The physical and energy foundations.",
+    layer: "Infrastructure & strategy",
+    blurb: "The foundations, and the long-horizon questions.",
     items: [
-      { title: "Mining & energy policy", body: "Thoughtful frameworks for the role Bitcoin mining could play in India's grid and power context." },
+      { title: "Mining & energy", body: "Frameworks for the role Bitcoin mining could play in India's grid and power context." },
+      { title: "Custody & service providers", body: "Standards for safe, compliant custody, security, and the providers a healthy ecosystem needs." },
+      { title: "Strategic reserve — research", body: "A long-horizon question we study: what a measured, sovereign Bitcoin allocation could add to India's resilience and optionality." },
     ],
   },
 ] as const;

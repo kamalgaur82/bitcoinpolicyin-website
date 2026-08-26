@@ -134,8 +134,8 @@ export default function Home() {
             Where we focus
           </h2>
           <p className="mt-4 text-lg text-ink-soft">
-            Six priorities, in three layers — so our work protects citizens,
-            removes barriers, and builds foundations, rather than pushing a
+            What we work on, across protection, enablement, and infrastructure —
+            grounded in what India&rsquo;s Bitcoin policy actually needs, not a
             single issue.
           </p>
         </div>
