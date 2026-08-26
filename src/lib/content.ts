@@ -161,14 +161,14 @@ export const FOUNDERS = [
   {
     name: "Kamal Gaur",
     role: "Co-founder",
-    bio: "Two decades across telecom, technology, and financial services, having led organisations of 300+. He has briefed India's Parliamentary Standing Committee on Finance on cryptocurrency, and brings the analytical depth — leading BPI's research and frameworks on digital-asset taxonomy, classification, and taxation.",
+    bio: "In Bitcoin since 2016–17, Kamal has spent years helping Indians understand it clearly — through talks, conversations, and webinars. He has presented to India's Parliamentary Standing Committee on Finance and taken part in industry discussions, and leads BPI's research and frameworks on digital-asset taxonomy, classification, and taxation. He also writes on money and personal finance through Zenca.",
     link: "https://www.linkedin.com/in/kamalgaur/",
     linkLabel: "LinkedIn",
   },
   {
     name: "Saqeer Shah",
     role: "Co-founder",
-    bio: "An advocate and policy strategist. He brings the network and on-the-ground judgment — turning research into relationships and real engagement across policy and industry.",
+    bio: "Saqeer is a lawyer who has litigated criminal cases across several state and high courts. He brings a practitioner's grasp of how India's legal and political institutions actually work — and the relationships and credibility to engage them seriously.",
     link: "", // LinkedIn URL to be added
     linkLabel: "LinkedIn",
   },
