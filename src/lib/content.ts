@@ -123,9 +123,8 @@ export const PRIORITY_LAYERS = [
 // What we are (April 2026 deck slide 10).
 export const WE_ARE = [
   "A Bitcoin-only, public-interest policy think tank",
-  "A research and thought-leadership institution",
   "An advocacy body — in that we want to influence policy direction",
-  "A small, high-trust, India-specific, long-term platform",
+  "A small, independent, India-first, long-term effort",
 ] as const;
 
 // What we are not (April 2026 deck slide 11).
