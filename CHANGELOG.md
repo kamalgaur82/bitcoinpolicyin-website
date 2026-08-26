@@ -4,6 +4,14 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.3 — Merge Work into Policy; drop Writing (2026-08)
+- Merged the Work page into a single **Policy** page: positions + the public
+  work behind them (taxonomy, GNLU, Parliament briefing) + sourced facts +
+  references. No public library of proposals; drafts/briefings go direct.
+- Dropped the Writing page — **Support** is the single way to subscribe and
+  show support for positive Bitcoin policy in India.
+- Nav: About · Policy · Contact (+ Support). Contact emails on @bitcoinpolicy.in.
+
 ## v0.2 — Lean 2-person footprint (2026-08)
 - Repositioned as a small, independent 2-person policy shop (Kamal + Saqeer),
   not an institute-scale operation.

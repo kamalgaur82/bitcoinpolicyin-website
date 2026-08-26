@@ -21,9 +21,7 @@ export const SITE = {
 // Primary navigation (top-level IA from the doc). Home is the logo.
 export const NAV_LINKS = [
   { label: "About", href: "/about" },
-  { label: "Work", href: "/work" },
   { label: "Policy", href: "/policy" },
-  { label: "Writing", href: "/writing" },
   { label: "Contact", href: "/contact" },
 ] as const;
 
