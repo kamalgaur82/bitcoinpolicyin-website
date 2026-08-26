@@ -26,7 +26,7 @@ export default function PolicyPage() {
       <PageHeader
         eyebrow="Policy"
         title="Independent, evidence-based positions for policymakers."
-        intro="What we stand for, and the work behind it. We engage government directly with rigorous analysis — never as a lobbying ask, and never for private interests."
+        intro="What we stand for, and the work behind it. We engage government directly, with rigorous, independent analysis."
       />
 
       {/* The problem, in numbers */}
