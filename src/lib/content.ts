@@ -58,15 +58,11 @@ export const PILLARS = [
 export const PURPOSE =
   "Bitcoin Policy India exists to enable positive, rational, and forward-looking regulation for Bitcoin — for Indians and India alike.";
 
-// The core design principle (April 2026 deck).
-export const PRINCIPLE =
-  "We aim to be trusted by policymakers more than we are useful to industry.";
-
 // Why we exist — the gap (April deck slide 3).
 export const WHY_EXISTS = {
   lead: "India does not yet have a clear, rational, stable, Bitcoin-specific policy posture. Bitcoin is too often conflated with speculation and “crypto” noise; tax treatment is misaligned; legal clarity is incomplete; rights like self-custody aren't firmly grounded; mining is poorly understood; and retail protection is weak.",
   gaps: [
-    "Policy conversations are fragmented and often punitive.",
+    "Policy is fragmented and inconsistent.",
     "Bitcoin is conflated with undifferentiated “crypto”.",
     "Self-custody and ownership rights aren't firmly grounded.",
     "Policymakers lack a trusted, rigorous, India-specific source.",
@@ -85,7 +81,7 @@ export const BELIEFS = [
 // What Bitcoin represents for India — the values layer (Moral Charter v1.7).
 // Dignified, civic register; every phrase is from the charter, not invented.
 export const MEANS_FOR_INDIA = {
-  lead: "In a digital age, sovereignty is not only political or military — it is also monetary. We see Bitcoin as sound money and a form of self-reliance — Atmanirbhar Bharat applied to money — an open asset that lets ordinary Indians build and preserve value over the long term, and opens a path to prosperity not reserved for the few.",
+  lead: "In a digital age, sovereignty is not only political or military — it is also monetary. We see Bitcoin as durable, rules-based money — a form of self-reliance, Atmanirbhar Bharat applied to money — an open asset that lets ordinary Indians build and preserve value over the long term, and opens a path to prosperity not reserved for the few.",
   represents: [
     { title: "Fairness", body: "The same rules for everyone — no insiders, no privileged access." },
     { title: "Sovereignty", body: "A tool that adds to India's optionality and resilience." },
@@ -135,9 +131,7 @@ export const WE_ARE = [
 // What we are not (April 2026 deck slide 11).
 export const WE_ARE_NOT = [
   "A lobbying shop for hire",
-  "A broker of access or a deal-making platform",
   "A place where money buys opinion",
-  "A policy wrapper around commercial agendas",
   "A generic crypto industry association",
 ] as const;
 
@@ -337,15 +331,6 @@ export const EVENTS_PAST = [
     detail:
       "BPI seminar sessions on Bitcoin's strategic power, law & policy, India's Bitcoin future, and reforming India's digital-asset policy.",
   },
-] as const;
-
-// Research themes (Research page).
-export const RESEARCH_THEMES = [
-  { title: "Economics & Monetary Policy", body: "Inflation, monetary supply, competitiveness, savings." },
-  { title: "Energy & Mining", body: "Renewables, grid stabilisation, rural power economics." },
-  { title: "Consumer Protection", body: "Risk models, safeguards, taxation clarity." },
-  { title: "Technology & Security", body: "Decentralisation, scalability, security guarantees." },
-  { title: "Regulation & Law", body: "Classification frameworks, AML/KYC, global comparisons." },
 ] as const;
 
 // Policy briefs + principles (Policy page).
