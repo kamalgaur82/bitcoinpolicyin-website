@@ -4,12 +4,11 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Legal & Governance",
   description:
-    "Bitcoin Policy India's governing documents: mission charter, funding and independence, conflict-of-interest policy, and entity details.",
+    "Bitcoin Policy India's governing documents: mission charter, conflict-of-interest policy, and entity details.",
 };
 
 const DOCUMENTS = [
   { title: "Mission Charter", note: "Our purpose, mandate, and standards of independence." },
-  { title: "Funding & Independence", note: "How we're funded, and the safeguards that keep our conclusions our own." },
   { title: "Conflict-of-Interest Policy", note: "How we identify and manage conflicts." },
   { title: "Entity & Registration", note: "Our legal entity and registration details." },
 ];

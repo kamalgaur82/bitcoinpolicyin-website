@@ -253,12 +253,12 @@ export default function Home() {
       <section className="border-t border-line bg-cream-alt" aria-label="Support the mission">
         <div className="mx-auto max-w-7xl px-6 py-20 text-center md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            Stand with sound Bitcoin policy for India.
+            Stand with better Bitcoin policy for India.
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-lg text-ink-soft">
-            Add your name to a growing community of people who want sound,
-            India-first Bitcoin policy — and be among the first to hear as our
-            work goes out.
+            Add your name to a growing community of people who want India-first
+            Bitcoin policy grounded in evidence — and be among the first to hear
+            as our work goes out.
           </p>
           <Link
             href="/support"
