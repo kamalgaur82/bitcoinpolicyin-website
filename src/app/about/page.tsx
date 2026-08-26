@@ -66,38 +66,48 @@ export default function AboutPage() {
 
       {/* Why we exist */}
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Why we exist">
-        <p className="max-w-3xl text-lg leading-relaxed text-ink-soft">{WHY_EXISTS.lead}</p>
-        <ul className="mt-6 space-y-2.5">
-          {WHY_EXISTS.gaps.map((g) => (
-            <li key={g} className="flex gap-3 text-ink-soft">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" aria-hidden />
-              {g}
-            </li>
-          ))}
-        </ul>
-        <p className="mt-6 font-display text-2xl font-medium leading-snug text-ink">
-          {WHY_EXISTS.resolve}
-        </p>
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+          <h2 className="font-display text-3xl font-semibold leading-tight text-ink md:text-4xl">
+            The gap we fill
+          </h2>
+          <div className="md:col-span-2">
+            <p className="text-lg leading-relaxed text-ink-soft">{WHY_EXISTS.lead}</p>
+            <ul className="mt-6 space-y-2.5">
+              {WHY_EXISTS.gaps.map((g) => (
+                <li key={g} className="flex gap-3 text-ink-soft">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" aria-hidden />
+                  {g}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-6 font-display text-2xl font-medium leading-snug text-ink">
+              {WHY_EXISTS.resolve}
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Purpose + principle + commitments */}
       <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Purpose">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">
-            Our mission
-          </span>
-          <p className="mt-4 max-w-3xl font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
-            {PURPOSE}
-          </p>
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+            <h2 className="font-display text-3xl font-semibold leading-tight text-ink md:text-4xl">
+              Our mission
+            </h2>
+            <div className="md:col-span-2">
+              <p className="font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
+                {PURPOSE}
+              </p>
+              <p className="mt-6 text-lg leading-relaxed text-ink-soft">
+                Our approach is simple: earn policymakers&rsquo; trust through
+                independence and rigor, and let our usefulness follow from that —
+                never the other way around. That&rsquo;s what keeps us a credible
+                voice rather than another interested party.
+              </p>
+            </div>
+          </div>
 
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-ink-soft">
-            Our approach is simple: earn policymakers&rsquo; trust through
-            independence and rigor, and let our usefulness follow from that —
-            never the other way around. That&rsquo;s what keeps us a credible
-            voice rather than another interested party.
-          </p>
-
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {COMMITMENTS.map((c) => (
               <div key={c.title} className="rounded-2xl border border-line bg-card p-6">
                 <h3 className="font-display text-xl font-semibold text-ink">
@@ -230,7 +240,7 @@ export default function AboutPage() {
             We assume we may one day be judged by hostile interpreters, not
             sympathetic ones. So we hold hard lines.
           </p>
-          <ul className="mt-8 space-y-3">
+          <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
             {RED_LINES.map((r) => (
               <li
                 key={r}

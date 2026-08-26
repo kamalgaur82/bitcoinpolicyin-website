@@ -78,7 +78,7 @@ export default function WorkPage() {
           Independent, third-party research that informs our work. These are not
           BPI publications.
         </p>
-        <ul className="mt-8 space-y-4">
+        <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {REFERENCES.map((r) => (
             <li key={r.title} className="rounded-2xl border border-line bg-card p-6">
               <h3 className="font-display text-lg font-semibold leading-snug text-ink">

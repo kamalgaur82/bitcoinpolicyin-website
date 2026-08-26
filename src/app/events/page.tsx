@@ -19,7 +19,7 @@ export default function EventsPage() {
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Recent events">
         <h2 className="font-display text-2xl font-semibold text-ink">Recent</h2>
-        <ul className="mt-8 space-y-6">
+        <ul className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {EVENTS_PAST.map((e) => (
             <li key={e.name} className="rounded-2xl border border-line bg-card p-8">
               <div className="flex flex-wrap items-baseline justify-between gap-2">

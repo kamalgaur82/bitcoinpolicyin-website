@@ -45,7 +45,7 @@ export default function WritingPage() {
         <h2 className="mt-16 font-display text-2xl font-semibold text-ink">
           What we&rsquo;ll be writing on
         </h2>
-        <ul className="mt-6 space-y-3">
+        <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
           {TOPICS.map((t) => (
             <li
               key={t}
