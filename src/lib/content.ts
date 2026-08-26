@@ -85,14 +85,14 @@ export const BELIEFS = [
 // What Bitcoin represents for India — the values layer (Moral Charter v1.7).
 // Dignified, civic register; every phrase is from the charter, not invented.
 export const MEANS_FOR_INDIA = {
-  lead: "In a digital age, sovereignty is not only political or military — it is also monetary. We see Bitcoin as honest, sound money: a form of self-reliance — Atmanirbhar Bharat applied to money — that protects the savings and labour of ordinary Indians from erosion, and opens a path to prosperity not reserved for the few.",
+  lead: "In a digital age, sovereignty is not only political or military — it is also monetary. We see Bitcoin as sound money and a form of self-reliance — Atmanirbhar Bharat applied to money — an open asset that lets ordinary Indians build and preserve value over the long term, and opens a path to prosperity not reserved for the few.",
   represents: [
-    { title: "Fairness", body: "No insider access, no privileged dilution." },
-    { title: "Sovereignty", body: "A tool that strengthens national resilience." },
-    { title: "Transparency", body: "An auditable monetary system, immune to political cycles." },
-    { title: "Time-protection", body: "Money that protects the labour of 1.4 billion Indians from erosion." },
+    { title: "Fairness", body: "The same rules for everyone — no insiders, no privileged access." },
+    { title: "Sovereignty", body: "A tool that adds to India's optionality and resilience." },
+    { title: "Transparency", body: "An open, rules-based system anyone can audit." },
+    { title: "Long-term value", body: "A durable way to preserve the value of the work people put in, across long horizons." },
     { title: "Inclusion", body: "An asset open to all — not just the wealthy or well-connected." },
-    { title: "Accountability", body: "A system where mathematics, not power, enforces the rules." },
+    { title: "Accountability", body: "Rules enforced by mathematics, the same for everyone." },
   ],
 } as const;
 
