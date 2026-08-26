@@ -4,6 +4,20 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.8 — Final read-through polish (2026-08)
+- "How we work" trimmed from 3 engines to 2 (research, policy); homepage
+  work titles aligned with Policy; contact copy tightened; dead consts
+  removed; Vision de-"high-trust/institution"-ed.
+
+## v0.7 — Rebalanced, grounded priorities (2026-08)
+- "Where we focus" rebalanced to an even 3/3/3; key asks grounded in
+  verified 2026 facts; all five original pillars represented (reserve as
+  a carefully-worded research interest).
+
+## v0.6 — Single for-profit reconciliation (2026-08)
+- Two-entity (Think Tank + Advisory / for-profit + non-profit) model
+  dropped; removed all "public-interest" posture claims.
+
 ## v0.5 — Guardrail read-through (2026-08)
 - Two standing content guardrails enforced across the site: (1) no
   India/RBI monetary-debasement subtext — Bitcoin's case made positively;
