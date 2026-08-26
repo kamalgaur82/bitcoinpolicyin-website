@@ -256,9 +256,9 @@ export default function Home() {
             Stand with sound Bitcoin policy for India.
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-lg text-ink-soft">
-            Add your name to a growing group of people who back rigorous,
-            India-first Bitcoin policy. It takes a moment, and it helps us show
-            policymakers this work has real support.
+            Add your name to a growing community of people who want sound,
+            India-first Bitcoin policy — and be among the first to hear as our
+            work goes out.
           </p>
           <Link
             href="/support"

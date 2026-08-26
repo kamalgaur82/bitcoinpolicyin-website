@@ -4,7 +4,7 @@ import PageHeader from "@/components/PageHeader";
 export const metadata: Metadata = {
   title: "Support",
   description:
-    "Stand with Bitcoin Policy India. Add your name to a growing group of people who back rigorous, India-first Bitcoin policy.",
+    "Stand with Bitcoin Policy India. Add your name to a growing community of people who want sound, India-first Bitcoin policy.",
 };
 
 const ROLES = [
@@ -22,7 +22,7 @@ export default function SupportPage() {
       <PageHeader
         eyebrow="Support"
         title="Stand with BPI"
-        intro="We're building a base of people who back rigorous, India-first Bitcoin policy. Add your name — it helps us show policymakers that this work has real, broad support."
+        intro="We're building a community of people who want sound, India-first Bitcoin policy. Add your name to join us — and to hear from us as our work goes out."
       />
 
       <section className="mx-auto max-w-xl px-6 py-16 md:px-10 md:py-20">
@@ -92,8 +92,8 @@ export default function SupportPage() {
 
         <p className="mt-5 text-sm text-ink-faint">
           Sign-ups open once our form is connected. We&rsquo;ll only use your
-          details to keep you posted on major milestones and to show — in
-          aggregate — how many people back this work.
+          details to keep you posted on major milestones — and we&rsquo;ll never
+          share them.
         </p>
       </section>
     </>

@@ -98,9 +98,8 @@ export default function PolicyPage() {
             Where we engage
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">
-            We work with serious institutions and policy bodies — and our
-            co-founder has briefed India&rsquo;s Parliamentary Standing Committee
-            on Finance on cryptocurrency.
+            We work with serious institutions and policy bodies across India —
+            through consultations, roundtables, and direct discussion.
           </p>
           <ul className="mt-8 flex flex-wrap gap-3">
             {WORKSHOPS.map((w) => (
