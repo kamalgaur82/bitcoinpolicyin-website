@@ -10,7 +10,6 @@ import {
   IDENTITY,
   FOUNDERS,
   FOUNDERS_INTRO,
-  RED_LINES,
   BOUNDARIES,
   STANDARD,
   VISION,
@@ -225,36 +224,23 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Red lines */}
-      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Our red lines">
+      {/* What we won't do */}
+      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="What we won't do">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            Our red lines
+            What we won&rsquo;t do
           </h2>
-          <p className="mt-4 text-lg text-ink-soft">
-            We assume we may one day be judged by hostile interpreters, not
-            sympathetic ones. So we hold hard lines.
+          <p className="mt-4 max-w-2xl text-lg text-ink-soft">
+            Discipline protects credibility. In our work and writing, we
+            don&rsquo;t:
           </p>
           <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {RED_LINES.map((r) => (
-              <li
-                key={r}
-                className="flex items-start gap-3 rounded-xl border border-line bg-card px-5 py-4 text-ink"
-              >
-                <span className="mt-0.5 shrink-0 font-semibold text-gold" aria-hidden>—</span>
-                {r}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-8 text-sm font-medium uppercase tracking-wider text-ink-faint">
-            In our writing, we also don&rsquo;t
-          </p>
-          <ul className="mt-3 flex flex-wrap gap-2">
             {BOUNDARIES.map((b) => (
               <li
                 key={b}
-                className="rounded-full border border-line bg-card px-4 py-2 text-sm text-ink-soft"
+                className="flex items-start gap-3 rounded-xl border border-line bg-card px-5 py-4 text-ink-soft"
               >
+                <span className="mt-0.5 shrink-0 font-semibold text-gold" aria-hidden>✕</span>
                 {b}
               </li>
             ))}

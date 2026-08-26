@@ -141,15 +141,6 @@ export const WE_ARE_NOT = [
   "A generic crypto industry association",
 ] as const;
 
-// Red lines (April 2026 deck slide 13).
-export const RED_LINES = [
-  "We never take money to change an opinion.",
-  "We never pay to secure a policy outcome.",
-  "We never represent commercial interests in policy meetings.",
-  "We never sell access to policymakers.",
-  "We help people understand the system — we don't help them game it.",
-] as const;
-
 // The three commitments beneath the mission (Home + About).
 export const COMMITMENTS = [
   { title: "Rigor", body: "Every insight is accurate, sourced, and globally benchmarked." },
@@ -190,11 +181,11 @@ export const FOUNDERS = [
 
 // Boundaries — what we don't do (Bitcoin-only discipline + firewall).
 export const BOUNDARIES = [
+  "Take money to change our conclusions",
   "Shill tokens, altcoins, or “crypto” projects",
   "Give trading, investment, or portfolio advice",
   "Comment on price or make predictions",
   "Publish hype, memes, or maximalist rhetoric",
-  "Represent commercial interests in policy meetings",
   "Align with political parties or campaigns",
 ] as const;
 
