@@ -155,7 +155,7 @@ export const IDENTITY = [
 // The two co-founders (About). Bios drawn from kamalgaur.com, saqeershah.com,
 // and BPI's own materials; kept factual and modest.
 export const FOUNDERS_INTRO =
-  "BPI is a small, deliberately lean effort — for now, two people doing the work. That's the point: independent, focused, and accountable. Together we set BPI's strategy, structure, and governance.";
+  "BPI is a small, deliberately lean effort — independent, focused, and accountable. We drive the work and set BPI's strategy, structure, and governance, with support from a wider community of contributors who share the mission.";
 
 export const FOUNDERS = [
   {
