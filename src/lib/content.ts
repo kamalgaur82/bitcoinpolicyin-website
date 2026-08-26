@@ -175,7 +175,7 @@ export const FOUNDERS = [
   },
 ] as const;
 
-// Boundaries — what we don't do (Bitcoin-only discipline + firewall).
+// Boundaries — what we don't do (editorial discipline; see project guardrails).
 export const BOUNDARIES = [
   "Take money to change our conclusions",
   "Shill tokens, altcoins, or “crypto” projects",
@@ -188,7 +188,7 @@ export const BOUNDARIES = [
 // Long-term ambition — what we're building (Home + About; April 2026 deck).
 export const VISION = {
   headline: "What we're building",
-  body: "A small, high-trust, Bitcoin-only policy institution that policymakers take seriously — helping move India from confusion toward a thoughtful, stable, rights-respecting, and economically intelligent Bitcoin posture.",
+  body: "A small, independent, Bitcoin-only policy voice that policymakers take seriously — helping move India from confusion toward a thoughtful, stable, rights-respecting, and economically intelligent Bitcoin posture.",
   aims: [
     "Policy clarity and credible frameworks",
     "Independent, India-first Bitcoin thinking",
@@ -203,15 +203,6 @@ export const STANDARD = [
   { title: "Clear", body: "Simple language. No jargon." },
   { title: "Useful", body: "Something policymakers, educators, companies, and citizens can actually use." },
   { title: "Balanced", body: "We have a view — and we state benefits, risks, and trade-offs fairly." },
-] as const;
-
-// Our Approach (About).
-export const APPROACH = [
-  "Slow thinking over hot takes",
-  "Facts over fear",
-  "India over ideology",
-  "Clarity over complexity",
-  "Signal over noise",
 ] as const;
 
 // Validated facts (Aug-2025 verification ledger, verdict 5.1 "Correct",
@@ -335,15 +326,7 @@ export const EVENTS_PAST = [
   },
 ] as const;
 
-// Policy briefs + principles (Policy page).
-export const POLICY_BRIEFS = [
-  "CBDC vs Bitcoin",
-  "Taxation models",
-  "Risk & consumer protection",
-  "Classification frameworks",
-  "International benchmarks",
-] as const;
-
+// Policy principles (Policy page).
 export const POLICY_PRINCIPLES = [
   "India-first",
   "Consumer protection",
@@ -351,14 +334,6 @@ export const POLICY_PRINCIPLES = [
   "Deep research",
   "Independence",
   "Evidence over ideology",
-] as const;
-
-// Education content (Education page).
-export const EDUCATION_ARTICLES = [
-  "Bitcoin, Explained for India",
-  "Why Bitcoin Is Not Crypto",
-  "How to Think About CBDCs",
-  "Bitcoin & Energy — Facts vs Myth",
 ] as const;
 
 // Fellowship (Fellowship page).
@@ -412,12 +387,3 @@ export const FELLOWSHIP = {
   values: ["humility", "independence", "discipline", "evidence", "consistency", "clarity"],
 } as const;
 
-// Resources page sections.
-export const RESOURCES = [
-  "Research PDFs",
-  "Policy briefs",
-  "Infographics",
-  "Data dashboards",
-  "Media kit",
-  "Annual report",
-] as const;
