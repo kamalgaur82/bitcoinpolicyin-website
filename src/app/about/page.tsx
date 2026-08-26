@@ -28,17 +28,14 @@ const DOES = [
     items: [
       "Research papers and data-driven analyses",
       "Benchmark studies and comparative regulatory models",
-      "Risk frameworks and consumer-protection analysis",
-      "CBDCs vs Bitcoin — implications for India",
     ],
     note: "Rigorous but readable. Deep, but not dense.",
   },
   {
     title: "Education",
     items: [
-      "Substack explainers and India-focused series",
-      "Visual charts and data dashboards",
-      "YouTube explainers",
+      "Plain-language explainers and primers",
+      "Visual charts and infographics",
       "University workshops and lectures",
     ],
     note: "Not marketing — building understanding.",
@@ -47,8 +44,6 @@ const DOES = [
     title: "Policy",
     items: [
       "Consultation responses and sector-specific briefs",
-      "Government and institutional workshops",
-      "Risk models and assessment templates",
       "Draft structures for taxation and classification",
     ],
     note: "Constructive, evidence-based, India-first.",

@@ -161,7 +161,7 @@ export const COMMITMENTS = [
 export const IDENTITY = [
   { title: "Bitcoin-Only", body: "Not Web3. Not crypto. Not tokens. Not NFTs. Only Bitcoin — anchored, and understood deeply." },
   { title: "India-First", body: "We benchmark globally, but think locally. Every question starts with India's economy, grid, and institutions." },
-  { title: "Policymaker-Trusted", body: "We aim to be trusted by policymakers more than we are useful to industry." },
+  { title: "Non-Partisan & Independent", body: "No party line, no industry brief. Our conclusions follow the evidence." },
   { title: "Rigor Without Jargon", body: "Being clear is harder than being complicated. We choose clarity." },
   { title: "Integrity Over Growth", body: "Small, slow, and credible beats fast-growing but compromised." },
 ] as const;
