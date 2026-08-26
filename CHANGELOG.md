@@ -4,6 +4,18 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.5 — Guardrail read-through (2026-08)
+- Two standing content guardrails enforced across the site: (1) no
+  India/RBI monetary-debasement subtext — Bitcoin's case made positively;
+  (2) no internal-only framing or public "never" that forecloses
+  for-profit/advisory revenue, and no over-promised capability lists.
+- Fixes: "sound money" → "durable, rules-based money"; softened tax
+  wording; trimmed "what we are not" and the Governance doc list; removed
+  the internal red-lines block and dead consts.
+
+## v0.4 — Citizen values/soul layer (2026-08)
+- Added "What Bitcoin represents for India" (Moral Charter), in RBI-safe framing.
+
 ## v0.3 — Merge Work into Policy; drop Writing (2026-08)
 - Merged the Work page into a single **Policy** page: positions + the public
   work behind them (taxonomy, GNLU, Parliament briefing) + sourced facts +
