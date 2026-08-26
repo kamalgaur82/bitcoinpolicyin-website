@@ -12,9 +12,9 @@ export const SITE = {
   promise: "Advancing India's understanding of Bitcoin.",
   domain: "bitcoinpolicy.in",
   email: {
-    contact: "contact@bpiindia.org",
-    partners: "partners@bpiindia.org",
-    press: "media@bpiindia.org",
+    contact: "contact@bitcoinpolicy.in",
+    partners: "partners@bitcoinpolicy.in",
+    press: "media@bitcoinpolicy.in",
   },
 } as const;
 
