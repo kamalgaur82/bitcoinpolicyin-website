@@ -20,7 +20,7 @@ export default function ContactPage() {
       <PageHeader
         eyebrow="Contact"
         title="Get in touch"
-        intro="Simple, serious, clean. Reach the right team directly, or send us a note."
+        intro="Simple, serious, clean. Reach us directly, or send us a note."
       />
 
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">

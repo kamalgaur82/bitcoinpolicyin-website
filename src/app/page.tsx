@@ -176,11 +176,11 @@ export default function Home() {
               How we work
             </h2>
             <p className="mt-4 text-lg text-ink-soft">
-              Three engines, each feeding the next: research becomes education,
-              education informs policy, policy raises new research questions.
+              We keep it lean and focused: rigorous research, and turning it into
+              policy that lands.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
             {PILLARS.map((p) => (
               <div
                 key={p.title}

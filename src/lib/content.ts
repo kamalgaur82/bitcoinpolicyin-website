@@ -32,19 +32,15 @@ export const FOOTER_LINKS = [
   { label: "Support", href: "/support" },
 ] as const;
 
-// Three pillars — "What We Do" (home).
+// What we do (home "How we work").
 export const PILLARS = [
   {
     title: "Research",
-    body: "Deep, accessible, globally benchmarked insights that cut through noise.",
+    body: "Rigorous, India-first analysis on the questions that matter — the evidence base for everything else.",
   },
   {
-    title: "Public Education",
-    body: "Explain Bitcoin to India in a way that is simple, accurate, and non-hyped.",
-  },
-  {
-    title: "Policy Frameworks",
-    body: "Evidence-based, independent analysis for policymakers, institutions, and researchers.",
+    title: "Policy",
+    body: "Turning that research into clear positions, briefs, and direct, credible engagement with government.",
   },
 ] as const;
 
@@ -237,10 +233,10 @@ export const INDIA_FACTS = [
 
 // Featured work cards (home "Our Work") — real BPI work.
 export const FEATURED_WORK = [
-  "An Accounting Framework for Virtual Digital Assets",
+  "An Accounting Standards Framework for Virtual Digital Assets in India",
   "A Functional Taxonomy for Digital Assets in India",
+  "Regulator Mapping for Digital Asset Categories",
   "The Sovereign Mining Initiative",
-  "Regulator Mapping for Digital Assets",
 ] as const;
 
 // Featured research (Research page) — actual BPI work products. Descriptions
