@@ -161,7 +161,7 @@ export const FOUNDERS = [
   {
     name: "Kamal Gaur",
     role: "Co-founder",
-    bio: "For close to a decade, Kamal has worked to demystify Bitcoin for Indians — through talks, webinars, and one-to-one conversations. He has presented to India's Parliamentary Standing Committee on Finance and taken part in industry discussions, and writes about money and personal finance at Zenca, his Substack publication.",
+    bio: "An IIM Ahmedabad alumnus with over two decades of leadership across financial services and technology, Kamal has spent close to a decade demystifying Bitcoin for Indians. He has presented to India's Parliamentary Standing Committee on Finance, taken part in industry discussions, and writes about money and personal finance at Zenca, his Substack publication.",
     link: "https://www.linkedin.com/in/kamalgaur/",
     linkLabel: "LinkedIn",
   },
