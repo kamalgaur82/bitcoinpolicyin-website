@@ -104,7 +104,7 @@ export const PRIORITY_LAYERS = [
     blurb: "Removing the barriers to responsible participation.",
     items: [
       { title: "Clear classification", body: "India lumps Bitcoin with every token under one Virtual Digital Asset definition (2022). Classification must precede sensible regulation." },
-      { title: "Fair taxation", body: "A flat 30% plus a 1% TDS, with no loss set-off, taxes Bitcoin like speculation — and pushed activity offshore. It needs rationalising." },
+      { title: "Fair taxation", body: "A flat 30% plus a 1% TDS, with no loss set-off, taxes Bitcoin like speculation — and drove trading to platforms outside India. It needs rationalising." },
       { title: "Institutional adoption", body: "Treasury, fund, and balance-sheet pathways for Bitcoin, where appropriate." },
     ],
   },
@@ -463,7 +463,7 @@ export const REFERENCES = [
     title: "TDS on Virtual Digital Assets: Effects on Tax Revenue and User Trends",
     author: "Centre for Tax Laws, NALSAR",
     year: "2024",
-    note: "How the 1% TDS affected tax collection and pushed users toward offshore venues.",
+    note: "How the 1% TDS affected tax collection and drove users to platforms outside India.",
     link: "",
   },
   {
@@ -529,7 +529,7 @@ export const EXPLAINER = {
     },
     {
       q: "How many Indians own Bitcoin?",
-      a: "Honestly, no one knows precisely — there is no official count, and the headline numbers you see (often 100 million or more) are third-party estimates for “crypto” owners broadly, not Bitcoin. What is well established is the scale and direction: India has ranked first in the world for grassroots crypto adoption three years running. Bitcoin is the single largest crypto asset, so a very large number of Indians are exposed to it — which is exactly why we argue it should be treated on its own terms, not lumped in with every other token.",
+      a: "Honestly, no one knows precisely — there is no official count, and the headline numbers you see (often 100 million or more) are third-party estimates for “crypto” owners broadly, not Bitcoin. What is well established is the scale and direction: India has ranked first in the world for grassroots crypto adoption three years running. Bitcoin is the single largest crypto asset, so it accounts for a meaningful part of that activity — which is exactly why we argue it should be treated on its own terms, not lumped in with every other token.",
       source: "Chainalysis Global Crypto Adoption Index (2023–2025)",
     },
     {
