@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Public_Sans } from "next/font/google";
+import { Archivo, Public_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
-const playfair = Playfair_Display({
+const archivo = Archivo({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -56,7 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${publicSans.variable} h-full`}
+      className={`${archivo.variable} ${publicSans.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink">
         <NavBar />

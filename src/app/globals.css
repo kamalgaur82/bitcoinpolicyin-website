@@ -2,9 +2,9 @@
 
 /* ------------------------------------------------------------------ *
    Bitcoin Policy India — design tokens
-   Carried forward from the existing site (Playfair + Public Sans,
-   gold accent) and aligned to the real brand logo: charcoal ink on
-   warm cream, gold emblem, India-tricolor accents.
+   Type: Archivo (display / headings) + Public Sans (body) — an
+   all-sans, grotesque pairing. Palette: "Slate mono" dark, gold accent,
+   India-tricolor reserved for sparing accents.
  * ------------------------------------------------------------------ */
 
 @theme {
@@ -34,7 +34,7 @@
   --color-line: #2a2e35;         /* hairline borders on slate */
 
   /* Type */
-  --font-display: "Playfair Display", Georgia, serif;
+  --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Public Sans", ui-sans-serif, system-ui, sans-serif;
 
   /* Layout */
