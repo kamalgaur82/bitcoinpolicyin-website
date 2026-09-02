@@ -16,10 +16,9 @@ export const metadata: Metadata = {
 };
 
 const WORKSHOPS = [
-  "GNLU stakeholder consultation",
   "Academic institutions",
-  "Policy roundtables",
-  "State innovation cells",
+  "Industry consultations",
+  "Think tanks",
 ];
 
 export default function PolicyPage() {
@@ -160,8 +159,8 @@ export default function PolicyPage() {
             Where we engage
           </h2>
           <p className="mt-4 max-w-2xl text-lg text-ink-soft">
-            We work with serious institutions and policy bodies across India —
-            through consultations, roundtables, and direct discussion.
+            We engage serious institutions across India — academic, industry,
+            and policy — through consultations and direct discussion.
           </p>
           <ul className="mt-8 flex flex-wrap gap-3">
             {WORKSHOPS.map((w) => (

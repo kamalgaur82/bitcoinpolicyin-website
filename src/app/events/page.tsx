@@ -22,11 +22,13 @@ export default function EventsPage() {
         <ul className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {EVENTS_PAST.map((e) => (
             <li key={e.name} className="rounded-2xl border border-line bg-card p-8">
-              <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <div className="flex items-start justify-between gap-3">
                 <h3 className="font-display text-xl font-semibold text-ink">
                   {e.name}
                 </h3>
-                <span className="text-sm text-ink-faint">{e.date}</span>
+                <span className="mt-1 shrink-0 whitespace-nowrap text-sm text-ink-faint">
+                  {e.date}
+                </span>
               </div>
               <p className="mt-1 text-sm font-medium text-gold">{e.host}</p>
               <p className="mt-3 leading-relaxed text-ink-soft">{e.detail}</p>

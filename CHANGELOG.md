@@ -4,6 +4,18 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.17b — Events, engagement, positioning corrections (2026-09)
+- Dropped "Atmanirbhar Bharat" from the home "What Bitcoin represents"
+  copy (politically aligned) — now plain "self-reliance".
+- Policy "Where we engage": replaced filler ("State innovation cells",
+  generic "GNLU stakeholder consultation") with real categories —
+  Academic institutions, Industry consultations, Think tanks.
+- Events: BitPlebs Goa card now describes the real full-day seminar (four
+  talks, from the Bitplebs_Goa_2025 source material); fixed title/date
+  alignment so the date pins top-right regardless of title length.
+- Press paragraph: "focused entirely on India" → "India-first, and
+  informed by developments around the world" (we draw on global evidence).
+
 ## v0.16 — India adoption stat, framed to keep Bitcoin ≠ crypto (2026-09)
 - Added a "No. 1" card to Policy → "The problem, in numbers": India's rank
   for grassroots crypto adoption, 3 years running (Chainalysis 2023–2025).

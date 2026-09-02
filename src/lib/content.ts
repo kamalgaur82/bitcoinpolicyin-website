@@ -78,7 +78,7 @@ export const BELIEFS = [
 // What Bitcoin represents for India — the values layer (Moral Charter v1.7).
 // Dignified, civic register; every phrase is from the charter, not invented.
 export const MEANS_FOR_INDIA = {
-  lead: "In a digital age, sovereignty is not only political or military — it is also monetary. We see Bitcoin as durable, rules-based money — a form of self-reliance, Atmanirbhar Bharat applied to money — an open asset that lets ordinary Indians build and preserve value over the long term, and opens a path to prosperity not reserved for the few.",
+  lead: "In a digital age, sovereignty is not only political or military — it is also monetary. We see Bitcoin as durable, rules-based money and a form of self-reliance — an open asset that lets ordinary Indians build and preserve value over the long term, and opens a path to prosperity not reserved for the few.",
   represents: [
     { title: "Fairness", body: "The same rules for everyone — no insiders, no privileged access." },
     { title: "Sovereignty", body: "A tool that adds to India's optionality and resilience." },
@@ -486,11 +486,11 @@ export const REFERENCES = [
 // Past events / talks — from BPI's own seminar and consultation materials.
 export const EVENTS_PAST = [
   {
-    name: "Bitplebs · Goa",
-    host: "Goa",
+    name: "BitPlebs Summit · Goa",
+    host: "Full-day BPI seminar",
     date: "Oct 2025",
     detail:
-      "BPI seminar sessions on Bitcoin's strategic power, law & policy, India's Bitcoin future, and reforming India's digital-asset policy.",
+      "BPI conducted a full-day seminar, with talks on Bitcoin law and policy, Bitcoin and strategic power, India's Bitcoin future, and reforming India's digital-asset policy.",
   },
   {
     name: "Regional Stakeholder Consultation on Crypto Assets",
@@ -565,7 +565,7 @@ export const PRESS = {
   oneLine:
     "Bitcoin Policy India (BPI) is an independent, Bitcoin-only policy think tank working to enable positive, rational, forward-looking regulation for Bitcoin in India.",
   oneParagraph:
-    "Bitcoin Policy India (BPI) is an independent, Bitcoin-only effort in research, education, and policy — focused entirely on India. It makes the evidence-based case for clear, workable Bitcoin regulation: treating Bitcoin distinctly from the wider “crypto” category, rationalising its taxation, and grounding the rights to hold and self-custody. Founded by Kamal Gaur and Saqeer Shah, BPI is deliberately small, independent, and India-first.",
+    "Bitcoin Policy India (BPI) is an independent, Bitcoin-only effort in research, education, and policy — India-first, and informed by developments around the world. It makes the evidence-based case for clear, workable Bitcoin regulation: treating Bitcoin distinctly from the wider “crypto” category, rationalising its taxation, and grounding the rights to hold and self-custody. Founded by Kamal Gaur and Saqeer Shah, BPI is deliberately small, independent, and India-first.",
   naming:
     "Refer to us as “Bitcoin Policy India” (first mention) or “BPI” thereafter.",
   logoNote: "High-resolution logo and founder headshots are available on request.",
