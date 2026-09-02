@@ -4,6 +4,12 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.12 — Typeface change to Archivo (2026-09)
+- Replaced Playfair Display with Archivo as the display/heading face
+  across the whole site (all-sans grotesque over Public Sans body).
+  Token-level swap in the font loader and `--font-display`; every
+  heading and the wordmark inherit it.
+
 ## v0.11 — Contributor takeaway pages (2026-09)
 - Added `/policy/[slug]` takeaway pages for the two contributor works —
   The Sovereign Mining Initiative (Sunil Kumar) and Sovereign Energy
