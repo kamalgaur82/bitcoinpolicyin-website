@@ -32,7 +32,7 @@ export default async function WorkDetailPage({
 
   return (
     <>
-      <PageHeader eyebrow="Our work" title={work.title} intro={work.summary} />
+      <PageHeader eyebrow="Research & briefs" title={work.title} intro={work.summary} />
 
       <section className="mx-auto max-w-3xl px-6 py-16 md:px-10 md:py-20">
         {work.audience && (
@@ -87,7 +87,7 @@ export default async function WorkDetailPage({
             href="/policy"
             className="inline-flex items-center gap-2 font-semibold text-ink hover:text-gold"
           >
-            <span aria-hidden>&larr;</span> All our work
+            <span aria-hidden>&larr;</span> Back to Policy
           </Link>
         </div>
       </section>

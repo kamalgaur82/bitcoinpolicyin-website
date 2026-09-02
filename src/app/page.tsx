@@ -1,13 +1,10 @@
 import Link from "next/link";
 import {
-  WHY_EXISTS,
+  MEANS_FOR_INDIA,
   BELIEFS,
   PRIORITY_LAYERS,
   PILLARS,
-  RESEARCH_PAPERS,
 } from "@/lib/content";
-
-const FEATURED = RESEARCH_PAPERS.slice(0, 4);
 
 export default function Home() {
   return (
@@ -37,7 +34,7 @@ export default function Home() {
               href="/policy"
               className="inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-cream transition-opacity hover:opacity-85"
             >
-              Read our work <span aria-hidden>&rarr;</span>
+              Explore our policy <span aria-hidden>&rarr;</span>
             </Link>
             <Link
               href="/about"
@@ -49,24 +46,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --------------------------------------------------------- Why we exist */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24" aria-label="Why we exist">
+      {/* ------------------------------------ What Bitcoin represents for India */}
+      <section
+        className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24"
+        aria-label="What Bitcoin represents for India"
+      >
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
           <h2 className="font-display text-3xl font-semibold leading-tight text-ink md:text-4xl">
-            Why we exist
+            What Bitcoin represents for India
           </h2>
-          <div className="md:col-span-2">
-            <p className="text-lg leading-relaxed text-ink-soft">{WHY_EXISTS.lead}</p>
-            <p className="mt-6 font-display text-xl font-medium text-ink md:text-2xl">
-              {WHY_EXISTS.resolve}
-            </p>
-            <Link
-              href="/about"
-              className="mt-6 inline-flex items-center gap-1.5 font-semibold text-gold hover:text-ink"
-            >
-              More about BPI <span aria-hidden>&rarr;</span>
-            </Link>
-          </div>
+          <p className="text-lg leading-relaxed text-ink-soft md:col-span-2 md:text-xl">
+            {MEANS_FOR_INDIA.lead}
+          </p>
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {MEANS_FOR_INDIA.represents.map((r) => (
+            <div key={r.title} className="rounded-2xl border border-line bg-card p-8">
+              <h3 className="font-display text-xl font-semibold text-ink">
+                {r.title}
+              </h3>
+              <p className="mt-2 leading-relaxed text-ink-soft">{r.body}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -120,7 +121,7 @@ export default function Home() {
           ))}
         </div>
         <Link
-          href="/policy"
+          href="/policy#where-we-focus"
           className="mt-8 inline-flex items-center gap-1.5 font-semibold text-gold hover:text-ink"
         >
           See our policy priorities <span aria-hidden>&rarr;</span>
@@ -158,39 +159,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --------------------------------------------------------------- Our Work */}
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24" aria-label="Our work">
-        <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-          <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            Our work
-          </h2>
-          <Link href="/policy" className="shrink-0 font-semibold text-gold hover:text-ink">
-            Explore our work &rarr;
-          </Link>
-        </div>
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {FEATURED.map((p) => (
-            <Link
-              key={p.title}
-              href={`/policy/${p.slug}`}
-              className="group flex items-start justify-between gap-4 rounded-2xl border border-line bg-card p-8 transition-shadow hover:shadow-lg"
-            >
-              <h3 className="font-display text-xl font-semibold text-ink">
-                {p.title}
-              </h3>
-              <span
-                className="mt-1 shrink-0 text-gold transition-transform group-hover:translate-x-1"
-                aria-hidden
-              >
-                &rarr;
-              </span>
-            </Link>
-          ))}
-        </div>
-      </section>
-
       {/* ----------------------------------------------------------------- Support */}
-      <section className="border-t border-line bg-cream-alt" aria-label="Support the mission">
+      <section className="border-t border-line" aria-label="Support the mission">
         <div className="mx-auto max-w-7xl px-6 py-20 text-center md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             Stand with better Bitcoin policy for India.

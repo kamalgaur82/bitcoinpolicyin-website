@@ -33,10 +33,6 @@ export default function EventsPage() {
             </li>
           ))}
         </ul>
-        <div className="mt-10 rounded-2xl border border-dashed border-line bg-cream-alt p-6 text-center text-sm text-ink-faint">
-          No upcoming events are scheduled yet. Add your support to hear when we
-          announce the next one.
-        </div>
       </section>
     </>
   );

@@ -4,6 +4,29 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.14 — Author edits: kill duplication, sharpen copy (2026-09)
+- Removed the last cross-page duplication: "Why we exist" is now on About
+  only (was 80% duplicated on Home). "What Bitcoin represents for India"
+  moved back to Home (off About).
+- Home "Where we focus" teaser now links to the Policy section anchor
+  (`/policy#where-we-focus`), not the whole page.
+- Trimmed the policy priorities: merged "legal clarity" + "self-custody"
+  into one item; reframed "retail protection" around honest self-custody
+  education (Protection layer now 2 items, not 3).
+- Dropped the generic "Work" label: Policy section is now "Our research &
+  briefs"; detail-page eyebrow "Research & briefs"; hero CTA "Explore our
+  policy"; work-detail back link "Back to Policy".
+- "The problem, in numbers": national solar-curtailment headline (8,133
+  GWh, Apr–Jun 2026, Grid-India/Parliament) replacing the Tamil Nadu figure.
+- Reordered VISION aims (thinking → engagement → frameworks).
+- Fixed the Bitcoin-in-India FAQ left-edge alignment with the page header.
+- Events lead with Bitplebs Goa (Oct 2025) then GNLU (Nov 2025); removed
+  the "no upcoming events" placeholder.
+- Press: removed the "Not an 'Institute'" line.
+- Governance: dropped the Conflict-of-Interest item; Mission now points to
+  the published About mission instead of "coming soon". Entity/registration
+  left pending a decision.
+
 ## v0.13 — Content once-over: de-dup & re-architecture (2026-09)
 - Fixed inconsistencies: aligned to Research + Policy (dropped the stray
   "Education" engine on About); home "Our work" cards now deep-link to

@@ -4,7 +4,6 @@ import PageHeader from "@/components/PageHeader";
 import {
   WHY_EXISTS,
   PURPOSE,
-  MEANS_FOR_INDIA,
   IDENTITY,
   FOUNDERS,
   FOUNDERS_INTRO,
@@ -72,130 +71,108 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* What Bitcoin represents for India */}
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="What Bitcoin represents for India">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-          <h2 className="font-display text-3xl font-semibold leading-tight text-ink md:text-4xl">
-            What Bitcoin represents for India
-          </h2>
-          <p className="text-lg leading-relaxed text-ink-soft md:col-span-2 md:text-xl">
-            {MEANS_FOR_INDIA.lead}
-          </p>
-        </div>
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {MEANS_FOR_INDIA.represents.map((r) => (
-            <div key={r.title} className="rounded-2xl border border-line bg-card p-8">
+      {/* Who's behind BPI */}
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Who's behind BPI">
+        <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
+          Who&rsquo;s behind BPI
+        </h2>
+        <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-soft">
+          {FOUNDERS_INTRO}
+        </p>
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+          {FOUNDERS.map((f) => (
+            <div key={f.name} className="rounded-2xl border border-line bg-card p-8">
               <h3 className="font-display text-xl font-semibold text-ink">
-                {r.title}
+                {f.name}
               </h3>
-              <p className="mt-2 leading-relaxed text-ink-soft">{r.body}</p>
+              <p className="mt-1 text-sm font-medium text-gold">{f.role}</p>
+              <p className="mt-4 leading-relaxed text-ink-soft">{f.bio}</p>
+              {f.link && (
+                <a
+                  href={f.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-gold"
+                >
+                  {f.linkLabel}
+                  <span aria-hidden>↗</span>
+                </a>
+              )}
             </div>
           ))}
         </div>
       </section>
 
-      {/* Who's behind BPI */}
-      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Who's behind BPI">
+      {/* Identity */}
+      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="Our identity">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            Who&rsquo;s behind BPI
+            Our identity
           </h2>
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-ink-soft">
-            {FOUNDERS_INTRO}
-          </p>
-          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
-            {FOUNDERS.map((f) => (
-              <div key={f.name} className="rounded-2xl border border-line bg-card p-8">
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {IDENTITY.map((i) => (
+              <div key={i.title} className="rounded-2xl border border-line bg-card p-8">
                 <h3 className="font-display text-xl font-semibold text-ink">
-                  {f.name}
+                  {i.title}
                 </h3>
-                <p className="mt-1 text-sm font-medium text-gold">{f.role}</p>
-                <p className="mt-4 leading-relaxed text-ink-soft">{f.bio}</p>
-                {f.link && (
-                  <a
-                    href={f.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-gold"
-                  >
-                    {f.linkLabel}
-                    <span aria-hidden>↗</span>
-                  </a>
-                )}
+                <p className="mt-2 leading-relaxed text-ink-soft">{i.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Identity */}
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Our identity">
-        <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-          Our identity
-        </h2>
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {IDENTITY.map((i) => (
-            <div key={i.title} className="rounded-2xl border border-line bg-card p-8">
-              <h3 className="font-display text-xl font-semibold text-ink">
-                {i.title}
-              </h3>
-              <p className="mt-2 leading-relaxed text-ink-soft">{i.body}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* What we won't do */}
-      <section className="border-y border-line bg-cream-alt py-16 md:py-20" aria-label="What we won't do">
-        <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-            What we won&rsquo;t do
-          </h2>
-          <p className="mt-4 max-w-2xl text-lg text-ink-soft">
-            Discipline protects credibility. In our work and writing, we
-            don&rsquo;t:
-          </p>
-          <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {BOUNDARIES.map((b) => (
-              <li
-                key={b}
-                className="flex items-start gap-3 rounded-xl border border-line bg-card px-5 py-4 text-ink-soft"
-              >
-                <span className="mt-0.5 shrink-0 font-semibold text-gold" aria-hidden>✕</span>
-                {b}
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Vision */}
-      <section className="mx-auto max-w-7xl border-t border-line px-6 py-16 text-center md:px-10 md:py-24" aria-label="What we're building">
-        <span className="text-sm font-semibold uppercase tracking-wider text-gold">
-          Long-term ambition
-        </span>
-        <h2 className="mt-3 font-display text-3xl font-semibold text-ink md:text-4xl">
-          {VISION.headline}
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="What we won't do">
+        <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
+          What we won&rsquo;t do
         </h2>
-        <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
-          {VISION.body}
+        <p className="mt-4 max-w-2xl text-lg text-ink-soft">
+          Discipline protects credibility. In our work and writing, we
+          don&rsquo;t:
         </p>
-        <ul className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
-          {VISION.aims.map((a) => (
+        <ul className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {BOUNDARIES.map((b) => (
             <li
-              key={a}
-              className="rounded-2xl border border-line bg-card p-6 text-sm leading-relaxed text-ink-soft"
+              key={b}
+              className="flex items-start gap-3 rounded-xl border border-line bg-card px-5 py-4 text-ink-soft"
             >
-              {a}
+              <span className="mt-0.5 shrink-0 font-semibold text-gold" aria-hidden>✕</span>
+              {b}
             </li>
           ))}
         </ul>
-        <Link
-          href="/contact"
-          className="mt-12 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-cream transition-opacity hover:opacity-90"
-        >
-          Get in touch <span aria-hidden>&rarr;</span>
-        </Link>
+      </section>
+
+      {/* Vision */}
+      <section className="border-t border-line bg-cream-alt py-16 text-center md:py-24" aria-label="What we're building">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold">
+            Long-term ambition
+          </span>
+          <h2 className="mt-3 font-display text-3xl font-semibold text-ink md:text-4xl">
+            {VISION.headline}
+          </h2>
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-ink-soft">
+            {VISION.body}
+          </p>
+          <ul className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
+            {VISION.aims.map((a) => (
+              <li
+                key={a}
+                className="rounded-2xl border border-line bg-card p-6 text-sm leading-relaxed text-ink-soft"
+              >
+                {a}
+              </li>
+            ))}
+          </ul>
+          <Link
+            href="/contact"
+            className="mt-12 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-cream transition-opacity hover:opacity-90"
+          >
+            Get in touch <span aria-hidden>&rarr;</span>
+          </Link>
+        </div>
       </section>
     </>
   );

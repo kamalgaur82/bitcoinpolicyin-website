@@ -18,7 +18,8 @@ export default function BitcoinInIndiaPage() {
         intro={EXPLAINER.intro}
       />
 
-      <section className="mx-auto max-w-3xl px-6 py-16 md:px-10 md:py-20" aria-label="Common questions">
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Common questions">
+        <div className="max-w-3xl">
         <div className="divide-y divide-line border-y border-line">
           {EXPLAINER.qas.map((qa) => (
             <div key={qa.q} className="py-8">
@@ -48,6 +49,7 @@ export default function BitcoinInIndiaPage() {
           >
             Add your support
           </Link>
+        </div>
         </div>
       </section>
     </>

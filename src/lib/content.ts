@@ -96,9 +96,8 @@ export const PRIORITY_LAYERS = [
     layer: "Protection",
     blurb: "Grounding the rights and safeguards citizens need.",
     items: [
-      { title: "Legal clarity for holding", body: "Holding Bitcoin is legal but ungrounded — no dedicated law since the 2021 bill was shelved. Ownership deserves clear, lawful recognition." },
-      { title: "Self-custody rights", body: "The right to hold your own Bitcoin securely and lawfully, protected in principle." },
-      { title: "Retail protection", body: "Protecting ordinary people from mis-selling, confusion, and avoidable harm." },
+      { title: "Legal clarity & self-custody", body: "Holding Bitcoin is legal but ungrounded — no dedicated law since the 2021 bill was shelved. The right to hold and self-custody your own Bitcoin, securely and lawfully, deserves clear recognition." },
+      { title: "Retail protection & education", body: "Helping ordinary people take part safely — starting with plain, honest education on what self-custody is, what it means, and how to do it responsibly." },
     ],
   },
   {
@@ -167,9 +166,9 @@ export const VISION = {
   headline: "What we're building",
   body: "A small, independent, Bitcoin-only policy voice that policymakers take seriously — helping move India from confusion toward a thoughtful, stable, rights-respecting, and economically intelligent Bitcoin posture.",
   aims: [
-    "Policy clarity and credible frameworks",
     "Independent, India-first Bitcoin thinking",
     "Trusted engagement with central and state stakeholders",
+    "Policy clarity and credible frameworks",
   ],
 } as const;
 
@@ -196,10 +195,10 @@ export const INDIA_FACTS = [
     source: "Supreme Court, K. S. Puttaswamy v. Union of India (2017)",
   },
   {
-    stat: "1,200 M kWh",
+    stat: "8,133 GWh",
     label:
-      "Renewable energy curtailed in Tamil Nadu in a single year — stranded, interruptible power that flexible Bitcoin mining could put to use.",
-    source: "CEA / State Load Despatch Centres",
+      "Solar power curtailed across India in a single quarter (April–June 2026) — stranded, interruptible energy that flexible Bitcoin mining could put to use rather than see wasted. Curtailment today is concentrated in solar as grid build-out lags new capacity.",
+    source: "Grid-India; MNRE reply to Parliament (2026)",
   },
 ] as const;
 
@@ -482,18 +481,18 @@ export const REFERENCES = [
 // Past events / talks — from BPI's own seminar and consultation materials.
 export const EVENTS_PAST = [
   {
+    name: "Bitplebs · Goa",
+    host: "Goa",
+    date: "Oct 2025",
+    detail:
+      "BPI seminar sessions on Bitcoin's strategic power, law & policy, India's Bitcoin future, and reforming India's digital-asset policy.",
+  },
+  {
     name: "Regional Stakeholder Consultation on Crypto Assets",
     host: "GNLU · Bengaluru",
     date: "Nov 2025",
     detail:
       "Presented a functional taxonomy and a regulator-mapping framework for digital assets in India.",
-  },
-  {
-    name: "Bitplebs · Goa",
-    host: "Goa",
-    date: "2025",
-    detail:
-      "BPI seminar sessions on Bitcoin's strategic power, law & policy, India's Bitcoin future, and reforming India's digital-asset policy.",
   },
 ] as const;
 
@@ -558,7 +557,7 @@ export const PRESS = {
   oneParagraph:
     "Bitcoin Policy India (BPI) is an independent, Bitcoin-only effort in research, education, and policy — focused entirely on India. It makes the evidence-based case for clear, workable Bitcoin regulation: treating Bitcoin distinctly from the wider “crypto” category, rationalising its taxation, and grounding the rights to hold and self-custody. Founded by Kamal Gaur and Saqeer Shah, BPI is deliberately small, independent, and India-first.",
   naming:
-    "Refer to us as “Bitcoin Policy India” (first mention) or “BPI” thereafter. Not an “Institute”.",
+    "Refer to us as “Bitcoin Policy India” (first mention) or “BPI” thereafter.",
   logoNote: "High-resolution logo and founder headshots are available on request.",
 } as const;
 

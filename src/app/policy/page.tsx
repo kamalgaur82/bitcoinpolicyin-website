@@ -28,7 +28,7 @@ export default function PolicyPage() {
       <PageHeader
         eyebrow="Policy"
         title="Independent, evidence-based positions for policymakers."
-        intro="What we stand for, and the work behind it. We engage government directly, with rigorous, independent analysis."
+        intro="What we stand for, and the research behind it. We engage government directly, with rigorous, independent analysis."
       />
 
       {/* The problem, in numbers */}
@@ -58,7 +58,7 @@ export default function PolicyPage() {
       </section>
 
       {/* Where we focus — the policy agenda */}
-      <section className="border-b border-line bg-cream-alt py-16 md:py-20" aria-label="Where we focus">
+      <section id="where-we-focus" className="scroll-mt-24 border-b border-line bg-cream-alt py-16 md:py-20" aria-label="Where we focus">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
             Where we focus
@@ -95,13 +95,14 @@ export default function PolicyPage() {
         </div>
       </section>
 
-      {/* Our work */}
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Our work">
+      {/* Our research & briefs */}
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20" aria-label="Our research and briefs">
         <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
-          Our work
+          Our research &amp; briefs
         </h2>
         <p className="mt-4 max-w-2xl text-lg text-ink-soft">
-          A small body of specific, India-first work that backs our positions.
+          A small, specific body of India-first research and briefs behind our
+          positions.
         </p>
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {RESEARCH_PAPERS.map((p) =>
