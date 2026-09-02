@@ -21,6 +21,7 @@ export const SITE = {
 // Primary navigation (top-level IA from the doc). Home is the logo.
 export const NAV_LINKS = [
   { label: "About", href: "/about" },
+  { label: "Bitcoin in India", href: "/bitcoin-in-india" },
   { label: "Policy", href: "/policy" },
   { label: "Contact", href: "/contact" },
 ] as const;
@@ -28,6 +29,7 @@ export const NAV_LINKS = [
 // Footer / system pages
 export const FOOTER_LINKS = [
   { label: "Events", href: "/events" },
+  { label: "Press", href: "/press" },
   { label: "Legal & Governance", href: "/governance" },
   { label: "Support", href: "/support" },
 ] as const;
@@ -487,5 +489,60 @@ export const FELLOWSHIP = {
     "India-first, not personality-first",
   ],
   values: ["humility", "independence", "discipline", "evidence", "consistency", "clarity"],
+} as const;
+
+// "Bitcoin in India" explainer (/bitcoin-in-india). Plain-language, grounded,
+// RBI-safe. Every load-bearing fact re-verified against current 2026 sources.
+export const EXPLAINER = {
+  intro:
+    "Straight answers to the questions Indians actually ask about Bitcoin — no hype, no jargon. For where we think policy should go, see our positions.",
+  qas: [
+    {
+      q: "Is Bitcoin legal in India?",
+      a: "Yes. Buying, holding, selling, and transferring Bitcoin is legal. It isn't legal tender — no one is obliged to accept it as payment — and there's no dedicated law for it yet, so it sits in a legal grey area, governed mainly through tax and anti-money-laundering rules.",
+      source: "Finance Act 2022; FIU-IND registration regime",
+    },
+    {
+      q: "Is Bitcoin the same as “crypto”?",
+      a: "No — and the difference matters for policy. Bitcoin has no issuer, no company behind it, and a fixed supply; it behaves more like a digital commodity. “Crypto” spans thousands of tokens, many with issuers, promoters, and very different risks. Lumping them together produces blunt, ill-fitting rules — which is why we argue classification must come before regulation.",
+      source: "",
+    },
+    {
+      q: "How is Bitcoin taxed in India?",
+      a: "Gains are taxed at a flat 30% (Section 115BBH), with a 1% tax deducted at source on transfers (Section 194S). Losses can't be set off against other income or carried forward. This regime came in with the Finance Act 2022 and was left unchanged in the Union Budget 2026.",
+      source: "Finance Act 2022; Union Budget 2026 (§115BBH, §194S)",
+    },
+    {
+      q: "Is Bitcoin banned? Was it ever?",
+      a: "It isn't banned. In 2018 the RBI restricted regulated banks from dealing with crypto businesses; in 2020 the Supreme Court set that restriction aside (Internet and Mobile Association of India v. RBI). Since then India has regulated the space through taxation and reporting, not prohibition.",
+      source: "Supreme Court, IAMAI v. RBI (2020)",
+    },
+    {
+      q: "Who regulates Bitcoin in India?",
+      a: "There's no single regulator. It's a patchwork today — the income-tax authorities (CBDT) for the VDA tax, and FIU-IND for anti-money-laundering compliance by exchanges — with no dedicated Bitcoin or crypto statute. We've mapped which regulator is the natural fit for each kind of digital asset.",
+      source: "",
+    },
+    {
+      q: "Can I hold my own Bitcoin (self-custody)?",
+      a: "Yes, holding your own Bitcoin is legal. But the right to self-custody isn't positively grounded in law — it exists by default rather than by clear protection. We think that right deserves explicit recognition.",
+      source: "",
+    },
+    {
+      q: "What about the RBI's digital rupee?",
+      a: "The RBI is piloting a central bank digital currency — the digital rupee (e-rupee). A CBDC and Bitcoin are different things: one is sovereign digital cash issued by the central bank, the other an open, decentralised asset. They can coexist and answer different needs.",
+      source: "",
+    },
+  ],
+} as const;
+
+// Press / media kit (/press). Copy is approved, ready-to-quote language.
+export const PRESS = {
+  oneLine:
+    "Bitcoin Policy India (BPI) is an independent, Bitcoin-only policy think tank working to enable positive, rational, forward-looking regulation for Bitcoin in India.",
+  oneParagraph:
+    "Bitcoin Policy India (BPI) is an independent, Bitcoin-only effort in research, education, and policy — focused entirely on India. It makes the evidence-based case for clear, workable Bitcoin regulation: treating Bitcoin distinctly from the wider “crypto” category, rationalising its taxation, and grounding the rights to hold and self-custody. Founded by Kamal Gaur and Saqeer Shah, BPI is deliberately small, independent, and India-first.",
+  naming:
+    "Refer to us as “Bitcoin Policy India” (first mention) or “BPI” thereafter. Not an “Institute”.",
+  logoNote: "High-resolution logo and founder headshots are available on request.",
 } as const;
 
