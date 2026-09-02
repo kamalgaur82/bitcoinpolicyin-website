@@ -30,7 +30,6 @@ export const NAV_LINKS = [
 export const FOOTER_LINKS = [
   { label: "Events", href: "/events" },
   { label: "Press", href: "/press" },
-  { label: "Legal & Governance", href: "/governance" },
   { label: "Support", href: "/support" },
 ] as const;
 

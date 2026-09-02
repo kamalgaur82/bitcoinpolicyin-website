@@ -4,6 +4,15 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.15 — Drop Governance, add Privacy (2026-09)
+- Removed the Governance page — a non-profit convention that added nothing
+  for a for-profit; independence already lives on About.
+- Added a Privacy page (/privacy) — an honest first draft scaffolded to
+  fill in as forms go live — the legal page a for-profit collecting data
+  actually needs.
+- Footer: dropped "Legal & Governance" from the More column (now Events ·
+  Press · Support) and put a Privacy link in the bottom legal strip.
+
 ## v0.14 — Author edits: kill duplication, sharpen copy (2026-09)
 - Removed the last cross-page duplication: "Why we exist" is now on About
   only (was 80% duplicated on Home). "What Bitcoin represents for India"
