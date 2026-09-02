@@ -4,6 +4,22 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.11 — Contributor takeaway pages (2026-09)
+- Added `/policy/[slug]` takeaway pages for the two contributor works —
+  The Sovereign Mining Initiative (Sunil Kumar) and Sovereign Energy
+  Monetization for India (Anooj) — summarised faithfully from the source
+  documents, RBI-safe framing (energy efficiency / grid stability /
+  additive revenue). Both now show "Read the takeaways →" on Policy.
+
+## v0.10 — Explainer + press kit (2026-09)
+- New "Bitcoin in India" plain-language explainer page (sourced Q&A) and
+  a Press / media kit page (approved descriptions, founder bios, naming
+  guidance, press contact).
+
+## v0.9 — Per-work detail pages (2026-08)
+- Introduced `/policy/[slug]` detail pages showing takeaways for the
+  three authored works; full documents shared directly on request.
+
 ## v0.8 — Final read-through polish (2026-08)
 - "How we work" trimmed from 3 engines to 2 (research, policy); homepage
   work titles aligned with Policy; contact copy tightened; dead consts
