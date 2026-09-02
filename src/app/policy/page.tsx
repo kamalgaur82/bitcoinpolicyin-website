@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import {
   INDIA_FACTS,
+  PRIORITY_LAYERS,
   RESEARCH_PAPERS,
   POLICY_PRINCIPLES,
   REFERENCES,
@@ -50,6 +51,44 @@ export default function PolicyPage() {
                 <p className="mt-4 text-xs uppercase tracking-wider text-ink-faint">
                   {f.source}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Where we focus — the policy agenda */}
+      <section className="border-b border-line bg-cream-alt py-16 md:py-20" aria-label="Where we focus">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
+          <h2 className="font-display text-3xl font-semibold text-ink md:text-4xl">
+            Where we focus
+          </h2>
+          <p className="mt-4 max-w-2xl text-lg text-ink-soft">
+            Our agenda spans three layers — protection, enablement, and
+            infrastructure — grounded in what India&rsquo;s Bitcoin policy
+            actually needs, not a single issue.
+          </p>
+          <div className="mt-12 space-y-10">
+            {PRIORITY_LAYERS.map((layer) => (
+              <div key={layer.layer} className="grid grid-cols-1 gap-6 md:grid-cols-4">
+                <div className="md:col-span-1">
+                  <h3 className="font-display text-xl font-semibold text-gold">
+                    {layer.layer}
+                  </h3>
+                  <p className="mt-2 text-sm text-ink-soft">{layer.blurb}</p>
+                </div>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:col-span-3">
+                  {layer.items.map((it) => (
+                    <div key={it.title} className="rounded-2xl border border-line bg-card p-6">
+                      <h4 className="font-display text-base font-semibold text-ink">
+                        {it.title}
+                      </h4>
+                      <p className="mt-2 text-sm leading-relaxed text-ink-soft">
+                        {it.body}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             ))}
           </div>

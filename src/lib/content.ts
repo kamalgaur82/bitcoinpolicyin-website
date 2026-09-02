@@ -121,27 +121,6 @@ export const PRIORITY_LAYERS = [
   },
 ] as const;
 
-// What we are (April 2026 deck slide 10).
-export const WE_ARE = [
-  "A Bitcoin-only policy think tank",
-  "An advocacy body — in that we want to influence policy direction",
-  "A small, independent, India-first, long-term effort",
-] as const;
-
-// What we are not (April 2026 deck slide 11).
-export const WE_ARE_NOT = [
-  "A lobbying shop for hire",
-  "A place where money buys opinion",
-  "A generic crypto industry association",
-] as const;
-
-// The three commitments beneath the mission (Home + About).
-export const COMMITMENTS = [
-  { title: "Rigor", body: "Every insight is accurate, sourced, and globally benchmarked." },
-  { title: "Clarity", body: "Complex ideas, explained simply — never slogan-heavy." },
-  { title: "Independence", body: "No party line, no industry brief. Our conclusions follow the evidence." },
-] as const;
-
 // Identity pillars — "Our Identity" (About).
 export const IDENTITY = [
   { title: "Bitcoin-Only", body: "Not Web3. Not crypto. Not tokens. Not NFTs. Only Bitcoin — anchored, and understood deeply." },
@@ -194,15 +173,6 @@ export const VISION = {
   ],
 } as const;
 
-// The bar every output must clear (About).
-export const STANDARD = [
-  { title: "Accurate", body: "Verified, benchmarked, referenced." },
-  { title: "Independent", body: "Unaffected by corporate or political interests." },
-  { title: "Clear", body: "Simple language. No jargon." },
-  { title: "Useful", body: "Something policymakers, educators, companies, and citizens can actually use." },
-  { title: "Balanced", body: "We have a view — and we state benefits, risks, and trade-offs fairly." },
-] as const;
-
 // Validated facts (Aug-2025 verification ledger, verdict 5.1 "Correct",
 // re-checked against current 2026 sources 2026-08-25). Every item is sourced;
 // do not add unsourced figures here.
@@ -231,14 +201,6 @@ export const INDIA_FACTS = [
       "Renewable energy curtailed in Tamil Nadu in a single year — stranded, interruptible power that flexible Bitcoin mining could put to use.",
     source: "CEA / State Load Despatch Centres",
   },
-] as const;
-
-// Featured work cards (home "Our Work") — real BPI work.
-export const FEATURED_WORK = [
-  "An Accounting Standards Framework for Virtual Digital Assets in India",
-  "A Functional Taxonomy for Digital Assets in India",
-  "Regulator Mapping for Digital Asset Categories",
-  "The Sovereign Mining Initiative",
 ] as const;
 
 // Featured work (Policy page) — actual BPI work products. Descriptions and
@@ -544,57 +506,6 @@ export const POLICY_PRINCIPLES = [
   "Independence",
   "Evidence over ideology",
 ] as const;
-
-// Fellowship (Fellowship page).
-export const FELLOWSHIP = {
-  commitment:
-    "8–12 hours a week for Fellows, 4–6 for Associate Fellows. Not full-time — but not casual.",
-  tiers: [
-    {
-      name: "Associate Fellow",
-      commitment: "4–6 hrs/week",
-      detail: "A training track for students, early-stage contributors, and high-potential volunteers.",
-    },
-    {
-      name: "Fellow",
-      commitment: "8–12 hrs/week",
-      detail: "The core engine — the primary producer of research, explainers, policy briefs, and workshops.",
-    },
-    {
-      name: "Senior Fellow",
-      commitment: "Project-based",
-      detail: "A domain expert leading major research, institutional collaborations, and mentoring.",
-    },
-  ],
-  cycle: [
-    { weeks: "Weeks 1–2", focus: "Orientation, research training, and project assignment." },
-    { weeks: "Weeks 3–4", focus: "Foundational reading, framing sessions, and first drafts." },
-    { weeks: "Weeks 5–9", focus: "Deep research, writing, and policy analysis." },
-    { weeks: "Weeks 10–11", focus: "Reviews, editing, and public-education output." },
-    { weeks: "Week 12", focus: "Final presentations, publication, and graduation." },
-  ],
-  deliverables: [
-    "A 10–15 page research paper",
-    "A 1,000–2,500 word policy brief",
-    "A public explainer (article, deck, or video)",
-    "A workshop or lecture",
-    "A capstone project",
-  ],
-  curriculum: [
-    "Bitcoin foundations, in an India context",
-    "Research & writing discipline",
-    "Policy thinking & comparative frameworks",
-    "Public education & clear communication",
-    "Institutional conduct & integrity",
-  ],
-  selection: [
-    "Humility over ego",
-    "Consistency over brilliance",
-    "Curiosity over credentials",
-    "India-first, not personality-first",
-  ],
-  values: ["humility", "independence", "discipline", "evidence", "consistency", "clarity"],
-} as const;
 
 // "Bitcoin in India" explainer (/bitcoin-in-india). Plain-language, grounded,
 // RBI-safe. Every load-bearing fact re-verified against current 2026 sources.

@@ -4,6 +4,22 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.13 — Content once-over: de-dup & re-architecture (2026-09)
+- Fixed inconsistencies: aligned to Research + Policy (dropped the stray
+  "Education" engine on About); home "Our work" cards now deep-link to
+  each work's `/policy/[slug]`; reworded hero (removed "Sound").
+- Cut cross-page duplication: `WHY_EXISTS`/`PURPOSE`/`VISION` now teased on
+  Home, owned in full on About. Consolidated six overlapping value lists
+  to two — kept `IDENTITY` and `BOUNDARIES`; removed `COMMITMENTS`,
+  `WE_ARE`, `WE_ARE_NOT`, `STANDARD`, and the `DOES` engines block.
+- Relocated "Where we focus" (`PRIORITY_LAYERS`) to the Policy page as the
+  policy agenda; Home keeps a 3-layer teaser. Moved "What Bitcoin
+  represents for India" from Home to About. Home 8→7 sections, About 10→7.
+- Removed the orphaned Fellowship page (unlinked; program not open).
+  Copy and data parked in `docs/fellowship.md` for later.
+- `FEATURED_WORK` retired in favour of deriving featured cards from
+  `RESEARCH_PAPERS`. Footer/nav structure left as-is (standard pattern).
+
 ## v0.12 — Typeface change to Archivo (2026-09)
 - Replaced Playfair Display with Archivo as the display/heading face
   across the whole site (all-sans grotesque over Public Sans body).

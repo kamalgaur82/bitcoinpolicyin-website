@@ -1,14 +1,13 @@
 import Link from "next/link";
 import {
   WHY_EXISTS,
-  MEANS_FOR_INDIA,
   BELIEFS,
   PRIORITY_LAYERS,
   PILLARS,
-  FEATURED_WORK,
-  VISION,
-  PURPOSE,
+  RESEARCH_PAPERS,
 } from "@/lib/content";
+
+const FEATURED = RESEARCH_PAPERS.slice(0, 4);
 
 export default function Home() {
   return (
@@ -20,7 +19,7 @@ export default function Home() {
             Clarity. Rigor. Independence.
           </p>
           <h1 className="anim-fade-up mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.1] text-ink md:text-6xl">
-            Sound, India-first policy for Bitcoin.
+            Rational, India-first policy for Bitcoin.
           </h1>
           <p
             className="anim-fade-up mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft md:text-xl"
@@ -58,44 +57,15 @@ export default function Home() {
           </h2>
           <div className="md:col-span-2">
             <p className="text-lg leading-relaxed text-ink-soft">{WHY_EXISTS.lead}</p>
-            <ul className="mt-6 space-y-2.5">
-              {WHY_EXISTS.gaps.map((g) => (
-                <li key={g} className="flex gap-3 text-ink-soft">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold" aria-hidden />
-                  {g}
-                </li>
-              ))}
-            </ul>
             <p className="mt-6 font-display text-xl font-medium text-ink md:text-2xl">
               {WHY_EXISTS.resolve}
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ------------------------------------ What Bitcoin represents for India */}
-      <section
-        className="border-t border-line"
-        aria-label="What Bitcoin represents for India"
-      >
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-24">
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
-            <h2 className="font-display text-3xl font-semibold leading-tight text-ink md:text-4xl">
-              What Bitcoin represents for India
-            </h2>
-            <p className="text-lg leading-relaxed text-ink-soft md:col-span-2 md:text-xl">
-              {MEANS_FOR_INDIA.lead}
-            </p>
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {MEANS_FOR_INDIA.represents.map((r) => (
-              <div key={r.title} className="rounded-2xl border border-line bg-card p-8">
-                <h3 className="font-display text-xl font-semibold text-ink">
-                  {r.title}
-                </h3>
-                <p className="mt-2 leading-relaxed text-ink-soft">{r.body}</p>
-              </div>
-            ))}
+            <Link
+              href="/about"
+              className="mt-6 inline-flex items-center gap-1.5 font-semibold text-gold hover:text-ink"
+            >
+              More about BPI <span aria-hidden>&rarr;</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -134,35 +104,27 @@ export default function Home() {
             Where we focus
           </h2>
           <p className="mt-4 text-lg text-ink-soft">
-            What we work on, across protection, enablement, and infrastructure —
-            grounded in what India&rsquo;s Bitcoin policy actually needs, not a
-            single issue.
+            Our agenda spans three layers — protection, enablement, and
+            infrastructure — grounded in what India&rsquo;s Bitcoin policy
+            actually needs, not a single issue.
           </p>
         </div>
-        <div className="mt-12 space-y-10">
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
           {PRIORITY_LAYERS.map((layer) => (
-            <div key={layer.layer} className="grid grid-cols-1 gap-6 md:grid-cols-4">
-              <div className="md:col-span-1">
-                <h3 className="font-display text-xl font-semibold text-gold">
-                  {layer.layer}
-                </h3>
-                <p className="mt-2 text-sm text-ink-soft">{layer.blurb}</p>
-              </div>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 md:col-span-3">
-                {layer.items.map((it) => (
-                  <div key={it.title} className="rounded-2xl border border-line bg-card p-6">
-                    <h4 className="font-display text-base font-semibold text-ink">
-                      {it.title}
-                    </h4>
-                    <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-                      {it.body}
-                    </p>
-                  </div>
-                ))}
-              </div>
+            <div key={layer.layer} className="rounded-2xl border border-line bg-card p-8">
+              <h3 className="font-display text-xl font-semibold text-gold">
+                {layer.layer}
+              </h3>
+              <p className="mt-2 leading-relaxed text-ink-soft">{layer.blurb}</p>
             </div>
           ))}
         </div>
+        <Link
+          href="/policy"
+          className="mt-8 inline-flex items-center gap-1.5 font-semibold text-gold hover:text-ink"
+        >
+          See our policy priorities <span aria-hidden>&rarr;</span>
+        </Link>
       </section>
 
       {/* ------------------------------------------------------------ How we work */}
@@ -207,14 +169,14 @@ export default function Home() {
           </Link>
         </div>
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          {FEATURED_WORK.map((title) => (
+          {FEATURED.map((p) => (
             <Link
-              key={title}
-              href="/policy"
+              key={p.title}
+              href={`/policy/${p.slug}`}
               className="group flex items-start justify-between gap-4 rounded-2xl border border-line bg-card p-8 transition-shadow hover:shadow-lg"
             >
               <h3 className="font-display text-xl font-semibold text-ink">
-                {title}
+                {p.title}
               </h3>
               <span
                 className="mt-1 shrink-0 text-gold transition-transform group-hover:translate-x-1"
@@ -224,28 +186,6 @@ export default function Home() {
               </span>
             </Link>
           ))}
-        </div>
-      </section>
-
-      {/* ------------------------------------------------------ What we're building */}
-      <section className="border-t border-line bg-cream-alt py-20 md:py-24" aria-label="What we're building">
-        <div className="mx-auto max-w-7xl px-6 text-center md:px-10">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">
-            Our purpose
-          </span>
-          <p className="mx-auto mt-4 max-w-3xl font-display text-2xl font-medium leading-snug text-ink md:text-3xl">
-            {PURPOSE}
-          </p>
-          <ul className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
-            {VISION.aims.map((a) => (
-              <li
-                key={a}
-                className="rounded-2xl border border-line bg-card p-6 text-sm leading-relaxed text-ink-soft"
-              >
-                {a}
-              </li>
-            ))}
-          </ul>
         </div>
       </section>
 
