@@ -244,8 +244,8 @@ export const FEATURED_WORK = [
 // Featured work (Policy page) — actual BPI work products. Descriptions and
 // takeaways are drawn from the documents themselves. Items with a `slug` have a
 // detail page (/policy/<slug>) showing takeaways; the full document is shared
-// directly on request. Contributor works (mining, energy) intentionally have no
-// detail page yet — pending the authors' sign-off.
+// directly on request. Contributor works (mining, energy) are attributed to
+// their authors and summarised faithfully from the source documents.
 export type Work = {
   slug?: string;
   title: string;
@@ -365,16 +365,121 @@ export const RESEARCH_PAPERS: Work[] = [
     ],
   },
   {
+    slug: "sovereign-mining-initiative",
     title: "The Sovereign Mining Initiative",
     summary:
-      "How India's stranded and surplus renewable energy — hydro, solar, wind — can be turned into monetary value through flexible, interruptible Bitcoin mining, with global precedents from Bhutan, Norway and Texas.",
-    status: "Research · in progress",
+      "How India's surplus and curtailed renewable energy — solar, wind, hydro — can be turned into economic value through flexible, interruptible Bitcoin mining, with global precedents from Bhutan, Ethiopia and Texas.",
+    status: "Research paper · Sunil Kumar",
+    audience:
+      "A research paper by Sunil Kumar, examining Bitcoin mining as a flexible consumer of India's surplus renewable energy.",
+    sections: [
+      {
+        heading: "The problem",
+        points: [
+          "India is targeting 500 GW of renewable capacity by 2030 — one of the world's largest expansion programmes.",
+          "That growth has outpaced the grid: solar and wind are intermittent, and when generation exceeds local demand or transmission capacity, power is curtailed — stranded generation assets and wasted output.",
+          "Curtailment undermines investor confidence in renewables and caps the economic return on infrastructure the country has already paid for.",
+        ],
+      },
+      {
+        heading: "Why Bitcoin mining fits",
+        points: [
+          "Unlike a factory or a smelter, a mining load can scale up or down within seconds — it is genuinely interruptible.",
+          "That makes it uniquely suited to absorb surplus renewable energy that would otherwise be curtailed, and to act as a grid-balancing tool that improves renewable integration rather than competing with households for power.",
+        ],
+      },
+      {
+        heading: "What other countries have done",
+        points: [
+          "Bhutan — a sovereign, state-led model using surplus hydropower, adding a new revenue stream from energy that had limited local value.",
+          "Ethiopia — a private-investment model: licences and incentives to attract miners, generating foreign direct investment and jobs.",
+          "Texas (USA) — flexible mining loads inside the ERCOT demand-response framework, disconnecting rapidly when the grid is under stress.",
+        ],
+      },
+      {
+        heading: "Three models for India",
+        points: [
+          "State-led sovereign, private-investment-driven, and hybrid public–private.",
+          "The paper's finding: a hybrid model is the most robust — it splits risk between public and private actors and balances public revenue with private-sector efficiency.",
+          "Bitcoin's price volatility remains the single largest risk in every model, and the analysis treats it as such.",
+        ],
+      },
+      {
+        heading: "What would make it work",
+        points: [
+          "Enabling fiscal policy — tax holidays and accelerated depreciation — to draw domestic and global capital.",
+          "'Renewable-Only Mining Zones' inside an SEZ framework, so mining stays tied to clean surplus and aligned with India's climate commitments — with scope to monetise carbon credits alongside.",
+          "A phased roadmap: state-owned pilots to prove the concept, then public–private partnerships in SEZ and renewable clusters, then a durable dual framework.",
+        ],
+      },
+      {
+        heading: "The balanced view",
+        points: [
+          "Mining is presented as a complementary tool to monetise surplus energy — not a substitute for traditional power markets or industrial energy use.",
+          "Success depends on interdisciplinary work across energy planners, policymakers, legal scholars, financial experts and technologists — and on compliance with international norms.",
+        ],
+      },
+    ],
   },
   {
+    slug: "sovereign-energy-monetization",
     title: "Sovereign Energy Monetization for India",
     summary:
-      "A pilot framework to convert stranded energy — renewable curtailment, hydro spillage, and gas flaring — into strategic reserves through flexible, containerised computing deployed at the source.",
-    status: "Working paper",
+      "A working paper proposing a limited government pilot to test whether stranded energy — renewable curtailment, hydro spillage and gas flaring — can be monetised through flexible, containerised computing deployed at the source. The objective is infrastructure efficiency, not speculation.",
+    status: "Working paper · Anooj",
+    audience:
+      "A working paper by Anooj proposing a small, evidence-gathering government pilot — its stated objective is infrastructure efficiency, not speculation.",
+    sections: [
+      {
+        heading: "The problem",
+        points: [
+          "Valuable domestic energy is routinely wasted — solar curtailed during oversupply, hydroelectric spillage in the monsoon, and associated petroleum gas flared at remote oil fields where pipelines can't reach.",
+          "Electricity is perishable: when it can't reach a buyer, a productive resource becomes lost revenue for public-sector enterprises and a poor return on infrastructure.",
+          "Separately, India relies on strong foreign-exchange inflows to manage external shocks — and those channels (exports, investment, remittances) turn on global conditions India can't fully control.",
+        ],
+      },
+      {
+        heading: "The proposal",
+        points: [
+          "Deploy modular, containerised computing directly at the site of generation — move the load to the energy, instead of moving the energy across expensive transmission.",
+          "Stranded energy powers the equipment; the output is exported digitally over the internet and earns revenue in global markets; the load shuts down instantly whenever the grid needs the power.",
+          "In effect, a virtual export channel for energy that would otherwise be wasted.",
+        ],
+      },
+      {
+        heading: "Why it doesn't threaten the grid",
+        points: [
+          "The key property is flexibility: unlike continuous industrial loads, computing can be interrupted immediately with no physical damage.",
+          "That lets grid operators absorb surplus during low demand, disconnect the load at peak, stabilise frequency and reduce curtailment.",
+          "The infrastructure behaves as a controllable demand-response asset — not a permanent consumer of electricity.",
+        ],
+      },
+      {
+        heading: "International experience",
+        points: [
+          "Bhutan — excess hydroelectric generation directed to state digital-asset production, adding revenue from energy of otherwise limited value.",
+          "Texas (ERCOT) — flexible computing loads integrated into demand response, returning power to households and businesses under grid stress.",
+          "Middle East — energy-producing nations increasingly evaluating digital infrastructure to monetise surplus and reduce waste.",
+        ],
+      },
+      {
+        heading: "A limited pilot for India",
+        points: [
+          "No national rollout — a 10–15 MW pilot over 12 months to gather evidence for informed policymaking.",
+          "Candidate sites: ONGC flare-gas fields in Assam, NHPC hydro facilities with seasonal spillage, and high-curtailment renewable zones.",
+          "Guardrails: no public power priority may be compromised; grid operators keep authority to curtail instantly; funded by private capital; government exposure kept minimal.",
+          "Measure what matters: energy recovered, curtailment reduction, revenue, grid-response performance and environmental impact.",
+        ],
+      },
+      {
+        heading: "How it would be governed",
+        points: [
+          "A limited-mandate inter-ministerial working group — Power, Petroleum & Natural Gas, Finance, RBI, MeitY, NHPC and ONGC.",
+          "If it works, the pilot points to additional revenue for public-sector enterprises, less renewable curtailment, lower flare-gas emissions and better use of assets already built.",
+          "The question the paper puts to policymakers: keep wasting energy that cannot reach a market, or test technologies that can bring a market to the energy source.",
+        ],
+      },
+    ],
   },
 ];
 
