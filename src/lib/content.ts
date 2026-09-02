@@ -176,6 +176,12 @@ export const VISION = {
 // do not add unsourced figures here.
 export const INDIA_FACTS = [
   {
+    stat: "No. 1",
+    label:
+      "India's rank for grassroots crypto adoption — first in the world, three years running (2023–2025). Bitcoin is the single largest crypto asset, yet India's rules still lump it in with every other token.",
+    source: "Chainalysis Global Crypto Adoption Index (2023–2025)",
+  },
+  {
     stat: "30% + 1% TDS",
     label:
       "A flat 30% tax on gains from virtual digital assets, plus a 1% TDS on transfers, with no set-off or carry-forward of losses — retained unchanged in Budget 2026.",
@@ -520,6 +526,11 @@ export const EXPLAINER = {
       q: "Is Bitcoin the same as “crypto”?",
       a: "No — and the difference matters for policy. Bitcoin has no issuer, no company behind it, and a fixed supply; it behaves more like a digital commodity. “Crypto” spans thousands of tokens, many with issuers, promoters, and very different risks. Lumping them together produces blunt, ill-fitting rules — which is why we argue classification must come before regulation.",
       source: "",
+    },
+    {
+      q: "How many Indians own Bitcoin?",
+      a: "Honestly, no one knows precisely — there is no official count, and the headline numbers you see (often 100 million or more) are third-party estimates for “crypto” owners broadly, not Bitcoin. What is well established is the scale and direction: India has ranked first in the world for grassroots crypto adoption three years running. Bitcoin is the single largest crypto asset, so a very large number of Indians are exposed to it — which is exactly why we argue it should be treated on its own terms, not lumped in with every other token.",
+      source: "Chainalysis Global Crypto Adoption Index (2023–2025)",
     },
     {
       q: "How is Bitcoin taxed in India?",

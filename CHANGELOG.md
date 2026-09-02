@@ -4,6 +4,16 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.16 — India adoption stat, framed to keep Bitcoin ≠ crypto (2026-09)
+- Added a "No. 1" card to Policy → "The problem, in numbers": India's rank
+  for grassroots crypto adoption, 3 years running (Chainalysis 2023–2025).
+- Added a "How many Indians own Bitcoin?" Q&A to Bitcoin-in-India — honest
+  (no official count; headline numbers are crypto estimates, not Bitcoin).
+- Both framed so the crypto-adoption figure reinforces "Bitcoin is not
+  crypto" (Bitcoin is the largest single asset, yet lumped in with every
+  token) rather than contradicting it. Cited as adoption rank, never a
+  holder headcount. (Official Schedule-VDA / Parliamentary figure = next.)
+
 ## v0.15 — Drop Governance, add Privacy (2026-09)
 - Removed the Governance page — a non-profit convention that added nothing
   for a for-profit; independence already lives on About.
