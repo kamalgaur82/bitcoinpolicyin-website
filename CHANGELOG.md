@@ -4,6 +4,15 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.23 — Light theme: warm paper (2026-09)
+- Re-themed the whole site from dark "slate mono" to a warm light palette:
+  ivory `#f7f4ee` surfaces, white cards, charcoal `#1c1b18` text, and a
+  deep-amber accent `#a66a00` (dark enough to stay legible as text and as a
+  button fill on light). Tricolor unchanged.
+- Token-only change in globals.css (color-scheme → light); every component
+  re-themed automatically. The logo mark keeps its dark tile + gold ₿, which
+  reads on the light ground. OG share card matched to the light look.
+
 ## v0.22 — Real Bitcoin ₿ logo, integrated + PNGs (2026-09)
 - Replaced the drawn ₿ with the official Bitcoin letterform (public-domain
   logo), stood upright; saved as public/brand/bitcoin-b.svg base.

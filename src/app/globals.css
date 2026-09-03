@@ -3,35 +3,34 @@
 /* ------------------------------------------------------------------ *
    Bitcoin Policy India — design tokens
    Type: Archivo (display / headings) + Public Sans (body) — an
-   all-sans, grotesque pairing. Palette: "Slate mono" dark, gold accent,
-   India-tricolor reserved for sparing accents.
+   all-sans, grotesque pairing. Palette: "Warm paper" light — ivory
+   surfaces, warm charcoal text, a deep-amber accent, India-tricolor
+   reserved for sparing accents. Token names ("cream" = page surface,
+   "ink" = text, "gold" = accent) are kept stable so the whole site
+   re-themes by changing values here.
  * ------------------------------------------------------------------ */
 
 @theme {
-  /* Palette: "Slate mono" — dark-first. Token names are kept stable so the
-     whole site re-themes by changing values here. "cream" = page/slate
-     surfaces, "ink" = paper text, "gold" = amber accent. */
+  /* Surfaces (warm light) */
+  --color-cream: #f7f4ee;        /* page background (warm ivory) */
+  --color-cream-alt: #efe9dd;    /* elevated / alternating band */
+  --color-card: #ffffff;         /* card surface */
 
-  /* Surfaces (dark) */
-  --color-cream: #0e0f12;        /* page background (slate) */
-  --color-cream-alt: #16181d;    /* elevated / alternating band */
-  --color-card: #1b1e24;         /* card surface */
+  /* Text (charcoal on paper) */
+  --color-ink: #1c1b18;          /* primary text */
+  --color-ink-soft: #55514b;     /* secondary text */
+  --color-ink-faint: #8b857b;    /* captions / muted */
 
-  /* Text (paper on slate) */
-  --color-ink: #f5f5f3;          /* primary text */
-  --color-ink-soft: #b7bbc2;     /* secondary text */
-  --color-ink-faint: #868b93;    /* captions / muted */
-
-  /* Accent (amber) */
-  --color-gold: #f5a524;
-  --color-gold-soft: #f7b84e;
-  --color-gold-tint: #2a2212;    /* dark amber chip background */
+  /* Accent (deep amber — legible as text and as a button fill on light) */
+  --color-gold: #a66a00;
+  --color-gold-soft: #8a5800;    /* hover / deeper */
+  --color-gold-tint: #f6ecd8;    /* light amber chip background */
 
   /* India tricolor — reserved for sparing accents */
   --color-saffron: #ff9933;
   --color-india-green: #16a34a;
 
-  --color-line: #2a2e35;         /* hairline borders on slate */
+  --color-line: #e7e1d5;         /* hairline borders on paper */
 
   /* Type */
   --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
@@ -43,7 +42,7 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
