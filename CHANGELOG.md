@@ -4,6 +4,17 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.21 — OG / social share image (2026-09)
+- Added a 1200×630 share card generated to PNG at build via next/og
+  (ImageResponse): slate ground, the tricolor mark, wordmark, tagline,
+  headline, and a tricolor base strip. Serves as og:image and twitter:image.
+- Archivo bundled via @fontsource/archivo for the render; the ₿ is
+  reconstructed from Archivo's "B" plus its two strokes (the Currency-
+  Symbols glyph isn't in the font subsets, and there's no build-time
+  network for a fallback).
+- Note: og:image resolves against metadataBase (www.bitcoinpolicy.in), so
+  previews light up once the custom domain is attached.
+
 ## v0.20 — Logo asset set + press downloads (2026-09)
 - Exported the full logo set to public/brand/: nine SVGs (mark / BPI /
   full-name × full-colour / black / white) plus a README documenting
