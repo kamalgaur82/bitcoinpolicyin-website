@@ -56,19 +56,22 @@ export default function OpengraphImage() {
                 alignItems: "center",
                 justifyContent: "center",
                 width: 40,
-                height: 54,
+                height: 58,
               }}
             >
-              <div style={{ position: "absolute", left: 13, top: 0, width: 4, height: 54, backgroundColor: "#f5a524" }} />
-              <div style={{ position: "absolute", left: 20, top: 0, width: 4, height: 54, backgroundColor: "#f5a524" }} />
+              {/* stroke ends protruding above the B */}
+              <div style={{ position: "absolute", top: 0, left: 12, width: 4, height: 11, backgroundColor: "#f5a524" }} />
+              <div style={{ position: "absolute", top: 0, left: 18, width: 4, height: 11, backgroundColor: "#f5a524" }} />
+              {/* stroke ends protruding below the B */}
+              <div style={{ position: "absolute", bottom: 0, left: 12, width: 4, height: 11, backgroundColor: "#f5a524" }} />
+              <div style={{ position: "absolute", bottom: 0, left: 18, width: 4, height: 11, backgroundColor: "#f5a524" }} />
               <div
                 style={{
                   fontFamily: "Archivo",
-                  fontSize: 48,
+                  fontSize: 46,
                   fontWeight: 700,
                   color: "#f5a524",
                   lineHeight: 1,
-                  marginTop: 1,
                 }}
               >
                 B
