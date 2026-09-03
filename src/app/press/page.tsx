@@ -9,10 +9,11 @@ export const metadata: Metadata = {
 };
 
 const LOGO_ASSETS = [
-  { label: "Full logo — colour", file: "bpi-full-color.svg" },
-  { label: "Mark only — colour", file: "bpi-mark-color.svg" },
-  { label: "Full logo — white (for dark backgrounds)", file: "bpi-full-white.svg" },
-  { label: "Full logo — black (one-colour)", file: "bpi-full-black.svg" },
+  { label: "Full logo — colour", svg: "bpi-full-color.svg", png: "bpi-full-color-h512.png" },
+  { label: "Full logo — white (on dark)", svg: "bpi-full-white.svg", png: "bpi-full-white-h512.png" },
+  { label: "Full logo — black (one-colour)", svg: "bpi-full-black.svg", png: "bpi-full-black-h512.png" },
+  { label: "Mark only — colour", svg: "bpi-mark-color.svg", png: "bpi-mark-color-1024.png" },
+  { label: "₿PI — colour", svg: "bpi-abbr-color.svg", png: "bpi-abbr-color-h512.png" },
 ];
 
 export default function PressPage() {
@@ -71,17 +72,19 @@ export default function PressPage() {
         </p>
         <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
           {LOGO_ASSETS.map((a) => (
-            <li key={a.file}>
-              <a
-                href={`/brand/${a.file}`}
-                download
-                className="flex items-center justify-between gap-4 rounded-xl border border-line bg-card px-5 py-4 transition-colors hover:border-gold/50"
-              >
-                <span className="text-sm font-medium text-ink">{a.label}</span>
-                <span className="shrink-0 text-xs font-semibold uppercase tracking-wider text-gold">
+            <li
+              key={a.svg}
+              className="flex items-center justify-between gap-4 rounded-xl border border-line bg-card px-5 py-4"
+            >
+              <span className="text-sm font-medium text-ink">{a.label}</span>
+              <span className="flex shrink-0 items-center gap-3 text-xs font-semibold uppercase tracking-wider">
+                <a href={`/brand/${a.svg}`} download className="text-gold hover:text-ink">
                   SVG ↓
-                </span>
-              </a>
+                </a>
+                <a href={`/brand/${a.png}`} download className="text-gold hover:text-ink">
+                  PNG ↓
+                </a>
+              </span>
             </li>
           ))}
         </ul>

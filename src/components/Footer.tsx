@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-12 md:px-10">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           <div className="max-w-sm md:col-span-2">
-            <Wordmark textClassName="text-xl" />
+            <Wordmark svgClass="h-9 w-auto" />
             <p className="mt-4 text-sm leading-relaxed text-ink-soft">
               An independent, Bitcoin-only policy think tank working to enable
               positive, rational regulation for Bitcoin in India.

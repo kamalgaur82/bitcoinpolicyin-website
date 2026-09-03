@@ -4,6 +4,16 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.22 — Real Bitcoin ₿ logo, integrated + PNGs (2026-09)
+- Replaced the drawn ₿ with the official Bitcoin letterform (public-domain
+  logo), stood upright; saved as public/brand/bitcoin-b.svg base.
+- New compositions: the ₿ is the "B" — ₿PI and ₿itcoin Policy India — plus
+  the ₿ mark (tile) for the icon. Nav/footer wordmark, favicon, and OG image
+  all now use the real ₿ (shared src/lib/bitcoin-mark.ts).
+- Regenerated the full asset set (3 configs × 3 treatments) as SVG **and PNG**
+  via scripts/build-logos.mjs (resvg + Archivo TTFs). Press page links both.
+- Dev tooling: @resvg/resvg-js, @expo-google-fonts/archivo (devDependencies).
+
 ## v0.21 — OG / social share image (2026-09)
 - Added a 1200×630 share card generated to PNG at build via next/og
   (ImageResponse): slate ground, the tricolor mark, wordmark, tagline,

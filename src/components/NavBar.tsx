@@ -14,7 +14,7 @@ export default function NavBar() {
         className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3 md:px-10"
         aria-label="Primary"
       >
-        <Wordmark textClassName="text-base sm:text-lg" />
+        <Wordmark svgClass="h-7 w-auto sm:h-8" />
 
         {/* Desktop links */}
         <div className="hidden items-center gap-6 lg:flex">

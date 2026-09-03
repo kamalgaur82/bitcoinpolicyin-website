@@ -1,6 +1,15 @@
 import { ImageResponse } from "next/og";
 import { readFileSync } from "fs";
 import { join } from "path";
+import { BTC_D } from "@/lib/bitcoin-mark";
+
+// Upright gold ₿ as a standalone SVG, embedded as an <img> (Satori can't
+// render the ₿ from a font — the glyph isn't in the available subsets).
+const btcSvg =
+  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 56">` +
+  `<g transform="translate(21 28) scale(1.229) rotate(-13.7) translate(-30.875 -31.41)">` +
+  `<path d="${BTC_D}" fill="#f5a524"/></g></svg>`;
+const btcImg = "data:image/svg+xml;utf8," + encodeURIComponent(btcSvg);
 
 export const dynamic = "force-static";
 export const alt =
@@ -49,34 +58,8 @@ export default function OpengraphImage() {
               border: "1px solid #2a2e35",
             }}
           >
-            <div
-              style={{
-                position: "relative",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                width: 40,
-                height: 58,
-              }}
-            >
-              {/* stroke ends protruding above the B */}
-              <div style={{ position: "absolute", top: 0, left: 12, width: 4, height: 11, backgroundColor: "#f5a524" }} />
-              <div style={{ position: "absolute", top: 0, left: 18, width: 4, height: 11, backgroundColor: "#f5a524" }} />
-              {/* stroke ends protruding below the B */}
-              <div style={{ position: "absolute", bottom: 0, left: 12, width: 4, height: 11, backgroundColor: "#f5a524" }} />
-              <div style={{ position: "absolute", bottom: 0, left: 18, width: 4, height: 11, backgroundColor: "#f5a524" }} />
-              <div
-                style={{
-                  fontFamily: "Archivo",
-                  fontSize: 46,
-                  fontWeight: 700,
-                  color: "#f5a524",
-                  lineHeight: 1,
-                }}
-              >
-                B
-              </div>
-            </div>
+            { /* eslint-disable-next-line @next/next/no-img-element */ }
+            <img src={btcImg} width={42} height={56} alt="" />
             <div style={{ display: "flex", gap: 4 }}>
               <div style={{ width: 15, height: 5, borderRadius: 3, backgroundColor: "#ff9933" }} />
               <div style={{ width: 15, height: 5, backgroundColor: "#ffffff" }} />

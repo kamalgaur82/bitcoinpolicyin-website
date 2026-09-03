@@ -1,56 +1,41 @@
 import Link from "next/link";
+import { BTC_D } from "@/lib/bitcoin-mark";
 
-// BPI wordmark: a dark tile with a gold ₿ over a thin tricolor
-// (saffron-white-green) bar, beside the name in Archivo (--font-display).
-// The tricolor is a stylised national accent — not the flag, and no chakra.
+// BPI wordmark: the official Bitcoin ₿ (upright) as the "B" in Bitcoin, over a
+// thin saffron-white-green bar, followed by "itcoin Policy India" in Archivo.
+// The ₿ is gold; the text takes the surrounding ink colour (currentColor).
 export default function Wordmark({
   className = "",
-  textClassName = "text-lg",
+  svgClass = "h-8 w-auto",
 }: {
   className?: string;
-  textClassName?: string;
+  svgClass?: string;
 }) {
   return (
     <Link
       href="/"
       aria-label="Bitcoin Policy India — home"
-      className={`group flex items-center gap-2.5 ${className}`}
+      className={`group inline-flex items-center text-ink ${className}`}
     >
-      <svg
-        viewBox="0 0 44 44"
-        className="h-9 w-9 shrink-0"
-        role="img"
-        aria-hidden="true"
-      >
-        <rect
-          x="0.5"
-          y="0.5"
-          width="43"
-          height="43"
-          rx="11"
-          fill="#14161b"
-          stroke="#2a2e35"
-        />
+      <svg viewBox="0 0 270 44" className={svgClass} role="img" aria-hidden="true">
+        <g transform="translate(12.2 20.5) scale(0.6663) rotate(-13.7) translate(-30.875 -31.41)">
+          <path d={BTC_D} fill="#f5a524" />
+        </g>
+        <rect x="2" y="35.5" width="5.848" height="2.4" rx="1.2" fill="#ff9933" />
+        <rect x="9.276" y="35.5" width="5.848" height="2.4" fill="#ffffff" />
+        <rect x="16.552" y="35.5" width="5.848" height="2.4" rx="1.2" fill="#16a34a" />
         <text
-          x="22"
-          y="26"
-          textAnchor="middle"
+          x="24.9"
+          y="31"
           className="font-display"
-          fontSize="21"
           fontWeight="700"
-          fill="#f5a524"
+          fontSize="30"
+          letterSpacing="-0.6"
+          fill="currentColor"
         >
-          {"₿"}
+          itcoin Policy India
         </text>
-        <rect x="11" y="33" width="7" height="2.8" rx="1.4" fill="#ff9933" />
-        <rect x="18.5" y="33" width="7" height="2.8" fill="#ffffff" />
-        <rect x="26" y="33" width="7" height="2.8" rx="1.4" fill="#16a34a" />
       </svg>
-      <span
-        className={`font-display font-semibold leading-tight text-ink ${textClassName}`}
-      >
-        Bitcoin Policy India
-      </span>
     </Link>
   );
 }

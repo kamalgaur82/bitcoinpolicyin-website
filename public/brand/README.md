@@ -1,24 +1,34 @@
 # Bitcoin Policy India — logo assets
 
-The BPI mark: a dark tile with a gold Bitcoin glyph (₿) over a thin
-saffron–white–green bar. A stylised national accent — not the flag, and no
-Ashoka Chakra.
+Built from the official **Bitcoin ₿ letterform** (`bitcoin-b.svg`, from the
+public-domain Bitcoin logo), stood upright and paired with a thin
+saffron–white–green bar. The tricolor is a stylised national accent — not the
+flag, and no Ashoka Chakra.
+
+Regenerate with `node scripts/build-logos.mjs` (from `v-next`).
 
 ## Files
 
-Nine SVGs — three treatments × three configurations:
+Three configurations × three treatments, each as **SVG + PNG**:
 
 | | Full colour | Black (1-colour) | White (1-colour) |
 |---|---|---|---|
-| Mark only | `bpi-mark-color.svg` | `bpi-mark-black.svg` | `bpi-mark-white.svg` |
-| With "BPI" | `bpi-abbr-color.svg` | `bpi-abbr-black.svg` | `bpi-abbr-white.svg` |
-| Full name | `bpi-full-color.svg` | `bpi-full-black.svg` | `bpi-full-white.svg` |
+| **Mark** (icon) | `bpi-mark-color.svg` | `bpi-mark-black.svg` | `bpi-mark-white.svg` |
+| **₿PI** | `bpi-abbr-color.svg` | `bpi-abbr-black.svg` | `bpi-abbr-white.svg` |
+| **₿itcoin Policy India** | `bpi-full-color.svg` | `bpi-full-black.svg` | `bpi-full-white.svg` |
 
-- **Full colour** is the default (gold ₿ + tricolor on a dark tile). It works on
-  white, on the site's slate, and on black.
-- **Black** and **White** are one-colour fallbacks for stamps, embossing,
-  single-colour print, or watermarks, where gold and the tricolor can't
-  reproduce. The bar keeps its three-segment shape in a single ink.
+- The **mark** is the ₿ on the slate tile — used as the favicon.
+- **₿PI** and **₿itcoin Policy India** use the Bitcoin ₿ *as the letter "B"*.
+- PNGs: marks at `-512.png` / `-1024.png`; lockups at `-h256.png` / `-h512.png`
+  (transparent background).
+
+## Treatments
+
+- **Full colour** — gold ₿ + tricolor; text in dark ink (for light grounds).
+  On dark grounds the site renders gold ₿ + off-white text (see the nav).
+- **Black** / **White** — one-colour fallbacks for stamps, embossing,
+  single-colour print, or watermarks. The bar keeps its three-segment shape in
+  a single ink.
 
 ## Colours
 
@@ -29,14 +39,10 @@ Nine SVGs — three treatments × three configurations:
 
 ## Type
 
-The wordmark is set in **Archivo** (weight 700). The lockup SVGs reference
-Archivo with an Arial/sans fallback — open them with Archivo installed for
-exact letterforms.
+The wordmark text is **Archivo** (700). The lockup SVGs reference Archivo with
+an Arial/sans fallback; the PNGs are rendered with Archivo baked in.
 
-## Clear space & don'ts
+## Don'ts
 
-- Keep clear space around the mark of at least the tile's corner radius.
 - Don't recolour the ₿ or the tricolor, stretch the mark, or add effects.
 - Never present the tricolor as the national flag, and never add a chakra.
-
-PNG exports (transparent, at a few sizes) are available on request.
