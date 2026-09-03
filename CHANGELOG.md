@@ -4,6 +4,14 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.20 — Logo asset set + press downloads (2026-09)
+- Exported the full logo set to public/brand/: nine SVGs (mark / BPI /
+  full-name × full-colour / black / white) plus a README documenting
+  colours, type, and usage. Removed the stale pre-rebrand "Institute" PNGs.
+- Press page now links the logo files as real downloads (was "on request").
+- PNG rasters deferred — no rasterizer available in this environment; SVGs
+  are the master format and cover press/print/web.
+
 ## v0.19 — Real logo: tricolor mark (2026-09)
 - Replaced the interim gold ₿ tile with the chosen logo (direction A): a
   dark tile, gold ₿, and a thin saffron-white-green underbar, in Archivo.

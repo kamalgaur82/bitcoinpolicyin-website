@@ -574,6 +574,6 @@ export const PRESS = {
     "Bitcoin Policy India (BPI) is an independent, Bitcoin-only effort in research, education, and policy — India-first, and informed by developments around the world. It makes the evidence-based case for clear, workable Bitcoin regulation: treating Bitcoin distinctly from the wider “crypto” category, rationalising its taxation, and grounding the rights to hold and self-custody. Founded by Kamal Gaur and Saqeer Shah, BPI is deliberately small, independent, and India-first.",
   naming:
     "Refer to us as “Bitcoin Policy India” (first mention) or “BPI” thereafter.",
-  logoNote: "High-resolution logo and founder headshots are available on request.",
+  logoNote: "Download the logo below. Founder headshots and other assets are available on request.",
 } as const;
 

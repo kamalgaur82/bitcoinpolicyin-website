@@ -8,6 +8,13 @@ export const metadata: Metadata = {
     "Press and media kit for Bitcoin Policy India — ready-to-quote descriptions, founder bios, naming guidance, and press contact.",
 };
 
+const LOGO_ASSETS = [
+  { label: "Full logo — colour", file: "bpi-full-color.svg" },
+  { label: "Mark only — colour", file: "bpi-mark-color.svg" },
+  { label: "Full logo — white (for dark backgrounds)", file: "bpi-full-white.svg" },
+  { label: "Full logo — black (one-colour)", file: "bpi-full-black.svg" },
+];
+
 export default function PressPage() {
   return (
     <>
@@ -53,6 +60,31 @@ export default function PressPage() {
             </div>
           ))}
         </div>
+
+        {/* Logo downloads */}
+        <h2 className="mt-14 font-display text-2xl font-semibold text-ink">
+          Logo
+        </h2>
+        <p className="mt-2 text-sm text-ink-soft">
+          SVG (scalable, print-ready). Full-colour is the default; use the white
+          version on dark backgrounds, the black version for one-colour print.
+        </p>
+        <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {LOGO_ASSETS.map((a) => (
+            <li key={a.file}>
+              <a
+                href={`/brand/${a.file}`}
+                download
+                className="flex items-center justify-between gap-4 rounded-xl border border-line bg-card px-5 py-4 transition-colors hover:border-gold/50"
+              >
+                <span className="text-sm font-medium text-ink">{a.label}</span>
+                <span className="shrink-0 text-xs font-semibold uppercase tracking-wider text-gold">
+                  SVG ↓
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
 
         {/* Assets + contact */}
         <div className="mt-14 rounded-2xl border border-dashed border-line bg-cream-alt p-8 text-center">
