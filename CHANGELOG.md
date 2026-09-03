@@ -4,6 +4,16 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.18 — Official government VDA figure (2026-09)
+- Item 3 resolved: no official Bitcoin/crypto holder count exists. Anchored
+  instead on the government's own Parliament-disclosed number — ₹1,096 cr of
+  TDS collected on VDA transfers over three years (FY2022-23 to FY2024-25;
+  Finance Ministry, Rajya Sabha, Dec 2025).
+- Added it as a Policy "problem in numbers" card (also evens the grid to 6),
+  and a line in the Bitcoin-in-India "how many own Bitcoin?" Q&A ("tracks the
+  tax, not the people"). Both keep Bitcoin ≠ crypto and stay RBI-neutral;
+  avoided the capital-flight / high-risk framings from the coverage.
+
 ## v0.17b — Events, engagement, positioning corrections (2026-09)
 - Dropped "Atmanirbhar Bharat" from the home "What Bitcoin represents"
   copy (politically aligned) — now plain "self-reliance".

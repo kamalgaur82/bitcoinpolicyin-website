@@ -188,6 +188,12 @@ export const INDIA_FACTS = [
     source: "Finance Act 2022; Union Budget 2026 (§115BBH, §194S)",
   },
   {
+    stat: "₹1,096 cr",
+    label:
+      "TDS collected on VDA transfers over three years (FY2022-23 to FY2024-25) — the government's own measure of a real, taxable market. Bitcoin is the single largest asset within it, yet the rules treat every token alike.",
+    source: "Ministry of Finance, reply in Parliament (Dec 2025)",
+  },
+  {
     stat: "~$135 billion",
     label:
       "India is the world's largest recipient of remittances (FY2024-25), typically at fees of 5–7% — exactly where low-cost, borderless rails matter most.",
@@ -529,8 +535,8 @@ export const EXPLAINER = {
     },
     {
       q: "How many Indians own Bitcoin?",
-      a: "Honestly, no one knows precisely — there is no official count, and the headline numbers you see (often 100 million or more) are third-party estimates for “crypto” owners broadly, not Bitcoin. What is well established is the scale and direction: India has ranked first in the world for grassroots crypto adoption three years running. Bitcoin is the single largest crypto asset, so it accounts for a meaningful part of that activity — which is exactly why we argue it should be treated on its own terms, not lumped in with every other token.",
-      source: "Chainalysis Global Crypto Adoption Index (2023–2025)",
+      a: "Honestly, no one knows precisely — there is no official count, and the headline numbers you see (often 100 million or more) are third-party estimates for “crypto” owners broadly, not Bitcoin. What is well established is the scale and direction: India has ranked first in the world for grassroots crypto adoption three years running. Bitcoin is the single largest crypto asset, so it accounts for a meaningful part of that activity — which is exactly why we argue it should be treated on its own terms, not lumped in with every other token. The government tracks the tax, not the people: it has told Parliament that about ₹1,096 crore in TDS was collected on crypto (VDA) transfers over three years to FY2024-25 — but it publishes no count of holders.",
+      source: "Chainalysis Global Crypto Adoption Index (2023–2025); Ministry of Finance, reply in Parliament (Dec 2025)",
     },
     {
       q: "How is Bitcoin taxed in India?",
