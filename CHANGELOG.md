@@ -4,6 +4,15 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.19 — Real logo: tricolor mark (2026-09)
+- Replaced the interim gold ₿ tile with the chosen logo (direction A): a
+  dark tile, gold ₿, and a thin saffron-white-green underbar, in Archivo.
+  A stylised national accent — not the flag, no chakra.
+- Wired into the Wordmark component (nav + footer) as inline SVG.
+- Added src/app/icon.svg as the favicon (Next auto-links it); removed the
+  default favicon.ico.
+- Still pending: a proper OG/social share image built on the mark.
+
 ## v0.18 — Official government VDA figure (2026-09)
 - Item 3 resolved: no official Bitcoin/crypto holder count exists. Anchored
   instead on the government's own Parliament-disclosed number — ₹1,096 cr of
