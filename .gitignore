@@ -39,3 +39,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# internal material — MoM/minutes/decks must NEVER be committed to this
+# public repo. Belt-and-suspenders: they live outside v-next, but if one ever
+# lands inside, git will not stage it.
+mom/
+**/mom/
+minutes/
+**/minutes/
+*.mom.*
+*-mom.*
+/decks/
