@@ -4,6 +4,13 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.24 — Complete logo PNG coverage (2026-09)
+- Regenerated the full logo set; added PNGs for the base `bitcoin-b` glyph
+  (upright, gold) so every SVG now has a matching PNG (10 SVG / 20 PNG).
+- Press page now offers all variants (mark / ₿PI / full × colour / white /
+  black, plus the ₿ glyph) as both SVG and PNG. The light-theme colour set
+  needed no redraw — the mark sits on any ground.
+
 ## v0.23 — Light theme: warm paper (2026-09)
 - Re-themed the whole site from dark "slate mono" to a warm light palette:
   ivory `#f7f4ee` surfaces, white cards, charcoal `#1c1b18` text, and a

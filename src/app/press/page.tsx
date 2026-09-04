@@ -12,8 +12,13 @@ const LOGO_ASSETS = [
   { label: "Full logo — colour", svg: "bpi-full-color.svg", png: "bpi-full-color-h512.png" },
   { label: "Full logo — white (on dark)", svg: "bpi-full-white.svg", png: "bpi-full-white-h512.png" },
   { label: "Full logo — black (one-colour)", svg: "bpi-full-black.svg", png: "bpi-full-black-h512.png" },
-  { label: "Mark only — colour", svg: "bpi-mark-color.svg", png: "bpi-mark-color-1024.png" },
   { label: "₿PI — colour", svg: "bpi-abbr-color.svg", png: "bpi-abbr-color-h512.png" },
+  { label: "₿PI — white", svg: "bpi-abbr-white.svg", png: "bpi-abbr-white-h512.png" },
+  { label: "₿PI — black", svg: "bpi-abbr-black.svg", png: "bpi-abbr-black-h512.png" },
+  { label: "Mark — colour", svg: "bpi-mark-color.svg", png: "bpi-mark-color-1024.png" },
+  { label: "Mark — white", svg: "bpi-mark-white.svg", png: "bpi-mark-white-1024.png" },
+  { label: "Mark — black", svg: "bpi-mark-black.svg", png: "bpi-mark-black-1024.png" },
+  { label: "Bitcoin ₿ glyph", svg: "bitcoin-b.svg", png: "bitcoin-b-1024.png" },
 ];
 
 export default function PressPage() {
@@ -67,8 +72,9 @@ export default function PressPage() {
           Logo
         </h2>
         <p className="mt-2 text-sm text-ink-soft">
-          SVG (scalable, print-ready). Full-colour is the default; use the white
-          version on dark backgrounds, the black version for one-colour print.
+          Each is available as SVG (scalable, print-ready) and PNG. Full-colour
+          is the default; use the white version on dark backgrounds, and the
+          black version for one-colour print.
         </p>
         <ul className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
           {LOGO_ASSETS.map((a) => (

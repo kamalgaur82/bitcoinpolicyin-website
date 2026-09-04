@@ -96,8 +96,10 @@ for (const cfg of ["mark", "abbr", "full"]) {
     }
   }
 }
-writeFileSync(
-  join(OUT, "bitcoin-b.svg"),
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${BTC.x} ${BTC.y} ${BTC.w} ${BTC.h}"><path d="${BTC.d}" fill="currentColor"/></svg>\n`
-);
+// base ₿ glyph — upright, on a 44×44 canvas with padding. SVG uses
+// currentColor (recolour in code); PNGs are rendered in Bitcoin gold.
+const glyphSvg = (fill) => svgOpen(44, 44) + btc(22, 22, 32, fill) + `</svg>`;
+writeFileSync(join(OUT, "bitcoin-b.svg"), glyphSvg("currentColor") + "\n");
+writeFileSync(join(OUT, "bitcoin-b-512.png"), png(glyphSvg("#f5a524"), "width", 512));
+writeFileSync(join(OUT, "bitcoin-b-1024.png"), png(glyphSvg("#f5a524"), "width", 1024));
 console.log("logo assets written to", OUT);

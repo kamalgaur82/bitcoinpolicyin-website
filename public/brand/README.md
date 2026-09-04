@@ -19,8 +19,9 @@ Three configurations × three treatments, each as **SVG + PNG**:
 
 - The **mark** is the ₿ on the slate tile — used as the favicon.
 - **₿PI** and **₿itcoin Policy India** use the Bitcoin ₿ *as the letter "B"*.
-- PNGs: marks at `-512.png` / `-1024.png`; lockups at `-h256.png` / `-h512.png`
-  (transparent background).
+- **Every SVG has matching PNGs** (transparent background): marks and the
+  `bitcoin-b` glyph at `-512.png` / `-1024.png`; lockups at `-h256.png` /
+  `-h512.png`.
 
 ## Treatments
 
