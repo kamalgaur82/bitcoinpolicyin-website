@@ -30,7 +30,7 @@ export default function EventsPage() {
                   {e.date}
                 </span>
               </div>
-              <p className="mt-1 text-sm font-medium text-gold">{e.host}</p>
+              <p className="mt-1 text-sm font-medium text-gold-ink">{e.host}</p>
               <p className="mt-3 leading-relaxed text-ink-soft">{e.detail}</p>
             </li>
           ))}

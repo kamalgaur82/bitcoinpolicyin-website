@@ -85,14 +85,14 @@ export default function AboutPage() {
               <h3 className="font-display text-xl font-semibold text-ink">
                 {f.name}
               </h3>
-              <p className="mt-1 text-sm font-medium text-gold">{f.role}</p>
+              <p className="mt-1 text-sm font-medium text-gold-ink">{f.role}</p>
               <p className="mt-4 leading-relaxed text-ink-soft">{f.bio}</p>
               {f.link && (
                 <a
                   href={f.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-gold"
+                  className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-ink hover:text-gold-ink"
                 >
                   {f.linkLabel}
                   <span aria-hidden>↗</span>
@@ -137,7 +137,7 @@ export default function AboutPage() {
               key={b}
               className="flex items-start gap-3 rounded-xl border border-line bg-card px-5 py-4 text-ink-soft"
             >
-              <span className="mt-0.5 shrink-0 font-semibold text-gold" aria-hidden>✕</span>
+              <span className="mt-0.5 shrink-0 font-semibold text-gold-ink" aria-hidden>✕</span>
               {b}
             </li>
           ))}
@@ -147,7 +147,7 @@ export default function AboutPage() {
       {/* Vision */}
       <section className="border-t border-line bg-cream-alt py-16 text-center md:py-24" aria-label="What we're building">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold-ink">
             Long-term ambition
           </span>
           <h2 className="mt-3 font-display text-3xl font-semibold text-ink md:text-4xl">
@@ -168,7 +168,7 @@ export default function AboutPage() {
           </ul>
           <Link
             href="/contact"
-            className="mt-12 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-cream transition-opacity hover:opacity-90"
+            className="mt-12 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-ink transition-opacity hover:opacity-90"
           >
             Get in touch <span aria-hidden>&rarr;</span>
           </Link>

@@ -12,7 +12,7 @@ export default function Home() {
       {/* ---------------------------------------------------------------- Hero */}
       <section className="border-b border-line" aria-label="Introduction">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 md:py-28">
-          <p className="anim-fade-up text-sm font-semibold uppercase tracking-[0.2em] text-gold">
+          <p className="anim-fade-up text-sm font-semibold uppercase tracking-[0.2em] text-gold-ink">
             Clarity. Rigor. Independence.
           </p>
           <h1 className="anim-fade-up mt-5 max-w-4xl font-display text-4xl font-bold leading-[1.1] text-ink md:text-6xl">
@@ -32,7 +32,7 @@ export default function Home() {
           >
             <Link
               href="/policy"
-              className="inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-cream transition-opacity hover:opacity-85"
+              className="inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-ink transition-opacity hover:opacity-85"
             >
               Explore our policy <span aria-hidden>&rarr;</span>
             </Link>
@@ -113,7 +113,7 @@ export default function Home() {
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
           {PRIORITY_LAYERS.map((layer) => (
             <div key={layer.layer} className="rounded-2xl border border-line bg-card p-8">
-              <h3 className="font-display text-xl font-semibold text-gold">
+              <h3 className="font-display text-xl font-semibold text-gold-ink">
                 {layer.layer}
               </h3>
               <p className="mt-2 leading-relaxed text-ink-soft">{layer.blurb}</p>
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
         <Link
           href="/policy#where-we-focus"
-          className="mt-8 inline-flex items-center gap-1.5 font-semibold text-gold hover:text-ink"
+          className="mt-8 inline-flex items-center gap-1.5 font-semibold text-gold-ink hover:text-ink"
         >
           See our policy priorities <span aria-hidden>&rarr;</span>
         </Link>
@@ -172,7 +172,7 @@ export default function Home() {
           </p>
           <Link
             href="/support"
-            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-cream transition-opacity hover:opacity-90"
+            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gold px-8 py-4 font-semibold text-ink transition-opacity hover:opacity-90"
           >
             Add your support <span aria-hidden>&rarr;</span>
           </Link>

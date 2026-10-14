@@ -11,7 +11,7 @@ export default function PageHeader({
     <header className="border-b border-line bg-cream-alt">
       <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-20">
         {eyebrow && (
-          <span className="text-sm font-semibold uppercase tracking-wider text-gold">
+          <span className="text-sm font-semibold uppercase tracking-wider text-gold-ink">
             {eyebrow}
           </span>
         )}

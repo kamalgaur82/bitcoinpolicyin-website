@@ -36,7 +36,7 @@ export default async function WorkDetailPage({
 
       <section className="mx-auto max-w-3xl px-6 py-16 md:px-10 md:py-20">
         {work.audience && (
-          <p className="text-sm font-medium leading-relaxed text-gold">
+          <p className="text-sm font-medium leading-relaxed text-gold-ink">
             {work.audience}
           </p>
         )}
@@ -76,7 +76,7 @@ export default async function WorkDetailPage({
           </p>
           <Link
             href="/contact"
-            className="mt-5 inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-cream transition-opacity hover:opacity-90"
+            className="mt-5 inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-ink transition-opacity hover:opacity-90"
           >
             Request the document <span aria-hidden>&rarr;</span>
           </Link>
@@ -85,7 +85,7 @@ export default async function WorkDetailPage({
         <div className="mt-10">
           <Link
             href="/policy"
-            className="inline-flex items-center gap-2 font-semibold text-ink hover:text-gold"
+            className="inline-flex items-center gap-2 font-semibold text-ink hover:text-gold-ink"
           >
             <span aria-hidden>&larr;</span> Back to Policy
           </Link>

@@ -61,7 +61,7 @@ export default function PressPage() {
               <h3 className="font-display text-lg font-semibold text-ink">
                 {f.name}
               </h3>
-              <p className="mt-1 text-sm font-medium text-gold">{f.role}</p>
+              <p className="mt-1 text-sm font-medium text-gold-ink">{f.role}</p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">{f.bio}</p>
             </div>
           ))}
@@ -84,10 +84,10 @@ export default function PressPage() {
             >
               <span className="text-sm font-medium text-ink">{a.label}</span>
               <span className="flex shrink-0 items-center gap-3 text-xs font-semibold uppercase tracking-wider">
-                <a href={`/brand/${a.svg}`} download className="text-gold hover:text-ink">
+                <a href={`/brand/${a.svg}`} download className="text-gold-ink hover:text-ink">
                   SVG ↓
                 </a>
-                <a href={`/brand/${a.png}`} download className="text-gold hover:text-ink">
+                <a href={`/brand/${a.png}`} download className="text-gold-ink hover:text-ink">
                   PNG ↓
                 </a>
               </span>
@@ -103,7 +103,7 @@ export default function PressPage() {
           <p className="mx-auto mt-2 max-w-md text-ink-soft">{PRESS.logoNote}</p>
           <a
             href={`mailto:${SITE.email.press}`}
-            className="mt-5 inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-cream transition-opacity hover:opacity-90"
+            className="mt-5 inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-ink transition-opacity hover:opacity-90"
           >
             {SITE.email.press}
           </a>

@@ -39,7 +39,7 @@ export default function BitcoinInIndiaPage() {
         <div className="mt-12 flex flex-wrap gap-4">
           <Link
             href="/policy"
-            className="inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-cream transition-opacity hover:opacity-85"
+            className="inline-flex items-center gap-2 rounded-lg bg-gold px-7 py-3.5 font-semibold text-ink transition-opacity hover:opacity-85"
           >
             Our policy positions <span aria-hidden>&rarr;</span>
           </Link>

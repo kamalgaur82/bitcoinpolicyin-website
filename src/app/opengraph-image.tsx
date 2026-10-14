@@ -37,8 +37,8 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 80px",
-          backgroundColor: "#f7f4ee",
-          color: "#1c1b18",
+          backgroundColor: "#faf9f6",
+          color: "#14161b",
           fontFamily: "Archivo",
         }}
       >
@@ -78,7 +78,7 @@ export default function OpengraphImage() {
               fontSize: 22,
               fontWeight: 700,
               letterSpacing: 5,
-              color: "#a66a00",
+              color: "#8a5800",
             }}
           >
             CLARITY. RIGOR. INDEPENDENCE.
@@ -95,7 +95,7 @@ export default function OpengraphImage() {
           >
             Rational, India-first policy for Bitcoin.
           </div>
-          <div style={{ fontSize: 27, fontWeight: 400, color: "#55514b" }}>
+          <div style={{ fontSize: 27, fontWeight: 400, color: "#44494f" }}>
             An independent, Bitcoin-only policy think tank.
           </div>
         </div>

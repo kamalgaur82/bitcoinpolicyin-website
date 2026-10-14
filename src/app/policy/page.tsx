@@ -43,7 +43,7 @@ export default function PolicyPage() {
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {INDIA_FACTS.map((f) => (
               <div key={f.stat} className="rounded-2xl border border-line bg-card p-8">
-                <div className="font-display text-3xl font-semibold text-gold">
+                <div className="font-display text-3xl font-semibold text-gold-ink">
                   {f.stat}
                 </div>
                 <p className="mt-3 leading-relaxed text-ink-soft">{f.label}</p>
@@ -71,7 +71,7 @@ export default function PolicyPage() {
             {PRIORITY_LAYERS.map((layer) => (
               <div key={layer.layer} className="grid grid-cols-1 gap-6 md:grid-cols-4">
                 <div className="md:col-span-1">
-                  <h3 className="font-display text-xl font-semibold text-gold">
+                  <h3 className="font-display text-xl font-semibold text-gold-ink">
                     {layer.layer}
                   </h3>
                   <p className="mt-2 text-sm text-ink-soft">{layer.blurb}</p>
@@ -120,7 +120,7 @@ export default function PolicyPage() {
                 <p className="mt-6 text-xs uppercase tracking-wider text-ink-faint">
                   {p.status}
                 </p>
-                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold transition-all group-hover:gap-2.5">
+                <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-ink transition-all group-hover:gap-2.5">
                   Read the takeaways <span aria-hidden>&rarr;</span>
                 </span>
               </Link>
@@ -145,7 +145,7 @@ export default function PolicyPage() {
         <p className="mt-6 text-sm text-ink-faint">
           Full documents are shared directly with the institutions they&rsquo;re
           for. To request one,{" "}
-          <Link href="/contact" className="text-gold hover:text-ink">
+          <Link href="/contact" className="text-gold-ink hover:text-ink">
             get in touch
           </Link>
           .
@@ -186,7 +186,7 @@ export default function PolicyPage() {
               key={p}
               className="flex items-center gap-4 rounded-xl border border-line bg-card px-5 py-4"
             >
-              <span className="font-display text-2xl font-semibold text-gold">
+              <span className="font-display text-2xl font-semibold text-gold-ink">
                 {String(idx + 1).padStart(2, "0")}
               </span>
               <span className="text-lg text-ink">{p}</span>
@@ -214,10 +214,10 @@ export default function PolicyPage() {
                       href={r.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="transition-colors hover:text-gold"
+                      className="transition-colors hover:text-gold-ink"
                     >
                       {r.title}{" "}
-                      <span aria-hidden className="text-gold">
+                      <span aria-hidden className="text-gold-ink">
                         ↗
                       </span>
                     </a>
@@ -225,7 +225,7 @@ export default function PolicyPage() {
                     r.title
                   )}
                 </h3>
-                <p className="mt-1 text-sm font-medium text-gold">
+                <p className="mt-1 text-sm font-medium text-gold-ink">
                   {r.author} · {r.year}
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-ink-soft">{r.note}</p>

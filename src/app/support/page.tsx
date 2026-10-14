@@ -84,7 +84,7 @@ export default function SupportPage() {
           <button
             type="button"
             disabled
-            className="w-full rounded-lg bg-gold px-7 py-3.5 font-semibold text-cream disabled:opacity-60"
+            className="w-full rounded-lg bg-gold px-7 py-3.5 font-semibold text-ink disabled:opacity-60"
           >
             Add my support
           </button>

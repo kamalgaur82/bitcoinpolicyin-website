@@ -29,7 +29,7 @@ export default function NavBar() {
           ))}
           <Link
             href="/support"
-            className="rounded-lg bg-gold px-5 py-2.5 text-sm font-semibold text-cream transition-opacity hover:opacity-85"
+            className="rounded-lg bg-gold px-5 py-2.5 text-sm font-semibold text-ink transition-opacity hover:opacity-85"
           >
             Support
           </Link>
@@ -70,7 +70,7 @@ export default function NavBar() {
             ))}
             <Link
               href="/support"
-              className="mt-3 rounded-lg bg-gold px-5 py-3 text-center text-base font-semibold text-cream"
+              className="mt-3 rounded-lg bg-gold px-5 py-3 text-center text-base font-semibold text-ink"
               onClick={() => setOpen(false)}
             >
               Support

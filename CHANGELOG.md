@@ -4,6 +4,17 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.25 — "Cream" theme, matched to the decks (2026-10)
+- Re-themed from the muddy warm-tan/deep-amber palette to a brighter, cooler
+  "Cream" palette matching the BPI decks: cream `#faf9f6` / `#f3f1ec`
+  surfaces, cool-slate text (`#14161b` / `#44494f` / `#8a8f97`), warm-gray
+  borders `#e6e3dc`.
+- Fixed the low-contrast "brown-on-brown" header eyebrows: gold is now split
+  — vibrant `#f5a524` for fills/buttons (with dark text), deep `#8a5800`
+  (`gold-ink`) for accent text so eyebrows/links/stats read cleanly on cream.
+- Buttons are vibrant gold with dark text (was deep-amber). OG share card
+  matched. Logo mark unchanged (works on any ground).
+
 ## v0.24.1 — Saqeer LinkedIn (2026-10)
 - Added Saqeer Shah's LinkedIn to his founder card on About.
 
