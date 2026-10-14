@@ -28,7 +28,12 @@ const SECTIONS: { heading: string; body: string[] }[] = [
     heading: "How we use it",
     body: [
       "To reply to your enquiry, to send the occasional update you've asked for, and to understand interest in our work. We do not sell or rent your details.",
-      "We share personal data only with service providers who help us operate the site and our mailing (for example, an email provider), under appropriate safeguards — never for their own marketing.",
+    ],
+  },
+  {
+    heading: "Who processes it",
+    body: [
+      "When you submit the contact or support form, the information you enter is processed by Web3Forms, our form-delivery provider, and delivered to us by email. The site is hosted on Cloudflare Pages, and our email addresses forward through Cloudflare Email Routing. These providers act only as processors on our behalf, under appropriate safeguards — never for their own marketing.",
     ],
   },
   {
