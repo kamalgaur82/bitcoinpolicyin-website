@@ -1,13 +1,12 @@
-# Cloudflare Pages caching rules — so visitors never get stuck on a stale page.
-# (This file is copied verbatim into the build output and read by Cloudflare Pages.)
-
-# Default: HTML and any non-hashed file must be revalidated every visit.
-# The browser sends a conditional request and gets a cheap 304 when nothing
-# changed, or the new content immediately after a deploy — never a stale page.
+# Cloudflare Pages caching — guarantee visitors never get a stale page.
+#
+# Every file is revalidated on each visit: the browser sends a conditional
+# request and gets a cheap "304 Not Modified" when nothing changed, or the new
+# file immediately after a deploy. Next.js build assets are content-hashed, so
+# their revalidations are trivial 304s and correctness is guaranteed.
+#
+# (We intentionally use a single rule. Cloudflare Pages APPENDS the headers of
+# every matching rule, so a catch-all plus a more specific "/_next/static/*"
+# rule produces one conflicting Cache-Control — avoided by keeping just this.)
 /*
   Cache-Control: public, max-age=0, must-revalidate
-
-# Next.js build assets are content-hashed (the filename changes when the
-# content does), so they can be cached forever and never go stale.
-/_next/static/*
-  Cache-Control: public, max-age=31536000, immutable
