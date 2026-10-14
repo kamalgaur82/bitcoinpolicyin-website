@@ -4,6 +4,11 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.25.1 — Cache headers (no stale pages) (2026-10)
+- Added `public/_headers` for Cloudflare Pages: HTML/non-hashed files
+  revalidate every visit (`max-age=0, must-revalidate`); hashed `/_next/static/*`
+  cached immutably. Stops visitors getting stuck on an old cached page after a deploy.
+
 ## v0.25 — "Cream" theme, matched to the decks (2026-10)
 - Re-themed from the muddy warm-tan/deep-amber palette to a brighter, cooler
   "Cream" palette matching the BPI decks: cream `#faf9f6` / `#f3f1ec`
