@@ -145,7 +145,7 @@ export const FOUNDERS = [
     name: "Saqeer Shah",
     role: "Co-founder",
     bio: "Saqeer is a lawyer who has litigated criminal cases across several state and high courts. He brings a practitioner's grasp of how India's legal and political institutions actually work — and the relationships and credibility to engage them seriously.",
-    link: "", // LinkedIn URL to be added
+    link: "https://www.linkedin.com/in/saqeer-shah/",
     linkLabel: "LinkedIn",
   },
 ] as const;

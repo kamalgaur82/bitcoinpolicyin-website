@@ -4,6 +4,9 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.24.1 — Saqeer LinkedIn (2026-10)
+- Added Saqeer Shah's LinkedIn to his founder card on About.
+
 ## v0.24 — Complete logo PNG coverage (2026-09)
 - Regenerated the full logo set; added PNGs for the base `bitcoin-b` glyph
   (upright, gold) so every SVG now has a matching PNG (10 SVG / 20 PNG).
