@@ -4,6 +4,19 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.26 — Contact + Support forms (Web3Forms) (2026-10)
+- Wired both forms to Web3Forms: real accessible forms with validation,
+  success/error states, and a honeypot. Contact routes by a Purpose dropdown
+  to the right alias (one access key per destination); Support captures
+  name/email/role/opt-in.
+- Keys in src/lib/forms.ts (public by design) are blank until set, so the
+  forms ship as "coming soon" and auto-enable when keys are pasted. Privacy
+  page names the processors (Web3Forms; Cloudflare Pages + Email Routing).
+
+## v0.25.2 — Clean single cache header (2026-10)
+- Simplified public/_headers to one rule so Cloudflare doesn't merge a
+  conflicting Cache-Control onto hashed assets.
+
 ## v0.25.1 — Cache headers (no stale pages) (2026-10)
 - Added `public/_headers` for Cloudflare Pages: HTML/non-hashed files
   revalidate every visit (`max-age=0, must-revalidate`); hashed `/_next/static/*`
