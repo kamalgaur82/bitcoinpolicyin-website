@@ -4,6 +4,11 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.26.1 — Forms live (2026-10)
+- Added the Web3Forms access key → Contact + Support forms are live,
+  delivering to bitcoinpolicyin@gmail.com. Verified end-to-end (HTTP 200,
+  success). Per-alias routing to be split out once aliases are set up.
+
 ## v0.26 — Contact + Support forms (Web3Forms) (2026-10)
 - Wired both forms to Web3Forms: real accessible forms with validation,
   success/error states, and a honeypot. Contact routes by a Purpose dropdown

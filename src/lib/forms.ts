@@ -17,10 +17,12 @@
 export const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 export const WEB3FORMS_KEYS = {
-  general: "",
+  // Single key for now -> delivers to bitcoinpolicyin@gmail.com. partners/press
+  // fall back to `general` until per-alias keys are created (see contactKey).
+  general: "4627d93a-8a1e-4835-bee5-4d93dcf8cbe9",
   partners: "",
   press: "",
-  support: "",
+  support: "4627d93a-8a1e-4835-bee5-4d93dcf8cbe9",
 } as const;
 
 export const CONTACT_PURPOSES = [
