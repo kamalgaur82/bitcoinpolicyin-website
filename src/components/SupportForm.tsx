@@ -78,6 +78,13 @@ export default function SupportForm() {
       <div className="rounded-2xl border border-line bg-card p-8 text-center">
         <h2 className="font-display text-xl font-semibold text-ink">You&rsquo;re in — thank you.</h2>
         <p className="mt-2 text-ink-soft">We&rsquo;ll keep you posted as our work goes out. No spam.</p>
+        <button
+          type="button"
+          onClick={() => setStatus("idle")}
+          className="mt-5 inline-flex items-center gap-1.5 font-semibold text-gold-ink hover:text-ink"
+        >
+          Add another <span aria-hidden>&rarr;</span>
+        </button>
       </div>
     );
   }

@@ -80,6 +80,13 @@ export default function ContactForm() {
       <div className="rounded-2xl border border-line bg-card p-8 text-center">
         <h2 className="font-display text-xl font-semibold text-ink">Thanks — your message is on its way.</h2>
         <p className="mt-2 text-ink-soft">We&rsquo;ll get back to you. For anything urgent, email {SITE.email.contact}.</p>
+        <button
+          type="button"
+          onClick={() => setStatus("idle")}
+          className="mt-5 inline-flex items-center gap-1.5 font-semibold text-gold-ink hover:text-ink"
+        >
+          Send another message <span aria-hidden>&rarr;</span>
+        </button>
       </div>
     );
   }
