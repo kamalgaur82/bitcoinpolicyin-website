@@ -4,6 +4,13 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.29.3 — Forms confirm only on explicit success (2026-10)
+- Both forms now require Web3Forms to return `success: true` before showing
+  the "sent" screen (was: anything not an explicit failure). A genuinely
+  rejected or malformed response now shows the visitor an error instead of a
+  false confirmation. (Note: Web3Forms still returns success for submissions
+  it silently drops as spam, so burst/duplicate testing can still look "sent".)
+
 ## v0.29.2 — Opt out of browser "force dark" (2026-10)
 - Changed `color-scheme: light` → `only light` so browsers that auto-darken
   pages (e.g. Opera/Chrome when the OS is in dark mode) leave the cream site

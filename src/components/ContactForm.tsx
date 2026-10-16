@@ -62,7 +62,7 @@ export default function ContactForm() {
         }),
       });
       const json = (await res.json().catch(() => ({}))) as { success?: boolean; message?: string };
-      if (res.ok && json.success !== false) {
+      if (res.ok && json.success === true) {
         setStatus("success");
         form.reset();
       } else {
