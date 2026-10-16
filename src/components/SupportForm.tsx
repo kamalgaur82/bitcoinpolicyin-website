@@ -133,7 +133,7 @@ export default function SupportForm() {
       </button>
 
       <p className="text-sm text-ink-faint">
-        We&rsquo;ll only use your details to keep you posted on major milestones — and we&rsquo;ll never share them.
+        Your details stay private — we&rsquo;ll never share them, and you can ask us to remove you any time.
       </p>
     </form>
   );

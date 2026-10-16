@@ -4,6 +4,12 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.29.4 — De-dupe Support form privacy copy (2026-10)
+- The checkbox and the footer line both said "keep you posted on major
+  milestones." Footer reworded to a distinct privacy promise ("Your details
+  stay private — we'll never share them, and you can ask us to remove you any
+  time"), so the two no longer repeat.
+
 ## v0.29.3 — Forms confirm only on explicit success (2026-10)
 - Both forms now require Web3Forms to return `success: true` before showing
   the "sent" screen (was: anything not an explicit failure). A genuinely
