@@ -43,7 +43,10 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: light;
+  /* `only light` is the strong opt-out: it stops a browser's "force dark"
+     feature (e.g. Opera/Chrome auto-dark when the OS is in dark mode) from
+     repainting this light-only site. Plain `light` still allows it. */
+  color-scheme: only light;
 }
 
 body {

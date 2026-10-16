@@ -4,6 +4,15 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.29.2 — Opt out of browser "force dark" (2026-10)
+- Changed `color-scheme: light` → `only light` so browsers that auto-darken
+  pages (e.g. Opera/Chrome when the OS is in dark mode) leave the cream site
+  alone. Plain `light` still let them repaint it brown/dark; `only light` is
+  the strong opt-out. No visual change for light-mode visitors.
+
+## v0.29.1 — Academic + Policymaker support labels (2026-10)
+- Renamed two Support roles: Researcher → Academic, Government → Policymaker.
+
 ## v0.29 — Form subjects carry the path + tidier dropdowns (2026-10)
 - Email subjects now name which form and which category, e.g.
   `BPI website - Support - Researcher` and `BPI website - Contact - Partnership`,
