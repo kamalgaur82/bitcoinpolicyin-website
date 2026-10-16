@@ -35,9 +35,9 @@ export type ContactPurpose = (typeof CONTACT_PURPOSES)[number]["value"];
 
 export const SUPPORT_ROLES = [
   "Individual",
-  "Researcher",
+  "Academic",
   "Industry",
-  "Government",
+  "Policymaker",
   "Student",
   "Other",
 ] as const;

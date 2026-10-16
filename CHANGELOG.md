@@ -9,8 +9,8 @@ and meaningful versions are tagged below (`git tag`).
   `BPI website - Support - Researcher` and `BPI website - Contact - Partnership`,
   so inbox triage is obvious at a glance.
 - Tightened the dropdown labels (reused in both the dropdown and the subject):
-  Contact → General / Partnership / Press; Support → Individual / Researcher /
-  Industry / Government / Student / Other.
+  Contact → General / Partnership / Press; Support → Individual / Academic /
+  Industry / Policymaker / Student / Other.
 
 ## v0.26.1 — Forms live (2026-10)
 - Added the Web3Forms access key → Contact + Support forms are live,
