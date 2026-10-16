@@ -87,7 +87,7 @@ export default function ContactForm() {
   const busy = status === "submitting";
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5" aria-label="Contact form" noValidate>
+    <form onSubmit={onSubmit} className="space-y-5" aria-label="Contact form">
       <div className="hidden" aria-hidden="true">
         <label>Leave this empty<input type="text" name="company_website" tabIndex={-1} autoComplete="off" /></label>
       </div>

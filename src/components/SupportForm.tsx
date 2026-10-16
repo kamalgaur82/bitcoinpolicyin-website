@@ -41,6 +41,7 @@ export default function SupportForm() {
     const form = e.currentTarget;
     const data = new FormData(form);
     if (data.get("company_website")) return; // honeypot
+    const role = data.get("role");
     setStatus("submitting");
     setError("");
     try {
@@ -49,11 +50,11 @@ export default function SupportForm() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEYS.support,
-          subject: "BPI website — new supporter",
+          subject: `BPI website — new supporter${role ? ` (${role})` : ""}`,
           from_name: "Bitcoin Policy India website",
           name: data.get("name"),
           email: data.get("email"),
-          role: data.get("role"),
+          role,
           keep_me_posted: data.get("updates") ? "Yes" : "No",
           replyto: data.get("email"),
         }),
@@ -84,7 +85,7 @@ export default function SupportForm() {
   const busy = status === "submitting";
 
   return (
-    <form onSubmit={onSubmit} className="space-y-5" aria-label="Support sign-up" noValidate>
+    <form onSubmit={onSubmit} className="space-y-5" aria-label="Support sign-up">
       <div className="hidden" aria-hidden="true">
         <label>Leave this empty<input type="text" name="company_website" tabIndex={-1} autoComplete="off" /></label>
       </div>
