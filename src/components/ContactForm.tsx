@@ -135,10 +135,29 @@ export default function ContactForm() {
         {busy ? "Sending…" : "Send message"}
       </button>
 
-      <p className="pt-2 text-sm text-ink-faint">
-        Prefer email? Reach us directly.
-      </p>
-      <DirectEmails />
+      <div className="pt-2 text-sm text-ink-faint">
+        <p>Prefer to go straight to a desk?</p>
+        <ul className="mt-2 space-y-1">
+          <li>
+            Partnerships —{" "}
+            <a href={`mailto:${SITE.email.partners}`} className="font-medium text-ink hover:text-gold-ink">
+              {SITE.email.partners}
+            </a>
+          </li>
+          <li>
+            Press —{" "}
+            <a href={`mailto:${SITE.email.press}`} className="font-medium text-ink hover:text-gold-ink">
+              {SITE.email.press}
+            </a>
+          </li>
+          <li>
+            Anything else — use the form above, or{" "}
+            <a href={`mailto:${SITE.email.contact}`} className="font-medium text-ink hover:text-gold-ink">
+              {SITE.email.contact}
+            </a>
+          </li>
+        </ul>
+      </div>
     </form>
   );
 }
