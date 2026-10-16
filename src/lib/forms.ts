@@ -26,18 +26,18 @@ export const WEB3FORMS_KEYS = {
 } as const;
 
 export const CONTACT_PURPOSES = [
-  { value: "general", label: "General enquiry" },
+  { value: "general", label: "General" },
   { value: "partners", label: "Partnership" },
-  { value: "press", label: "Press & media" },
+  { value: "press", label: "Press" },
 ] as const;
 
 export type ContactPurpose = (typeof CONTACT_PURPOSES)[number]["value"];
 
 export const SUPPORT_ROLES = [
-  "Citizen / individual",
-  "Researcher / academic",
-  "Industry / builder",
-  "Policy / government",
+  "Individual",
+  "Researcher",
+  "Industry",
+  "Government",
   "Student",
   "Other",
 ] as const;

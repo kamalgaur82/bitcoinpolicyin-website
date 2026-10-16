@@ -51,7 +51,7 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: contactKey(purpose),
-          subject: `BPI website — ${CONTACT_PURPOSES.find((p) => p.value === purpose)?.label ?? "Contact"}`,
+          subject: `BPI website - Contact - ${CONTACT_PURPOSES.find((p) => p.value === purpose)?.label ?? "General"}`,
           from_name: "Bitcoin Policy India website",
           name: data.get("name"),
           email: data.get("email"),

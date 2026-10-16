@@ -4,6 +4,14 @@ Named milestones for the site. Every commit is versioned in git, every push
 is a separate Cloudflare Pages deployment (rollback-able from the dashboard),
 and meaningful versions are tagged below (`git tag`).
 
+## v0.29 — Form subjects carry the path + tidier dropdowns (2026-10)
+- Email subjects now name which form and which category, e.g.
+  `BPI website - Support - Researcher` and `BPI website - Contact - Partnership`,
+  so inbox triage is obvious at a glance.
+- Tightened the dropdown labels (reused in both the dropdown and the subject):
+  Contact → General / Partnership / Press; Support → Individual / Researcher /
+  Industry / Government / Student / Other.
+
 ## v0.26.1 — Forms live (2026-10)
 - Added the Web3Forms access key → Contact + Support forms are live,
   delivering to bitcoinpolicyin@gmail.com. Verified end-to-end (HTTP 200,

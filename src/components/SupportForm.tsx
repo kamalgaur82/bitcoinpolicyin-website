@@ -50,7 +50,7 @@ export default function SupportForm() {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: WEB3FORMS_KEYS.support,
-          subject: `BPI website — new supporter${role ? ` (${role})` : ""}`,
+          subject: `BPI website - Support - ${role || "Other"}`,
           from_name: "Bitcoin Policy India website",
           name: data.get("name"),
           email: data.get("email"),
